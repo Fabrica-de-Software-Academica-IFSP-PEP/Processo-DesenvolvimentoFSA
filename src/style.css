@@ -1,0 +1,25 @@
+#diagrama-scrum {
+    position: relative;
+}
+
+#captacao {
+    width: 160px;
+    height: 50px;
+    top: 225px;
+    left: 140px;
+}
+
+.clickable {
+    position: absolute;
+    display: block;
+}
+
+.round {
+    border-radius: 10px;
+}
+
+.clickable:hover {
+    cursor: pointer;
+    background-color: rgba(0, 100, 0, 0.2);
+    transition: background-color 0.1s;
+}
