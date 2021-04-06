@@ -3,7 +3,7 @@
 }
 
 #captacao {
-    width: 160px;
+    width: 155px;
     height: 50px;
     top: 225px;
     left: 140px;
@@ -21,5 +21,5 @@
 .clickable:hover {
     cursor: pointer;
     background-color: rgba(0, 100, 0, 0.2);
-    transition: background-color 0.1s;
+    transition: background-color 0.3s;
 }
