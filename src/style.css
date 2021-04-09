@@ -2,13 +2,6 @@
     position: relative;
 }
 
-#captacao {
-    width: 155px;
-    height: 50px;
-    top: 225px;
-    left: 140px;
-}
-
 .clickable {
     position: absolute;
     display: block;
@@ -22,4 +15,52 @@
     cursor: pointer;
     background-color: rgba(0, 100, 0, 0.2);
     transition: background-color 0.3s;
+}
+#captacao {
+    width: 208px;
+    height: 55px;
+    top: 222px;
+    left: 117px;
+} 
+#revisao_estorias {
+    width: 180px;
+    height: 52px;
+    top: 422px;
+    left: 130px;
+}
+#elaboracao_backlog {
+    width: 173px;
+    height: 52px;
+    top: 560px;
+    left: 130px;
+}
+#planejar_sprint {
+    width: 175px;
+    height: 32px;
+    top: 140px;
+    left: 1005px;
+}
+#executar_atividades {
+    width: 220px;
+    height: 52px;
+    top: 262px;
+    left: 982px;
+}
+#reuniao {
+    width: 165px;
+    height: 32px;
+    top: 272px;
+    left: 1340px;
+}
+#revisao_sprint {
+    width: 225px;
+    height: 52px;
+    top: 402px;
+    left: 980px;
+}
+#realizar_retrospectiva {
+    width: 225px;
+    height: 53px;
+    top: 518px;
+    left: 980px;
 }
