@@ -22,12 +22,12 @@ body {
 }
 
 .topics h2:not(:first-child) {
-    margin-top: 1rem;
+    margin-top: 1.4rem;
 }
 
 .topics q {
     display: inline-block;
-    font-weight: 300;
+    font-style: italic;
 }
 
 .topics p, .topics q {
