@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topics {
+    max-width: 1200px;
+    padding: 2em;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.topics h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.topics h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+}
+
+.topics h2:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.topics q {
+    display: inline-block;
+    font-weight: 300;
+}
+
+.topics p, .topics q {
+    margin-bottom: 0.5rem;
+}
+
+.topics ul {
+    list-style-position: inside;
+    margin-left: 0.5rem;
+}
+

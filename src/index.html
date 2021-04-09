@@ -1,45 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="clickable-boxes.css"/>
-    <link rel="stylesheet" href="base-style.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Diagrama SCRUM</title>
-</head>
-<body>
-    <div id="diagrama_scrum">
-        <a href="#topico_captacao" id="captacao" class="clickable round green"></a>
-        <a href="#topico_revisao_estorias" id="revisao_estorias" class="clickable round green"></a>
-        <a href="#topico_elaboracao_backlog" id="elaboracao_backlog" class="clickable round green"></a>
-        <a href="#topico_planejar_sprint" id="planejar_sprint" class="clickable round green"></a>
-        <a href="#topico_executar_atividades" id="executar_atividades" class="clickable round green"></a>
-        <a href="#topico_reuniao" id="reuniao" class="clickable round green"></a>
-        <a href="#topico_revisao_sprint" id="revisao_sprint" class="clickable round green"></a>
-        <a href="#topico_realizar_retrospectiva" id="realizar_retrospectiva" class="clickable round green"></a>
-        <img src="images/Diagrama SCRUM.png" alt="Diagrama do SCRUM" />
-    </div>
-    <div>
-        
-        <h1 id="topico_captacao">Captar requisitos e estórias de usuário</h1>
-        <br>
-        <h1 id="topico_revisao_estorias">Revisar e corrigir estórias</h1>
-        <br>
-        <h1 id="topico_elaboracao_backlog">Elaborar product backlog</h1>
-        <br>
-        <h1 id="topico_planejar_sprint">Planejar sprint</h1>
-        <br>
-        <h1 id="topico_executar_atividades">Executar atividades da sprint</h1>
-        <br>
-        <h1 id="topico_reuniao">Reunião diária</h1>
-        <br>
-        <h1 id="topico_revisao_sprint">Revisar sprint (sprint review meeting)</h1>
-        <br>
-        <h1 id="topico_realizar_retrospectiva">Tealizar retrospectiva da sprint</h1>
-        <br>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="base-style.css" />
+        <link rel="stylesheet" href="clickable-boxes.css" />
+        <link rel="stylesheet" href="topics.css" /> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Diagrama SCRUM</title>
+    </head>
+    <body>
+        <div id="diagrama_scrum">
+            <a
+                href="#topico_captacao"
+                id="captacao"
+                class="clickable round green"
+            ></a>
+            <a
+                href="#topico_revisao_estorias"
+                id="revisao_estorias"
+                class="clickable round green"
+            ></a>
+            <a
+                href="#topico_elaboracao_backlog"
+                id="elaboracao_backlog"
+                class="clickable round green"
+            ></a>
+            <a
+                href="#topico_planejar_sprint"
+                id="planejar_sprint"
+                class="clickable round green"
+            ></a>
+            <a
+                href="#topico_executar_atividades"
+                id="executar_atividades"
+                class="clickable round green"
+            ></a>
+            <a
+                href="#topico_reuniao"
+                id="reuniao"
+                class="clickable round green"
+            ></a>
+            <a
+                href="#topico_revisao_sprint"
+                id="revisao_sprint"
+                class="clickable round green"
+            ></a>
+            <a
+                href="#topico_realizar_retrospectiva"
+                id="realizar_retrospectiva"
+                class="clickable round green"
+            ></a>
+            <img src="images/Diagrama SCRUM.png" alt="Diagrama do SCRUM" />
+        </div>
+        <div class="topics">
+            <section class="topic">
+                <h1 id="topico_captacao">
+                    Captar requisitos e estórias de usuário
+                </h1>
+                <h2>Descrição</h2>
+                <p>
+                    Essa atividade está ligado ao levantamento de requisitos
+                    (tanto funcionais quanto não funcionais) em formato de
+                    estórias de usuários (User Stories). Essa etapa é
+                    fundamental para a construção do Product Backlog, que
+                    depende das estórias de usuários para definir o que se deve
+                    desenvolver.
+                </p>
+                <h2>Responsáveis</h2>
+                <p>
+                    Product Owner, e se for possível, um auxiliar ao Product
+                    Owner, de preferência um desenvolvedor para saber o que dá
+                    para desenvolver e o que não dá.
+                </p>
+                <h2>Tarefas</h2>
+                <ul>
+                    <li>Reunir e conversar com os <i>stakeholders</i></li>
+                    <li>Esclarecer dúvidas</li>
+                    <li>Registrar das estórias de usuário</li>
+                </ul>
+                <h2>Ferramentas/técnicas auxiliares</h2>
+                <p>
+                    Para executar essa tarefa, é fundamental que o Product Owner
+                    defina uma forma das estórias ficarem organizadas. Portanto,
+                    pode definir um formato na qual elas podem ser escritar,
+                    como o modelo abaixo proposto por Connextra em 2021:
+                </p>
+                <q>
+                    Como <strong>(papel)</strong>, eu quero
+                    <strong>(algo)</strong> para
+                    <strong>(me beneficiar)</strong>
+                </q>
+                <p>O exemplo abaixo demonstra a aplicação desse modelo</p>
+                <q>
+                    Como um gestor de atividades, eu quero poder cadastrar
+                    atividades e tarefas de um processo para eu poder organizar
+                    a sequência de atividades a serem realizadas em um projeto."
+                </q>
+            </section>
+
+            <br />
+            <h1 id="topico_revisao_estorias">Revisar e corrigir estórias</h1>
+            <br />
+            <h1 id="topico_elaboracao_backlog">Elaborar product backlog</h1>
+            <br />
+            <h1 id="topico_planejar_sprint">Planejar sprint</h1>
+            <br />
+            <h1 id="topico_executar_atividades">
+                Executar atividades da sprint
+            </h1>
+            <br />
+            <h1 id="topico_reuniao">Reunião diária</h1>
+            <br />
+            <h1 id="topico_revisao_sprint">
+                Revisar sprint (sprint review meeting)
+            </h1>
+            <br />
+            <h1 id="topico_realizar_retrospectiva">
+                Tealizar retrospectiva da sprint
+            </h1>
+            <br />
+        </div>
+    </body>
 </html>
