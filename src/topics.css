@@ -30,7 +30,7 @@ body {
 
 .topics h2 {
     font-size: 1.6rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 	text-decoration: underline;
 }
 
@@ -49,6 +49,7 @@ body {
 
 .topics ul {
     list-style-position: inside;
+	margin-top: 0.4rem;
+	margin-bottom: 0.2rem;
     margin-left: 0.5rem;
 }
-
