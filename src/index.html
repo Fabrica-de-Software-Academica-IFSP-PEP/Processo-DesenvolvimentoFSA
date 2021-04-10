@@ -12,6 +12,31 @@
             href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
             rel="stylesheet"
         />
+		<script>
+			let last_element = null;
+			window.addEventListener("load", () => {
+				console.log('On load')
+				const topic = document.location.href.split('#').pop();
+				console.log(topic);
+
+				document.querySelectorAll("a").forEach(a => {
+					a.addEventListener("click", (ev) => {
+						const topico = a.getAttribute('href').replace('#', '');
+						console.log(topico);
+
+						if (topico) {
+							last_element?.classList.remove('topic_selected');
+
+							const element = document.getElementById(topico);
+							console.log(element);
+
+							element?.classList.add('topic_selected');
+							last_element = element;
+						}
+					});
+				});
+			})
+		</script>
         <title>Diagrama SCRUM</title>
     </head>
     <body>

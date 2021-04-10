@@ -23,6 +23,11 @@ body {
 	margin-bottom: 1.5rem;
 }
 
+.topic_selected {
+	border-color: blue !important;
+	border-width: 2px;
+}
+
 .topics h1 {
     font-size: 2.4rem;
     margin-bottom: 0.4rem;
