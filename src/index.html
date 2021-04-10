@@ -12,31 +12,7 @@
             href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
             rel="stylesheet"
         />
-		<script>
-			let last_element = null;
-			window.addEventListener("load", () => {
-				console.log('On load')
-				const topic = document.location.href.split('#').pop();
-				console.log(topic);
-
-				document.querySelectorAll("a").forEach(a => {
-					a.addEventListener("click", (ev) => {
-						const topico = a.getAttribute('href').replace('#', '');
-						console.log(topico);
-
-						if (topico) {
-							last_element?.classList.remove('topic_selected');
-
-							const element = document.getElementById(topico);
-							console.log(element);
-
-							element?.classList.add('topic_selected');
-							last_element = element;
-						}
-					});
-				});
-			})
-		</script>
+		<script src="click_effect.js"></script>
         <title>Diagrama SCRUM</title>
     </head>
     <body>
@@ -326,7 +302,7 @@
 			</section>
 			<section class="topic" id="topico_realizar_retrospectiva">
 				<h1>
-					Tealizar retrospectiva da sprint
+					Realizar retrospectiva da sprint
 				</h1>
 				<hr/>
                 <h2>Descrição</h2>
