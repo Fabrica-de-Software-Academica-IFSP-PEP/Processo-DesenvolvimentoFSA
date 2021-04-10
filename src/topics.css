@@ -9,6 +9,18 @@ body {
     padding: 2em;
     font-size: 1.2rem;
     text-align: justify;
+
+}
+
+.topic {
+	padding: 25px;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 8px;
+	box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+
+	margin-bottom: 1.5rem;
 }
 
 .topics h1 {
@@ -18,7 +30,8 @@ body {
 
 .topics h2 {
     font-size: 1.6rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
+	text-decoration: underline;
 }
 
 .topics h2:not(:first-child) {
