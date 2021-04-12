@@ -30,48 +30,48 @@
 #captacao {
     width: 13.4%;
     height: 6.5%;
-    top: 27%;
+    top: 25.7%;
     left: 7%;
 } 
 #revisao_estorias {
     width: 11.5%;
     height: 6.5%;
-    top: 52%;
+    top: 50.5%;
     left: 7.8%;
 }
 #elaboracao_backlog {
-    width: 11%;
+    width: 11.3%;
     height: 6.5%;
-    top: 69.2%;
-    left: 8%;
+    top: 67.2%;
+    left: 7.7%;
 }
 #planejar_sprint {
     width: 11%;
     height: 4%;
-    top: 16.5%;
+    top: 16.3%;
     left: 64%;
 }
 #executar_atividades {
     width: 14%;
     height: 6.5%;
-    top: 32%;
+    top: 31%;
     left: 62.3%;
 }
 #reuniao {
     width: 10.5%;
     height: 4%;
-    top: 33%;
+    top: 32%;
     left: 85.5%;
 }
 #revisao_sprint {
     width: 14.3%;
     height: 6.5%;
-    top: 49.5%;
+    top: 48.5%;
     left: 62.3%;
 }
 #realizar_retrospectiva {
-    width: 14.3%;
+    width: 14.6%;
     height: 6.5%;
-    top: 64%;
-    left: 62.3%;
+    top: 62.5%;
+    left: 62%;
 }
