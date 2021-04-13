@@ -12,10 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet" />
     <script src="scripts/click_effect.js"></script>
-    <title>Diagrama SCRUM</title>
+    <title>Processo da Fábrica de Software</title>
 </head>
 
 <body>
+    <h1>Clique nas atividades para ver detalhes!</h1>
     <div id="diagrama_scrum">
         <a href="#topico_captacao" id="captacao" class="clickable round green"></a>
         <a href="#topico_revisao_historias" id="revisao_historias" class="clickable round green"></a>
@@ -25,7 +26,9 @@
         <a href="#topico_reuniao" id="reuniao" class="clickable round green"></a>
         <a href="#topico_revisao_sprint" id="revisao_sprint" class="clickable round green"></a>
         <a href="#topico_realizar_retrospectiva" id="realizar_retrospectiva" class="clickable round green"></a>
-        <img src="images/Diagrama SCRUM.png" alt="Diagrama do SCRUM" />
+        <a href="#topico_verificar_product_backlog" id="verificar_product_backlog" class="clickable round green"></a>
+        <a href="#topico_verificar_historias" id="verificar_historias" class="clickable round green"></a>
+        <img src="images/Diagrama do processo da Fábrica de Software.png" alt="Diagrama do SCRUM" />
     </div>
     <div class="topics">
         <section class="topic" id="topico_captacao">
@@ -202,6 +205,7 @@
                 </li>
             </ul>
         </section>
+
         <section class="topic" id="topico_planejar_sprint">
             <h1>Planejar sprint</h1>
             <a 
@@ -261,6 +265,7 @@
                 <li><i>Planning Poker</i></li>
             </ul>
         </section>
+
         <section class="topic" id="topico_executar_atividades">
             <h1>
                 Executar atividades da sprint
@@ -312,6 +317,7 @@
                 </li>
             </ul>
         </section>
+
         <section class="topic" id="topico_reuniao">
             <h1>Reunião diária</h1>
             <a 
@@ -333,23 +339,25 @@
             </p>
             <h2>Entradas e saídas</h2>
             <h3>Entrada</h3>
-            <p>
-                Feedback da equipe no dia anterior.
-            </p>
+            <ul>
+                <li>Sprint Backlog</li>
+                <li><i>Feedback</i> da equipe no dia anterior</li>
+            </ul>
             <h3>Saída</h3>
-            <p>
-                Feedback da equipe no presente dia.
-            </p>
+            <ul>
+                <li><i>Feedback</i> da equipe no presente dia</li>
+            </ul>
             <h2>Tarefas</h2>
             <ul>
-                <li>A equipe deve levantar o que fei feito desde a ultima reunião</li>
-                <li>Tabém deve ser levantado o que será feito no dia em questão</li>
-                <li>Discussão sobre quais os impedimentos para a realização do trabalho</li>
+                <li>Levantar o que fei feito desde a ultima reunião</li>
+                <li>Levantar o que será feito no dia em questão</li>
+                <li>Discustir quais os impedimentos para a realização do trabalho</li>
             </ul>
             <h2>Ferramentas/técnicas auxiliares</h2>
             <ul>
             </ul>
         </section>
+
         <section class="topic" id="topico_revisao_sprint">
             <h1>
                 Revisar sprint (sprint review meeting)
@@ -371,14 +379,14 @@
             </p>
             <h2>Entradas e saídas</h2>
             <h3>Entrada</h3>
-            <li>
-                Incremento desenvolvido
-            </li>
+            <ul>
+                <li>Incremento desenvolvido</li>
+            </ul>
             
             <h3>Saída</h3>
-            <li>
-                Feedback das partes interessadas
-            </li> 
+            <ul>
+                <li><i>Feedback</i> sobre o produto das partes interessadas</li>
+            </ul>
             <h2>Tarefas</h2>
             <ul> 
                 <li>Apresentação das entregas feitas pela equipe</li>
@@ -400,6 +408,7 @@
                 </li>
             </ul>
         </section>
+
         <section class="topic" id="topico_realizar_retrospectiva">
             <h1>
                 Realizar retrospectiva da sprint
@@ -418,23 +427,120 @@
             </p>
             <h2>Responsáveis</h2>
             <p>
-                A equipe de Desenvolvimento<br>
-                <i>Scrum Master</i>
+                Todo o <i>Team</i>
             </p>
             <h2>Entradas e saídas</h2>
             <h3>Entrada</h3>
-            <p>
-                Avaliação e Feedback do incremento
-            </p>
+            <ul>
+                <li><i>Feedback</i> do incremento</li>
+                <li>Sprint Backlog</li>
+                <li>Product Backlog</li>
+            </ul>
+
             <h3>Saída</h3>
-            <p>
-                Avaliação e feedback do Team e da Sprint
-            </p>
+            <ul>
+                <li><i>Feedback</i> e avaliação da <i>Sprint</i></li>
+            </ul>
             <h2>Tarefas</h2>
             <ul>
-                <li>Reunião da equipe de desenvolvimento</li>
+                <li>Reunir com a equipe de desenvolvimento</li>
                 <li>Cada integrante do time menciona um ponto positivo, negativo e o que melhorar e o explica para a equipe</li>
-                <li>São anotados os pontos positivos, negativos</li>
+                <li>Anotar os pontos positivos e negativos, para aplicar futuramente na próxima <i>Sprint Planning</i></li>
+            </ul>
+            <h2>Ferramentas/técnicas auxiliares</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/">
+                        Github
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd">
+                        Zenhub para Github
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="topic" id="topico_verificar_product_backlog">
+            <h1>Verificar itens restantes no Product Backlog</h1>
+            <a 
+                href="#diagrama_scrum"
+                class="blue round"
+                id="voltar"
+            >Voltar para o diagrama</a>
+            <hr />
+            <h2>Descrição</h2>
+            Essa atividade de verificação serve apenas para verificar se ainda restam itens que devem ser concluídos
+            no <i>Product Backlog</i>. Caso exista, é importante ter a continuidade do projeto, e caso contrário,
+            o projeto estará finalizado.
+            <p>
+            </p>
+            <h2>Responsáveis</h2>
+            Basta o PO verificar se ainda restam requisitos a serem concluídos.
+            <p>
+            </p>
+            <h2>Entradas e saídas</h2>
+            <h3>Entrada</h3>
+            <ul>
+                <li><i>Product Backlog</i></li>
+            </ul>
+            <h3>Saída</h3>
+            <ul>
+                <li>Avaliação do estado do <i>Product Backlog</i></li>
+            </ul>
+            <h2>Tarefas</h2>
+            <ul>
+                <li>Avaliar o estado atual do <i>Product Backlog</i></li>
+                <li>Verificar quantidade de itens já atendidos</li>
+            </ul>
+            <h2>Ferramentas/técnicas auxiliares</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/">
+                        Github
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd">
+                        Zenhub para Github
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="topic" id="topico_verificar_historias">
+            <h1>Verificar qualidade das histórias de usuários</h1>
+            <a 
+                href="#diagrama_scrum"
+                class="blue round"
+                id="voltar"
+            >Voltar para o diagrama</a>
+            <hr />
+            <h2>Descrição</h2>
+            Essa atividade é onde o PO avalia se alguma história dificultou o progresso do <i>Team</i> com o andamento da <i>Sprint</i>,
+            avaliando principalmente através do <i>feedback</i> recebido durante a <i>Sprint Retrospective</i>.
+            <p>
+            </p>
+            <h2>Responsáveis</h2>
+            O PO, responsável pelo <i>Product Backlog</i>, é quem verificará a adequação dessas histórias com o <i>Product Backlog</i>.
+            <p>
+            </p>
+            <h2>Entradas e saídas</h2>
+            <h3>Entrada</h3>
+            <ul>
+                <li><i>Feedback</i> do <i>Team</i></li>
+                <li>Histórias de usuários</li>
+            </ul>
+            <h3>Saída</h3>
+            <ul>
+                <li>Avaliação do estado das <strong>Histórias de Usuários</strong></li>
+            </ul>
+            <h2>Tarefas</h2>
+            <ul>
+                <li>Avaliar o estado atual das Histórias de Usuários</li>
             </ul>
             <h2>Ferramentas/técnicas auxiliares</h2>
             <ul>
