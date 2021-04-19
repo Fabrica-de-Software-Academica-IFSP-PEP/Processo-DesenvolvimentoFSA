@@ -24,3 +24,16 @@ a {
 	color: royalblue;
 	text-decoration: none;
 }
+
+.subir {
+	background-color: white;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	margin: 20px;
+	padding: 10px;
+
+	border-width: 1px;
+	border-radius: 8px;
+	box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+}
