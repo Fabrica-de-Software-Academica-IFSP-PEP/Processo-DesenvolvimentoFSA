@@ -216,7 +216,7 @@
         </section>
 
         <section class="topic" id="topico_planejar_sprint">
-            <h1>Planejar sprint</h1>
+            <h1>4. Planejar sprint</h1>
             <a 
                 href="#diagrama_scrum"
                 class="blue round"
@@ -224,21 +224,60 @@
             >Voltar para o diagrama</a>
             <hr />
             <h2>Descrição</h2>
-            Está atividade ocorre antes do ínicio de uma sprint e se trata
-            da definição do que pode ser entregue em determinada sprint, e como
-            este trabalho será alcançado e concluído.
             <p>
+                Antes do início da <i>Sprint</i>, deve ocorrer o <i>Sprint Planning</i>, isto é, 
+                planejamento da <i>Sprint</i>. Artefatos como a <i>Sprint Backlog</i> e Definição de Pronto
+                são definidas nessa etapa. Deve ser feita em uma reunião com no máximo 8 horas de duração
+                (dependendo da duração da <i>Sprint</i>) (SCHWABER; SUTHERLAND, 2020).
+            </p>
+            <p>
+                A <i>Sprint Backlog</i> define um conjunto de atividades que deverão ser feita na <i>Sprint</i>
+                após o planejamento. Esse conjunto de atividades são instanciadas das Histórias de Usuário
+                selecionadas para ser concluída na <i>Sprint</i>. Observe que nem sempre pode ser possível concluir
+                uma ou mais Histórias de Usuário em uma única <i>Sprint</i>, podendo ser encarregadas para a próxima.
+            </p>
+            <p>
+                A Definição de Pronto define um conjunto de critérios de conclusão para as atividades.
+                Como cada atividade pode ser distinta entre si (por exemplo, atividades de codificação e 
+                atividades de elaboração de documentação), a Definição de Pronto pode especificar qual o
+                critério de conclusão para cada tipo de atividade.
+                Caso a Definição de Pronto elaborada em um planejamento anterior ainda esteja em conformidade e não
+                necessite de alteração, o <i>Team</i> pode optar por pular esta etapa.
             </p>
             <h2>Responsáveis</h2>
             <p>
-                Os responsáveis pelo planejamento da sprint são o <i>Product Owner</i> (PO) e a equipe.
-                O PO definirá a meta de acordo com o valor que procura, enquanto a equipe de desenvolvimento precisa
-                entender como pode ou não cumprir este objetivo.
-                A equipe juntamente deve estimar os pontos de cada de atividade, que pode ser feita por determinadas técnicas.
-                Também é nessa fase que se faz a definição de pronto do produto. Esta definição é um acordo entre a equipe e
-                o PO sobre quando e o que haverá no produto ao ser considerado pronto. É recomendável que a definição siga
-                critérios adequados para cada Sprint.
-
+                Os responsáveis pelo planejamento da <i>Sprint</i> são <b>todo o <i>Team</i></b>.
+            </p>
+            <p>
+                O <i>Scrum Master</i> é responsável por organizar e dar um fluxo contínuo à reunião, sempre levantando
+                pontos de discussão importantes da reunião e permitindo que todos participem, cada um dando sua voz.
+            </p>
+            <p>
+                O P.O. é quem deve lembrar a equipe sobre as metas mais importantes a serem alcançadas para entrega do incremento,
+                utilizando como base o <i>Product Backlog</i> já desenvolvido. Ele é quem deve dar a visão geral e também sugerir
+                qual o objetivo principal a ser alcançado pela <i>Sprint</i> atual.
+            </p>
+            <p>
+                Todo o <i>Team</i> deve discutir e selecionar quais as Histórias de Usuário que serão encarregadas para
+                a <i>Sprint</i> atual. É importante que todos opinem em cima da seleção, tendo sempre em mente o que se
+                deseja entregar para aquela <i>Sprint</i>.
+            </p>
+            <p>
+                O Time de Desenvolvimento será responsável por instanciar as atividades com base nas Histórias de Usuário selecionadas.
+                Essas atividades devem ser estimadas seguindo alguma técnica: sugere-se o uso do <i>Planning Poker</i>, técnica na qual
+                os desenvolvedores estimam os pontos (ou tamanho) das atividades. Essa técnica permite que todos os desenvolvedores votem
+                pontos para uma atividade em pauta e discutem sobre o porquê deram aquele ponto, de forma a se chegar uma conclusão.
+            </p>
+            <p>
+                Mais detalhes de como realizar o <i>Planning Poker</i> pode ser encontrado nesse 
+                <a href="https://agiledigest.com/agile-digest-tutorial-2/agile-estimation-2/"><i>post</i> feito por Niladri Mahapatra (2017).</a>
+                Observe que apenas as atividades devem ser estimadas, visto que as Histórias de Usuário são apenas referências de metas que
+                se deseja alcançar.
+            </p>
+            <p>
+                É possível que a soma dos pontos das atividades definidas naquela <i>Sprint</i> exceda a capacidade de trabalho da equipe.
+                Caso isso ocorra, sugere-se adiar algumas das atividades (ou até mesmo Histórias de Usuário) para uma futura <i>Sprint</i>.
+                É sempre importante ter em mente qual a capacidade total de trabalho da equipe.
             </p>
             <h2>Entradas e saídas</h2>
             <h3>Entrada</h3>
@@ -252,32 +291,52 @@
             </ul>
             <h2>Tarefas</h2>
             <ul>
-                <li>Reunião da equipe de desenvolvimento e o <i>Product Owner</i></li>
-                <li>Definição dos objetivos da sprint</li>
-                <li>Determinar quais tarefas serão realizadas para alcançar o objetivo</li>
-                <li>Estimativa da duração e pontos das tarefas</li>
-                <li>Selecionamento das tarefas os quais podem ser alcançadas no período de tempo da sprint</li>
+                <li>Elaborar, caso não se tenha ou não esteja em conformidade, uma Definição de Pronto</li>
+                <li>Definir o objetivo da <i>Sprint</i> atual</li>
+                <li>Selecionar as Histórias de Usuário relevantes para o objetivo da <i>Sprint</i></li>
+                <li>Instanciar atividades com base nas Histórias de Usuário</li>
+                <li>Estimar os pontos das atividades instanciadas</li>
             </ul>
             <h2>Ferramentas/técnicas auxiliares</h2>
             <ul>
                 <li>
-                    <a href="https://github.com/">
-                        Github
-                    </a>
+                    <a href="https://planningpokeronline.com/">
+                        Planning Poker Online
+                    </a> para estimar os pontos das atividades
                 </li>
                 <li>
                     <a
                         href="https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd">
                         Zenhub para Github
+                    </a> para construir o <i>Sprint Backlog</i> com um conjunto de Histórias de Usuário e atividades
+                </li>
+            </ul>
+            <h2>Materiais e referências</h2>
+            <ul>
+                <li>
+                    SCHWABER, Ken; SUTHERLAND, Jeff. <b>SCRUM Guide</b>. 2020. Disponível em: 
+                    <a href="https://www.scrum.org/resources/scrum-guide/">
+                        https://www.scrum.org/resources/scrum-guide/
                     </a>
                 </li>
-                <li><i>Planning Poker</i></li>
+                <li>
+                    MAHAPATRA, Niladri. <b>What is Sprint Planning</b>. AGILE DIGEST, 2017. Disponível em: 
+                    <a href="https://agiledigest.com/agile-digest-tutorial-2/sprint-planning-agile-scrum-n/">
+                        https://agiledigest.com/agile-digest-tutorial-2/sprint-planning-agile-scrum-n/
+                    </a>
+                </li>
+                <li>
+                    MAHAPATRA, Niladri. <b>What is Agile Estimation?</b>. AGILE DIGEST, 2017. Disponível em: 
+                    <a href="https://agiledigest.com/agile-digest-tutorial-2/agile-estimation-2/">
+                        https://agiledigest.com/agile-digest-tutorial-2/agile-estimation-2/
+                    </a>
+                </li>
             </ul>
         </section>
 
         <section class="topic" id="topico_executar_atividades">
             <h1>
-                Executar atividades da sprint
+                5. Executar atividades da sprint
             </h1>
             <a 
                 href="#diagrama_scrum"
