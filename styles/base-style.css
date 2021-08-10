@@ -25,6 +25,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	opacity: .7;
+}
+
 .subir {
 	background-color: white;
 	position: fixed;
