@@ -276,11 +276,11 @@
             <h2>Entradas e saídas</h2>
             <h3>Entrada</h3>
             <ul>
-                <li>Product Backlog</li>
+                <li><i>Product Backlog</i></li>
             </ul>
             <h3>Saída</h3>
             <ul>
-                <li>Sprint Backlog</li>
+                <li><i>Sprint Backlog</i></li>
                 <li>Definição de Pronto <i>(Definition of Done, DoD)</i></li>
             </ul>
             <h2>Tarefas</h2>
@@ -330,7 +330,7 @@
 
         <section class="topic" id="topico_executar_atividades">
             <h1>
-                5. Executar atividades da sprint
+                5. Executar atividades da <i>Sprint</i>
             </h1>
             <a 
                 href="#diagrama_scrum"
@@ -340,41 +340,101 @@
             <hr />
             <h2>Descrição</h2>
             <p>
-                Esta tarefa consiste em executar o que foi planejado para a sprint atual. Realizar as tarefas propostas para alcançar o objetivo da sprint a 
-                atingir a definição de pronto.
+                A execução das atividades da <i>Sprint</i> se referem às atividades do <i>Sprint Backlog</i> definido anteriormente.
+                Essas atividades serão executadas por todo o Time de Desenvolvimento no período estipulado para a <i>Sprint</i>, sem mais
+                ou menos atividades: a <i>Sprint Backlog</i> e a Definição de Pronto não pode ser alterada durante essa execução.
+            </p>
+            <p>
+                O incremento a ser desenvolvido durante essa etapa pode ser constituído por diversos artefatos, como
+                <b>documentação, codificação e elaboração de casos de testes.</b> Os métodos e ferramentas já devem ter sido definidos 
+                na atividade de <a href="#todo">(TODO LINK) "Definir ferramentas, métodos e duração da Sprint"</a>, utilizando padrões
+                como a UML e técnicas como o <i>Test-Driven Development</i>.
+            </p>
+            <p>
+                Para se ter um desenvolvimento fluido, é importante se ter uma paralelização do desenvolvimento, com cada membro
+                do Time de Desenvolvimento se encarregando por um conjunto de atividades de uma parte do incremento.
+                Os membros também devem ter consciência da Definição de Pronto, e antes de encarregar uma atividade como concluída,
+                precisam atingir o requisito da Definição de Pronto (definido na atividade <a href="#topico_planejar_sprint">"4. Planejar sprint"</a>).
+            </p>
+            <p>
+                Para manter o progresso das atividades, o Time de Desenvolvimento precisa registrar elas em um quadro visual, com cada
+                atividade encarregada para algum membro. Pode ser utilizado ferramentas como o ZenHub (2021), Trello (2021), Jira (2021) ou até mesmo
+                um quadro Kanban físico. Sugere-se o uso do ZenHub ou Trello, ambos são gratuitos.
+            </p>
+            <p>
+                O Time de Desenvolvimento deve realizar a <a href="#topico_reuniao">reunião diária</a> para esclarecer qualquer problema e manter
+                uma fluidez com o desenvolvimento.
+            </p>
+            <p>
+                Para acompanhar o progresso do desenvolvimento, o Time de Desenvolvimento pode utilizar o gráfico de <i>Burndown</i>, que mede
+                uma linha ideal de progresso de conclusão das atividades durante o tempo da <i>Sprint</i>. Se a equipe estiver acima da linha, está
+                atrasada, enquanto se estiver abaixo da linha, está adiantada. Esse gráfico é importante para se ter noção de como o Time de Desenvolvimento
+                está com o desenvolvimento. O ZenHub já possui um <i>Burndown</i> integrado, e o Trello aceita como uma extensão ao projeto.
+            </p>
+            <p>
+                Ao fim da execução das atividades, se espera ter um incremento pronto. É possível que nem todas as atividades possam ter sido realizadas
+                com sucesso, as quais devem ser encarregadas para uma próxima <i>Sprint</i>. Caso isso ocorra, é importante discutir futuramente na retrospectiva
+                da <i>Sprint</i> os problemas enfrentados pelos membros do Time de Desenvolvimento.
             </p>
             <h2>Responsáveis</h2>
             <p>
-                Todos os membros da equipe de desenvolvimento.
+                Os membros do Time de Desenvolvimento
             </p>
             <h2>Entradas e saídas</h2>
             <h3>Entrada</h3>
-            <p>
-                Definição de pronto e sprint backlog.
-            </p>
+            <ul>
+                <li><i>Sprint Backlog</i></li>
+                <li>Definição de Pronto</li>
+            </ul>
             <h3>Saída</h3>
-            <p>
-                Incremento desenvolvido.
-            </p>
+            <ul>
+                <li>Um incremento desenvolvido, constituído por:</li>
+                <ul>
+                    <li>Documentação</li>
+                    <li>Código da funcionalidade</li>
+                    <li>Casos de testes</li>
+                </ul>
+            </ul>
             <h2>Tarefas</h2>
             <ul>
-                <li>Desenvolver todas as funcionalidades planejadas para a sprint</li>
-                <li>Testar todas as funcionalidades desenvolvidas na sprint</li>
-                <li>Implantar incremento gerado</li>
+                <li>Executar as atividades planejadas no <i>Sprint Backlog</i></li>
+                <li>Elaborar a documentação do incremento</li>
+                <li>Codificar as funcionalidades principais</li>
+                <li>Escrever e codificar os casos de testes</li>
             </ul>
             <h2>Ferramentas/técnicas auxiliares</h2>
             <ul>
-                <li>Técnicas para testes de software - <i>Test-driven development</i></li>
-                <li>Utilização de <i>frameworks</i> e <i>bibliotecas</i> para a linguagem (depende de equipe para equipe)</li>
-                <li>
-                    <a href="https://github.com/">
-                        Github
-                    </a>
-                </li>
                 <li>
                     <a
                         href="https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd">
                         Zenhub para Github
+                    </a> para manter o progresso das atividades
+                </li>
+                <li>
+                    <a
+                        href="https://trello.com/pt-BR">
+                        Trello
+                    </a> para manter o progresso das atividades
+                </li>
+                <li>
+                    <a
+                        href="https://www.atlassian.com/br/software/jira">
+                        Trello
+                    </a> para manter o progresso das atividades
+                </li>
+            </ul>
+            <h2>Materiais e referências</h2>
+            <ul>
+                <li>
+                    BUTTLER, Matt. <b>How the ZenHub Team Uses ZenHub Boards on GitHub</b>. 2014. Disponível em: 
+                    <a href="https://blog.zenhub.com/how-the-zenhub-team-uses-zenhub-boards-on-github/">
+                        https://blog.zenhub.com/how-the-zenhub-team-uses-zenhub-boards-on-github/
+                    </a>
+                </li>
+                <li>
+                    CAMARGO, Robson. <b>Burndown:</b> conheça o gráfico que mede produtividade. 2020. Disponível em: 
+                    <a href="https://robsoncamargo.com.br/blog/Burndown/">
+                        https://robsoncamargo.com.br/blog/Burndown/
                     </a>
                 </li>
             </ul>
