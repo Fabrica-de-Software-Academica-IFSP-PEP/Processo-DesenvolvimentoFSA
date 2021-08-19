@@ -2,7 +2,7 @@
     position: relative;
     overflow: visible;
     max-width: 1560px;
-    max-height: 1000px;
+    max-height: 1200px;
 }
 
 .clickable {
@@ -35,70 +35,70 @@
 
 #captacao {
     width: 13.4%;
-    height: 4.6%;
-    top: 20%;
+    height: 4.4%;
+    top: 19.8%;
     left: 16.8%;
 } 
 
 #revisao_historias {
     width: 13.8%;
-    height: 4.8%;
-    top: 32.4%;
+    height: 4.4%;
+    top: 32%;
     left: 16.7%;
 }
 
 #definir_ferramentas {
     width: 10.7%;
-    height: 7.5%;
-    top: 50.0%;
+    height: 7.4%;
+    top: 48.9%;
     left: 12.2%;
 }
 
 #elaboracao_backlog {
     width: 10.5%;
-    height: 4.8%;
-    top: 50.5%;
+    height: 4.4%;
+    top: 49.5%;
     left: 23.8%;
 }
 #planejar_sprint {
     width: 12.1%;
-    height: 3.0%;
+    height: 2.5%;
     top: 12.1%;
     left: 69.8%;
 }
 #executar_atividades {
     width: 15%;
-    height: 4.6%;
-    top: 25%;
+    height: 4.4%;
+    top: 24.6%;
     left: 68.3%;
 }
 #reuniao {
     width: 11.8%;
-    height: 4.3%;
-    top: 25%;
+    height: 4.4%;
+    top: 24.6%;
     left: 85.4%;
 }
 #revisao_sprint {
     width: 14.4%;
-    height: 4.7%;
-    top: 40%;
+    height: 4.4%;
+    top: 39%;
     left: 68.6%;
 }
 #realizar_retrospectiva {
     width: 15.7%;
-    height: 5.0%;
-    top: 67.5%;
+    height: 4.4%;
+    top: 66%;
     left: 68.0%;
 }
 #verificar_product_backlog {
     width: 15.6%;
-    height: 5.0%;
-	top: 67.5%;
+    height: 4.4%;
+    top: 66%;
     left: 38.9%;
 }
 #verificar_historias {
-    width: 16.3%;
-    height: 5.0%;
-    top: 80.8%;
+    width: 16.7%;
+    height: 4.4%;
+    top: 79%;
     left: 15.2%;
 }
