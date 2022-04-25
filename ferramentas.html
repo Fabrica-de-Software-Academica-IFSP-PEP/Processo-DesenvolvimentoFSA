@@ -1,69 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<title></title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="styles/base-style.css">
-		<link rel="stylesheet" href="styles/topics.css">
-		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
-		<title>Ferramentas utilizadas</title>
-	</head>
-	<body>
-		<div class="topics">
-			<section class="topic" id="github">
-				<h1>Github</h1>
-				<h2>Descrição</h2>
-				<p>
-					O Github é uma plataforma de gerenciamento de código a qual funciona com base no Git. Se trata de uma ferramenta a qual facilita que outros usuários acessam um determinado código fonte, desde que estes possuam permissões para visualizá-los. 
-				</p>
-				<p>
-				Por se basear na ferramenta <a href="https://git-scm.com/">Git</a>, a plataforma possui a capacidade de facilitar o controle de versionamento de determinado código fonte, permitindo que os mantedores deste visualizem as alterações realizadas em cada artefato, o que neste caso é um <i>commit</i>.
-				</p>
-				<h2>Justificativa de uso</h2>
-				<p>
-					O desenvolvimento de software tende a ser uma atividade extremamente complexa, a implementação de novas funcionalidades em um sistema pode facilmente causar comportamentos indesejados, sendo assim extremamente interessante a utilização de uma ferramenta a qual permita a visualização de cada alteração realizada no código fonte de um sistema.
-				</p>
-				<p>
-					Outro ponto em questão, é que o desenvolvimento de projetos na Fabrica de Software é um trabalho realizado em grupos e gerenciar o versionamento de código entre várias pessoas pode causar diversos problemas como mais de um desenvolvedor realizando alterações no mesmo local, junção de funcionalidades desenvolvidas ao mesmo tempo por pessoas diferentes e muitas outras. 
-					Estes problemas se tornaram um dos grandes problemas durante o desenvolvimento do Linux, por Linux Torvalds. Buscando uma solução, ele desenvolveu o Git o qual permite o gerenciamento de versões de código descentralizado o qual acompanha todas as modificações realizadas em um projeto e possui a capacidade de mesclar códigos modificações realizadas por um ou mais usuários, ao mesmo tempo que em caso de conflitos possui a capacidade de indicar exatamente onde o problema ocorreu e pedir que escolhemos qual parte do código deverá permanecer, e qual será removida.
-				</p>
-				<p>
-					Embora o Git, disponibilizada todas essas funcionalidades a ferramenta é utilizada localmente no computador do desenvolvedor. Sendo assim necessário a utilização de um repositório remoto (um projeto com git em um outro computador) o qual irá armazenar todas as alterações realizada no projeto. Para isso, existem diversas ferramentas como <a href="https://about.gitlab.com/">Gitlab</a>, <a href="https://github.com/">Github</a>, etc...
-				</p>
-				<p>
-					Dentre as plataformas de controle de versão existentes, foi-se escolhido a utilização do Github devido a necessidade de trabalhar em um projeto como um Time. Funcionalidade a qual é disponibilizada gratuitamente no Github enquanto em outras plataformas é necessário que seja efetuado o pagamento de uma determinada quantia.
-				</p>
-			</section>
-			<section class="topic" id="zenhub">
-				<h1>Zenhub</h1>
-				<h2>Descrição</h2>
-				<p>
-					O Zenhub é uma ferramenta a qual disponibiliza um quadro Kanbam interligado com o seu repositório pertencente ao Github, facilitando a criação de relações entre o código e uma atividade a ser desenvolvida. Cada item do quadro Kanbam, se trata de uma <i>Issue</i> (tarefa/problema/bug) pertencente ao repositório. O uso do Zenhub permite que organizamos as <i>issues</i>/tarefas em diferentes grupos, os quais podem ser utilizados para determinar o Product Backlog, Sprint Backlog, tarefas em desenvolvimento, tarefas concluídas e muito mais.
-				</p>
-				<p>
-					Para organização de Sprints o Zenhub disponibiliza a criação automática destas após a definição de sua duração em dias, assim como a data inicial. A partir deste momento, ela irá criar uma quantidade de Sprints no projeto as quais podem ser utilizadas nas tarefas para indicar qual Sprint ela pertence.
-				</p>
-				<p>
-					A ferramenta também é integrada com um conjunto de diagramas, os quais utilizam do mecanismo de separação de tarefas por sprints para fornecer relatórios de burndown, fluxo cumulativo, controle e velocidade de trabalho
-				</p>
-				<h2>Uso da ferramenta</h2>
-				<p>
-					Para usar o Zenhub é necessário possuir alguns itens instalados
-				</p>
-				<ul>
-					<li><a href="https://www.google.com/chrome/">O navegador Google Chrome, ou outro navegador baseado em Chromium como Brave, OperaGX, Vivaldi, etc...</a></li>
-					<li><a href="https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd">Extensão do Zenhub</a></li>
-				</ul>
-				<p>Após a instalação desses dois itens é necessário que utilize um repositório no Github o qual possui um projeto do Zenhub, primeiramente iremos criar um projeto do Zenhub no repositório, caso você busca utilizar em um repositório o qual já possui o projeto, poderá pular esta etapa</p>
-				<ol>
-					<li>Abrir o repositório</li>
-					<li>Nas abas do repositório, você deverá clickar em Zenhub o qual está ao lado de Pull requests como o quarto item</li>	
-					<li>Preencher informações sobre o projeto e clicar em <i>Create Workspace</i></li>
-					<li>Após a criação do projeto, você pode criar novas <i>issues</i>  apertando em <i>New issue</i> ou no botão de mais</li>
-					<li>A troca de uma tarefa de categoria pode ser realizada ao segurar o mouse em cima do card que a representa e a arrastando para os lados</li>
-				</ol>
-			</section>
-		</div>
-	</body>
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/base-style.css">
+	<link rel="stylesheet" href="styles/topics.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+		rel="stylesheet" />
+	<title>Ferramentas utilizadas</title>
+</head>
+
+<body>
+	<div class="topics">
+		<section class="topic" id="github">
+			<h1>Github</h1>
+			<h2>Descrição</h2>
+			<p>
+				O Github é uma plataforma de gerenciamento de código a qual funciona com base no Git. Se trata de uma
+				ferramenta a qual facilita que outros usuários acessam um determinado código fonte, desde que estes
+				possuam permissões para visualizá-los.
+			</p>
+			<p>
+				Por se basear na ferramenta <a href="https://git-scm.com/">Git</a>, a plataforma possui a capacidade de
+				facilitar o controle de versionamento de determinado código fonte, permitindo que os mantedores deste
+				visualizem as alterações realizadas em cada artefato, o que neste caso é um <i>commit</i>.
+			</p>
+			<h2>Justificativa de uso</h2>
+			<p>
+				O desenvolvimento de software tende a ser uma atividade extremamente complexa, a implementação de novas
+				funcionalidades em um sistema pode facilmente causar comportamentos indesejados, sendo assim
+				extremamente interessante a utilização de uma ferramenta a qual permita a visualização de cada alteração
+				realizada no código fonte de um sistema.
+			</p>
+			<p>
+				Outro ponto em questão, é que o desenvolvimento de projetos na Fabrica de Software é um trabalho
+				realizado em grupos e gerenciar o versionamento de código entre várias pessoas pode causar diversos
+				problemas como mais de um desenvolvedor realizando alterações no mesmo local, junção de funcionalidades
+				desenvolvidas ao mesmo tempo por pessoas diferentes e muitas outras.
+				Estes problemas se tornaram um dos grandes problemas durante o desenvolvimento do Linux, por Linux
+				Torvalds. Buscando uma solução, ele desenvolveu o Git o qual permite o gerenciamento de versões de
+				código descentralizado o qual acompanha todas as modificações realizadas em um projeto e possui a
+				capacidade de mesclar códigos modificações realizadas por um ou mais usuários, ao mesmo tempo que em
+				caso de conflitos possui a capacidade de indicar exatamente onde o problema ocorreu e pedir que
+				escolhemos qual parte do código deverá permanecer, e qual será removida.
+			</p>
+			<p>
+				Embora o Git, disponibilizada todas essas funcionalidades a ferramenta é utilizada localmente no
+				computador do desenvolvedor. Sendo assim necessário a utilização de um repositório remoto (um projeto
+				com git em um outro computador) o qual irá armazenar todas as alterações realizada no projeto. Para
+				isso, existem diversas ferramentas como <a href="https://about.gitlab.com/">Gitlab</a>, <a
+					href="https://github.com/">Github</a>, etc...
+			</p>
+			<p>
+				Dentre as plataformas de controle de versão existentes, foi-se escolhido a utilização do Github devido a
+				necessidade de trabalhar em um projeto como um Time. Funcionalidade a qual é disponibilizada
+				gratuitamente no Github enquanto em outras plataformas é necessário que seja efetuado o pagamento de uma
+				determinada quantia.
+			</p>
+		</section>
+		<section class="topic" id="trello">
+			<h1>Trello</h1>
+			<h2>Descrição</h2>
+			<p>
+				Trello é uma ferramenta criada para organizar projetos pessoais e corporativos. Ele funciona como um
+				painel de gerenciamento de projetos e permite personalizar os fluxos de trabalho para uso pessoal ou de
+				uma equipe.
+			</p>
+			<p>
+				Tal ferramenta utiliza o paradigma Kanban para gerenciamento de projetos e se tornou popular ao ser
+				utilizada
+				pela Toyota. Os projetos são representados por quadros (boards), que contêm listas com várias tarefas.
+				Cada tarefa é representada por meio de cartões criados dentro das listas. Cartões podem ser movidos,
+				copiados ou compartilhados entre as listas, de modo a alterar seu progresso. Usuários podem ser
+				adicionados nos cartões.
+			</p>
+			<h2>Uso da ferramenta</h2>
+			<p>
+				Para usar o Zenhub é necessário possuir conta no site
+			</p><br>
+			<ol>
+				<li><strong>Crie sua conta:</strong><br>
+					No cadastro, é necessário informar seu nome, e-mail e criar uma senha. Você pode se registrar usando
+					seus dados do Google também.</li><br>
+				<li><strong>Crie seu quadro de organização de tarefas: </strong><br>
+					Na tela principal do Trello, clique em “Criar novo quadro”. Cada quadro se refere a um projeto (por
+					exemplo, "Sistema - Prefeitura").</li><br>
+				<li><strong>Crie suas listas: </strong><br>
+					Este é o momento de criar suas listas de tarefas, que são equivalentes a colunas em uma planilha.
+					O quadro criado anteriormente permite que você adicione cartões (Sprint Backlog, por exemplo)
+					ordenados por
+					listas (status atual da tarefa).</li><br>
+				<li><strong>Adicione cartões: </strong><br>
+					Agora você pode adicionar cartões com as tarefas. Em cada um dá para acrescentar uma descrição com
+					detalhes do planejamento. Depois você pode usar etiquetas coloridas de acordo com o tipo de tarefa,
+					além do(s) responsável(is) por ela.
+				</li><br>
+				<li><strong>Adicione detalhes: </strong><br>
+					O Trello oferece muitos recursos que ajudam na organização e na execução das tarefas.
+					Em cada cartão, por exemplo, é possível adicionar diversos itens, como checklist, prazos e anexos,
+					incluindo fotos, vídeos e documentos armazenados no computador ou na nuvem.
+				</li><br>
+
+			</ol>
+		</section>
+	</div>
+</body>
+
 </html>
