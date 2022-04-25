@@ -1,217 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles/base-style.css" />
-		<link rel="stylesheet" href="styles/clickable-boxes.css" />
-		<link rel="stylesheet" href="styles/topics.css" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="styles/base-style.css" />
+	<link rel="stylesheet" href="styles/clickable-boxes.css" />
+	<link rel="stylesheet" href="styles/topics.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
 		rel="stylesheet" />
-		<script src="scripts/click_effect.js"></script>
-		<!--<script type="text/javascript" src="https://livejs.com/live.js"></script>[> Provem live reload <]-->
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		<title>Processo da Fábrica de Software</title>
-	</head>
+	<script src="scripts/click_effect.js"></script>
+	<!--<script type="text/javascript" src="https://livejs.com/live.js"></script>[> Provem live reload <]-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<title>Processo da Fábrica de Software</title>
+</head>
 
-	<body>
-		<a href="#diagrama_scrum" class="subir" id="voltar">⬆️ Diagrama</a>
+<body>
+	<a href="#diagrama_scrum" class="subir" id="voltar">⬆️ Diagrama</a>
 
-		<h1>Clique nas atividades para ver detalhes!</h1>
-		<div id="diagrama_scrum">
-			<a href="#topico_captacao" id="captacao" class="clickable round green"></a>
-			<a href="#topico_revisao_historias" id="revisao_historias" class="clickable round green"></a>
-			<a href="#topico_elaboracao_backlog" id="elaboracao_backlog" class="clickable round green"></a>
-			<a href="#topico_definir_ferramentas" id="definir_ferramentas" class="clickable round green"></a>
-			<a href="#topico_planejar_sprint" id="planejar_sprint" class="clickable round green"></a>
-			<a href="#topico_executar_atividades" id="executar_atividades" class="clickable round green"></a>
-			<a href="#topico_reuniao" id="reuniao" class="clickable round green"></a>
-			<a href="#topico_revisao_sprint" id="revisao_sprint" class="clickable round green"></a>
-			<a href="#topico_realizar_retrospectiva" id="realizar_retrospectiva" class="clickable round green"></a>
-			<a href="#topico_verificar_product_backlog" id="verificar_product_backlog" class="clickable round green"></a>
-			<a href="#topico_verificar_historias" id="verificar_historias" class="clickable round green"></a>
-			<img src="images/Diagrama do processo da Fábrica de Software.png" alt="Diagrama do SCRUM" />
-		</div>
-		<div class="topics">
-			<section class="topic" id="topico_captacao">
-				<h1> 1. Elicitar requisitos e histórias de usuários </h1>
-				<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-				<hr />
-				<h2>Descrição</h2>
-				<p>
+	<h1>Clique nas atividades para ver detalhes!</h1>
+	<div id="diagrama_scrum">
+		<a href="#topico_captacao" id="captacao" class="clickable round green"></a>
+		<a href="#topico_revisao_historias" id="revisao_historias" class="clickable round green"></a>
+		<a href="#topico_elaboracao_backlog" id="elaboracao_backlog" class="clickable round green"></a>
+		<a href="#topico_definir_ferramentas" id="definir_ferramentas" class="clickable round green"></a>
+		<a href="#topico_planejar_sprint" id="planejar_sprint" class="clickable round green"></a>
+		<a href="#topico_executar_atividades" id="executar_atividades" class="clickable round green"></a>
+		<a href="#topico_reuniao" id="reuniao" class="clickable round green"></a>
+		<a href="#topico_revisao_sprint" id="revisao_sprint" class="clickable round green"></a>
+		<a href="#topico_realizar_retrospectiva" id="realizar_retrospectiva" class="clickable round green"></a>
+		<a href="#topico_verificar_product_backlog" id="verificar_product_backlog" class="clickable round green"></a>
+		<a href="#topico_verificar_historias" id="verificar_historias" class="clickable round green"></a>
+		<img src="images/Diagrama do processo da Fábrica de Software.png" alt="Diagrama do SCRUM" />
+	</div>
+	<div class="topics">
+		<section class="topic" id="topico_captacao">
+			<h1> 1. Elicitar requisitos </h1>
+			<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+			<hr />
+			<h2>Descrição</h2>
+			<p>
 				Essa atividade está ligada ao levantamento de requisitos
 				funcionais em formato de
 				histórias de usuários (User Stories) e também ao levantamento de requisitos não funcionais. Essa etapa é
 				fundamental para a construção do Product Backlog, que
 				depende das histórias de usuários para definir o que se deve
 				desenvolver.
-				</p>
-				<h2>Responsáveis</h2>
-				<p>
+			</p>
+			<h2>Responsáveis</h2>
+			<p>
 				Product Owner e, se for possível, um auxiliar ao Product
 				Owner para que possa conduzir a escrita das histórias.
-				</p>
-				<h2>Entradas e saídas</h2>
-				<h3>Entrada</h3>
-				<ul>
-					<li>
-						Necessidades e expectativas dos <i>stakeholders</i>
-					</li>
+			</p>
+			<h2>Entradas e saídas</h2>
+			<h3>Entrada</h3>
+			<ul>
+				<li>
+					Necessidades e expectativas dos <i>stakeholders</i>
+				</li>
 
-				</ul>
-				<h3>Saída</h3>
-				<ul>
-					<li>
-						As
-						<strong>Histórias de usuários</strong>, uma coletânea
-						de histórias que descrevem o que é esperado do produto a ser
-						desenvolvido
-					</li>
-					<li>
-						Uma lista de requisitos não funcionais detectados de acordo
-						com as expectativas dos <i>stakeholders</i>
-					</li>
-				</ul>
-				<h2>Tarefas</h2>
-				<ul>
-					<li>Realizar reuniões com os stakeholders para obtenção das necessidades e expectativas dos stakeholders
-					</li>
-					<li>Registrar as histórias de usuário de acordo com o modelo proposto pelo modelo Connextra (BIK et al., 2017): "Como
-						<strong>(papel)</strong>, eu quero <strong>(algo)</strong> para <strong>(me beneficiar)</strong>"
-					</li>
-					<li>Registrar requisitos não funcionais detectados</li>
-				</ul>
-				<h2>Ferramentas/técnicas auxiliares</h2>
-				<p>
+			</ul>
+			<h3>Saída</h3>
+			<ul>
+				<li>
+					As
+					<strong>Histórias de usuários</strong>, uma coletânea
+					de histórias que descrevem o que é esperado do produto a ser
+					desenvolvido
+				</li>
+				<li>
+					Uma lista de requisitos não funcionais detectados de acordo
+					com as expectativas dos <i>stakeholders</i>
+				</li>
+			</ul>
+			<h2>Tarefas</h2>
+			<ul>
+				<li>Realizar reuniões com os stakeholders para obtenção das necessidades e expectativas dos stakeholders
+				</li>
+				<li>Registrar as histórias de usuário de acordo com o modelo proposto pelo modelo Connextra (BIK et al.,
+					2017): "Como
+					<strong>(papel)</strong>, eu quero <strong>(algo)</strong> para <strong>(me beneficiar)</strong>"
+				</li>
+				<li>Registrar requisitos não funcionais detectados</li>
+			</ul>
+			<h2>Ferramentas auxiliares</h2>
+			<p>
 				Para maior clareza, as histórias podem estar definidas em
 				um formato homogêneo, como o modelo Connextra desenvolvido em 2001 (BIK et al., 2017).
 				Ao se utilizar um modelo, há maiores chances das histórias serem claras.
-				</p>
-				<q>
-					Como <strong>(papel)</strong>, eu quero
-					<strong>(algo)</strong> para
-					<strong>(me beneficiar)</strong>
-				</q>
-				<p>O exemplo abaixo demonstra a aplicação desse modelo</p>
-				<q>
-					Como um gestor de atividades, eu quero poder cadastrar
-					atividades e tarefas de um processo para eu poder organizar
-					a sequência de atividades a serem realizadas em um projeto
-				</q>
-				<h2>Materiais e referências</h2>
-				<p>BIK, Niels; LUCASSEN, Garm; BRINKKEMPER, Sjaak. A reference method for user story requirements in agile
+			</p>
+			<q>
+				Como <strong>(papel)</strong>, eu quero
+				<strong>(algo)</strong> para
+				<strong>(me beneficiar)</strong>
+			</q>
+			<p>O exemplo abaixo demonstra a aplicação desse modelo</p>
+			<q>
+				Como um gestor de atividades, eu quero poder cadastrar
+				atividades e tarefas de um processo para eu poder organizar
+				a sequência de atividades a serem realizadas em um projeto
+			</q>
+			<h2>Referências</h2>
+			<p>BIK, Niels; LUCASSEN, Garm; BRINKKEMPER, Sjaak. A reference method for user story requirements in agile
 				systems development. In: <strong> 2017 IEEE 25th International Requirements Engineering Conference
 					Workshops (REW). </strong> IEEE, 2017. p. 292-298.</p>
-			</section>
+		</section>
 
-			<section class="topic" id="topico_revisao_historias">
-				<h1> 2. Revisar e corrigir histórias de usuários</h1>
-				<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-				<hr />
-				<h2>Descrição</h2>
-				<p>
+		<section class="topic" id="topico_revisao_historias">
+			<h1> 2. Revisar e corrigir requisitos</h1>
+			<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+			<hr />
+			<h2>Descrição</h2>
+			<p>
 				Essa atividade refere-se à revisão e correção das histórias dos usuários, sendo fundamental tanto para
 				garantir a qualidade e viabilidade dos requisitos quanto para a construção do Product Backlog.
-				</p>
-				<h2>Responsáveis</h2>
-				<p>
+			</p>
+			<h2>Responsáveis</h2>
+			<p>
 				Product Owner e, se for possível, um auxiliar ao Product Owner, de preferência um desenvolvedor para
 				verificar a viabilidade de atendimento das histórias de usuário.
-				</p>
-				<h2>Entradas e saídas</h2>
-				<h3>Entrada</h3>
-				<ul>
-					<li>
-						Histórias de usuários
-					</li>
-				</ul>
-				<h3>Saída</h3>
-				<ul>
-					<li>
-						Como resultado, você consegue as
-						<strong>histórias de usuários revisadas</strong>, sendo uma coletânea
-						das histórias revisadas e analisadas
-					</li>
-				</ul>
-				<h2>Tarefas</h2>
-				<ul>
-					<li>Analisar histórias de usuário</i></li>
-					<li>Reunir e conversar com os <i>stakeholders</i></li>
-					<li>Esclarecer dúvidas</li>
-					<li>Estudar viabilidade das histórias de usário</li>
-				</ul>
-				<h2>Ferramentas/técnicas auxiliares</h2>
-				<p>
+			</p>
+			<h2>Entradas e saídas</h2>
+			<h3>Entrada</h3>
+			<ul>
+				<li>
+					Histórias de usuários
+				</li>
+			</ul>
+			<h3>Saída</h3>
+			<ul>
+				<li>
+					Como resultado, você consegue as
+					<strong>histórias de usuários revisadas</strong>, sendo uma coletânea
+					das histórias revisadas e analisadas
+				</li>
+			</ul>
+			<h2>Tarefas</h2>
+			<ul>
+				<li>Analisar histórias de usuário</i></li>
+				<li>Reunir e conversar com os <i>stakeholders</i></li>
+				<li>Esclarecer dúvidas</li>
+				<li>Estudar viabilidade das histórias de usário</li>
+			</ul>
+			<h2>Ferramentas auxiliares</h2>
+			<p>
 				Para maior clareza, as histórias podem estar definidas em
 				um formato homogêneo, como o modelo Connextra desenvolvido em 2001 (BIK et al., 2017).
 				Ao se utilizar um modelo, há maiores chances das histórias serem claras.
-				</p>
-				<q>
-					Como <strong>(papel)</strong>, eu quero
-					<strong>(algo)</strong> para
-					<strong>(me beneficiar)</strong>
-				</q>
-				<p>O exemplo abaixo demonstra a aplicação desse modelo</p>
-				<q>
-					Como um gestor de atividades, eu quero poder cadastrar
-					atividades e tarefas de um processo para eu poder organizar
-					a sequência de atividades a serem realizadas em um projeto.
-				</q>
-				<h2>Materiais e referências</h2>
-				<p>BIK, Niels; LUCASSEN, Garm; BRINKKEMPER, Sjaak. A reference method for user story requirements in agile
+			</p>
+			<q>
+				Como <strong>(papel)</strong>, eu quero
+				<strong>(algo)</strong> para
+				<strong>(me beneficiar)</strong>
+			</q>
+			<p>O exemplo abaixo demonstra a aplicação desse modelo</p>
+			<q>
+				Como um gestor de atividades, eu quero poder cadastrar
+				atividades e tarefas de um processo para eu poder organizar
+				a sequência de atividades a serem realizadas em um projeto.
+			</q>
+			<h2>Referências</h2>
+			<p>BIK, Niels; LUCASSEN, Garm; BRINKKEMPER, Sjaak. A reference method for user story requirements in agile
 				systems development. In: <strong> 2017 IEEE 25th International Requirements Engineering Conference
 					Workshops (REW). </strong> IEEE, 2017. p. 292-298.</p>
-			</section>
+		</section>
 
-			<section class="topic" id="topico_definir_ferramentas">
-				<h1>3.1 Definir ferramentas, métodos e duração da Sprint</h1>
-				<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-				<hr />
-				<h2>Descrição</h2>
-					Escolha das ferramentas a serem utilizadas, assim como o método de execução da Sprint. Os requisitos não funcionais
-					ajudam a direcionar a tomar a decisão das ferramentas a serem utilizada, com base na sua performance, memória e
-					funcionalidades para a equipe.
-				<p>
-				</p>
-				<h2>Responsáveis</h2>
-				<p>
-					Product Owner (P.O)
-				</p>
-				<h2>Entradas e saídas</h2>
-				<h3>Entrada</h3>
-				<ul>
-					<li>Histórias de usuário revisadas</li>
-					<li>Requisitos não funcionais</li>
-				</ul>
-				<h3>Saída</h3>
-				<ul>
-					<li>Lista de ferramentas</li>
-					<li>Métodos de testes</li>
-					<li>Metodologia das Sprints</li>
-				</ul>
-				<h2>Tarefas</h2>
-				<ul>
-					<li>
-						Considerar ferramentas existentes no mercado e escolher a mais adequada de acordo com os requerimentos do sistema
-					</li>
-					<li>
-						Definir o método de testes mais adequado para o produto, e que atenda os requerimentos
-					</li>
-					<li>
-						Definir a metodologia de execução da Sprint e sua duração
-					</li>
-				</ul>
-			</section>
+		<section class="topic" id="topico_definir_ferramentas">
+			<h1>3.1 Definir ferramentas, métodos e duração da Sprint</h1>
+			<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+			<hr />
+			<h2>Descrição</h2>
+			Escolha das ferramentas a serem utilizadas, assim como o método de execução da Sprint. Os requisitos não
+			funcionais
+			ajudam a direcionar a tomar a decisão das ferramentas a serem utilizada, com base na sua performance,
+			memória e
+			funcionalidades para a equipe.
+			<p>
+			</p>
+			<h2>Responsáveis</h2>
+			<p>
+				Product Owner (P.O)
+			</p>
+			<h2>Entradas e saídas</h2>
+			<h3>Entrada</h3>
+			<ul>
+				<li>Histórias de usuário revisadas</li>
+				<li>Requisitos não funcionais</li>
+			</ul>
+			<h3>Saída</h3>
+			<ul>
+				<li>Lista de ferramentas</li>
+				<li>Métodos de testes</li>
+				<li>Metodologia das Sprints</li>
+			</ul>
+			<h2>Tarefas</h2>
+			<ul>
+				<li>
+					Considerar ferramentas existentes no mercado e escolher a mais adequada de acordo com os
+					requerimentos do sistema
+				</li>
+				<li>
+					Definir o método de testes mais adequado para o produto, e que atenda os requerimentos
+				</li>
+				<li>
+					Definir a metodologia de execução da Sprint e sua duração
+				</li>
+			</ul>
+			<h2>Referências</h2>
+			<p>DUARTE, Luiz. As cerimônias do Scrum. <strong>Escritório de Projetos</strong>, 2022. Disponível em:
+				https://escritoriodeprojetos.com.br/cerimonias-do-scrum
+			</p>
+		</section>
 
-			<section class="topic" id="topico_elaboracao_backlog">
-				<h1>3.2 Elaborar o product backlog</h1>
-				<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-				<hr />
-				<h2>Descrição</h2>
-				<p>
+		<section class="topic" id="topico_elaboracao_backlog">
+			<h1>3.2 Elaborar o product backlog</h1>
+			<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+			<hr />
+			<h2>Descrição</h2>
+			<p>
 				A elaboração do do produto backlog é uma atividade realizada pelo Product Owner (PO), com o objetivo de
 				estabelecer uma lista a qual contem
 				todos os requisitos necessários para o desenvolvimento do produto a partir das histórias de usuário as
@@ -220,109 +229,106 @@
 				acontecimento de uma sprint, ou seja,
 				mesmo que o processo de desenvolvimento já tenha sido iniciado, o Product Backlog pode ser alterado após
 				a finalização da Sprint atual.
-				</p>
-				<p>
+			</p>
+			<p>
 				Note, que para garantir o bom desenvolvimento do produto, o Product Owner também deverá garantir de que
-				todos os integrantes da equipe entendam as histórias de usuário e os requisitos delimitados no Product Backlog.
-				</p>
-				<h2>Responsáveis</h2>
-				<p>
-				Os responsáveis por esta atividade são o Product Owner juntamente com o seu ajudante se este existir. O P,O.
+				todos os integrantes da equipe entendam as histórias de usuário e os requisitos delimitados no Product
+				Backlog.
+			</p>
+			<h2>Responsáveis</h2>
+			<p>
+				Os responsáveis por esta atividade são o Product Owner juntamente com o seu ajudante se este existir. O
+				P,O.
 				deve
 				definir a ordem de importância de cada item do Product Backlog.
-				</p>
-				<h2>Entradas e saídas</h2>
-				<h3>Entrada</h3>
-				<ul>
-					<li>Histórias de usuário revisadas</li>
-				</ul>
-				<h3>Saída</h3>
-				<ul>
-					<li>Product Backlog</li>
-				</ul>
-				<h2>Tarefas</h2>
-				<ul>
-					<li>Desdobrar as histórias de usuário em requisitos funcionais os quais irão compor o Product Backlog
-					</li>
-					<!-- O PO que realiza essa atividade, portanto se sub-entente que a prioridade foi criada de acordo com seu entendimento -->
-					<li>Priorizar os items do product backlog</li>
-				</ul>
-				<h2>Ferramentas/técnicas auxiliares</h2>
-				<p>
+			</p>
+			<h2>Entradas e saídas</h2>
+			<h3>Entrada</h3>
+			<ul>
+				<li>Histórias de usuário revisadas</li>
+			</ul>
+			<h3>Saída</h3>
+			<ul>
+				<li>Product Backlog</li>
+			</ul>
+			<h2>Tarefas</h2>
+			<ul>
+				<li>Desdobrar as histórias de usuário em requisitos funcionais os quais irão compor o Product Backlog
+				</li>
+				<li>Priorizar os items do product backlog</li>
+			</ul>
+			<h2>Ferramentas auxiliares</h2>
+			<p>
 				As ferramentas utilizadas nesta etapa foram a plataforma de controle de versionamento de código <a
 					href="ferramentas.html#github">Github</a> em conjunto com
-				a ferramenta <a href="ferramentas.html#zenhub">Zenhub</a>. Para facilitar o acesso a plataforma
-				disponibilizada pelo Zenhub, foi-se utilizado um <a
-					href="https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd">plugin
-					para
-					Google Chrome</a> o qual permite o acesso do projeto a partir do próprio repositório do projeto.
-				</p>
-				<div>
-					Mais informaçẽos sobre as ferramentas:	
-					<ul>
-						<li>
-							<a href="ferramentas.html#github">Github</a>
-						</li>
-						<li>
-							<a href="ferramentas.html#zenhub">Zenhub</a>
-						</li>
-					</ul>
-				</div>
-				<h2>Materiais e referências</h2>
-				<p>
+				a ferramenta <a href="trello.com">Trello</a>.
+			</p>
+			<div>
+				Mais informaçẽos sobre as ferramentas:
+				<ul>
+					<li>
+						<a href="ferramentas.html#github">Github</a>
+					</li>
+					<li>
+						<a href="ferramentas.html#trello">Trello</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Referências</h2>
+			<p>
 				SCHWABER, Ken; SUTHERLAND, Jeff. <b>SCRUM Guide</b>. 2020. Disponível em:
 				<a href="https://www.scrum.org/resources/scrum-guide/">
 					https://www.scrum.org/resources/scrum-guide/
 				</a>
-				</p>
-			</section>
+			</p>
+		</section>
 
-			<section class="topic" id="topico_planejar_sprint">
-				<h1>4. Planejar sprint</h1>
-				<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-				<hr />
-				<h2>Descrição</h2>
-				<p>
+		<section class="topic" id="topico_planejar_sprint">
+			<h1>4. Planejar sprint</h1>
+			<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+			<hr />
+			<h2>Descrição</h2>
+			<p>
 				Antes do início da <i>Sprint</i>, deve ocorrer o <i>Sprint Planning</i>, isto é,
 				planejamento da <i>Sprint</i>. Artefatos como a <i>Sprint Backlog</i> e Definição de Pronto
 				são definidas nessa etapa. Deve ser feita em uma reunião com no máximo 8 horas de duração
 				(dependendo da duração da <i>Sprint</i>) (SCHWABER; SUTHERLAND, 2020).
-				</p>
-				<p>
+			</p>
+			<p>
 				A <i>Sprint Backlog</i> define um conjunto de atividades que deverão ser feita na <i>Sprint</i>
 				após o planejamento. Esse conjunto de atividades são instanciadas das Histórias de Usuário
 				selecionadas para ser concluída na <i>Sprint</i>. Observe que nem sempre pode ser possível concluir
 				uma ou mais Histórias de Usuário em uma única <i>Sprint</i>, podendo ser encarregadas para a próxima.
-				</p>
-				<p>
+			</p>
+			<p>
 				A Definição de Pronto define um conjunto de critérios de conclusão para as atividades.
 				Como cada atividade pode ser distinta entre si (por exemplo, atividades de codificação e
 				atividades de elaboração de documentação), a Definição de Pronto pode especificar qual o
 				critério de conclusão para cada tipo de atividade.
 				Caso a Definição de Pronto elaborada em um planejamento anterior ainda esteja em conformidade e não
 				necessite de alteração, o <i>Team</i> pode optar por pular esta etapa.
-				</p>
-				<h2>Responsáveis</h2>
-				<p>
+			</p>
+			<h2>Responsáveis</h2>
+			<p>
 				Os responsáveis pelo planejamento da <i>Sprint</i> são <b>todo o <i>Team</i></b>.
-				</p>
-				<p>
+			</p>
+			<p>
 				O <i>Scrum Master</i> é responsável por organizar e dar um fluxo contínuo à reunião, sempre levantando
 				pontos de discussão importantes da reunião e permitindo que todos participem, cada um dando sua voz.
-				</p>
-				<p>
+			</p>
+			<p>
 				O P.O. é quem deve lembrar a equipe sobre as metas mais importantes a serem alcançadas para entrega do
 				incremento,
 				utilizando como base o <i>Product Backlog</i> já desenvolvido. Ele é quem deve dar a visão geral e
 				também sugerir
 				qual o objetivo principal a ser alcançado pela <i>Sprint</i> atual.
-				</p>
-				<p>
+			</p>
+			<p>
 				Todo o <i>Team</i> deve discutir e selecionar quais as Histórias de Usuário que serão encarregadas para
 				a <i>Sprint</i> atual. É importante que todos opinem em cima da seleção, tendo sempre em mente o que se
 				deseja entregar para aquela <i>Sprint</i>.
-				</p>
-				<p>
+			</p>
+			<p>
 				O Time de Desenvolvimento será responsável por instanciar as atividades com base nas Histórias de
 				Usuário selecionadas.
 				Essas atividades devem ser estimadas seguindo alguma técnica: sugere-se o uso do <i>Planning Poker</i>,
@@ -331,101 +337,101 @@
 				desenvolvedores votem
 				pontos para uma atividade em pauta e discutem sobre o porquê deram aquele ponto, de forma a se chegar
 				uma conclusão.
-				</p>
-				<p>
+			</p>
+			<p>
 				Mais detalhes de como realizar o <i>Planning Poker</i> pode ser encontrado nesse
 				<a href="https://agiledigest.com/agile-digest-tutorial-2/agile-estimation-2/"><i>post</i> feito por
 					Niladri Mahapatra (2017).</a>
 				Observe que apenas as atividades devem ser estimadas, visto que as Histórias de Usuário são apenas
 				referências de metas que
 				se deseja alcançar.
-				</p>
-				<p>
+			</p>
+			<p>
 				É possível que a soma dos pontos das atividades definidas naquela <i>Sprint</i> exceda a capacidade de
 				trabalho da equipe.
 				Caso isso ocorra, sugere-se adiar algumas das atividades (ou até mesmo Histórias de Usuário) para uma
 				futura <i>Sprint</i>.
 				É sempre importante ter em mente qual a capacidade total de trabalho da equipe.
-				</p>
-				<h2>Entradas e saídas</h2>
-				<h3>Entrada</h3>
-				<ul>
-					<li><i>Product Backlog</i></li>
-				</ul>
-				<h3>Saída</h3>
-				<ul>
-					<li><i>Sprint Backlog</i></li>
-					<li>Definição de Pronto <i>(Definition of Done, DoD)</i></li>
-				</ul>
-				<h2>Tarefas</h2>
-				<ul>
-					<li>Elaborar, caso não se tenha ou não esteja em conformidade, uma Definição de Pronto</li>
-					<li>Definir o objetivo da <i>Sprint</i> atual</li>
-					<li>Selecionar as Histórias de Usuário relevantes para o objetivo da <i>Sprint</i></li>
-					<li>Instanciar atividades com base nas Histórias de Usuário</li>
-					<li>Estimar os pontos das atividades instanciadas</li>
-				</ul>
-				<h2>Ferramentas/técnicas auxiliares</h2>
-				<ul>
-					<li>
-						<a href="https://planningpokeronline.com/">
-							Planning Poker Online
-						</a> para estimar os pontos das atividades
-					</li>
-					<li>
-						<a
-							href="ferramentas.html#zenhub">
-							Zenhub para Github
-						</a> para construir o <i>Sprint Backlog</i> com um conjunto de Histórias de Usuário e atividades
-					</li>
-				</ul>
-				<h2>Materiais e referências</h2>
-				<ul>
-					<li>
-						SCHWABER, Ken; SUTHERLAND, Jeff. <b>SCRUM Guide</b>. 2020. Disponível em:
-						<a href="https://www.scrum.org/resources/scrum-guide/">
-							https://www.scrum.org/resources/scrum-guide/
-						</a>
-					</li>
-					<li>
-						MAHAPATRA, Niladri. <b>What is Sprint Planning</b>. AGILE DIGEST, 2017. Disponível em:
-						<a href="https://agiledigest.com/agile-digest-tutorial-2/sprint-planning-agile-scrum-n/">
-							https://agiledigest.com/agile-digest-tutorial-2/sprint-planning-agile-scrum-n/
-						</a>
-					</li>
-					<li>
-						MAHAPATRA, Niladri. <b>What is Agile Estimation?</b>. AGILE DIGEST, 2017. Disponível em:
-						<a href="https://agiledigest.com/agile-digest-tutorial-2/agile-estimation-2/">
-							https://agiledigest.com/agile-digest-tutorial-2/agile-estimation-2/
-						</a>
-					</li>
-				</ul>
-			</section>
+			</p>
+			<h2>Entradas e saídas</h2>
+			<h3>Entrada</h3>
+			<ul>
+				<li><i>Product Backlog</i></li>
+			</ul>
+			<h3>Saída</h3>
+			<ul>
+				<li><i>Sprint Backlog</i></li>
+				<li>Definição de Pronto <i>(Definition of Done, DoD)</i></li>
+			</ul>
+			<h2>Tarefas</h2>
+			<ul>
+				<li>Elaborar, caso não se tenha ou não esteja em conformidade, uma Definição de Pronto</li>
+				<li>Definir o objetivo da <i>Sprint</i> atual</li>
+				<li>Selecionar as Histórias de Usuário relevantes para o objetivo da <i>Sprint</i></li>
+				<li>Instanciar atividades com base nas Histórias de Usuário</li>
+				<li>Estimar os pontos das atividades instanciadas</li>
+			</ul>
+			<h2>Ferramentas auxiliares</h2>
+			<ul>
+				<li>
+					<a href="https://planningpokeronline.com/">
+						Planning Poker Online
+					</a> para estimar os pontos das atividades
+				</li>
+				<li>
+					<a href="ferramentas.html#trello">
+						Trello
+					</a> para construir o <i>Sprint Backlog</i> com um conjunto de Histórias de Usuário e atividades
+				</li>
+			</ul>
+			<h2>Referências</h2>
+			<ul>
+				<li>
+					SCHWABER, Ken; SUTHERLAND, Jeff. <b>SCRUM Guide</b>. 2020. Disponível em:
+					<a href="https://www.scrum.org/resources/scrum-guide/">
+						https://www.scrum.org/resources/scrum-guide/
+					</a>
+				</li>
+				<li>
+					MAHAPATRA, Niladri. <b>What is Sprint Planning</b>. AGILE DIGEST, 2017. Disponível em:
+					<a href="https://agiledigest.com/agile-digest-tutorial-2/sprint-planning-agile-scrum-n/">
+						https://agiledigest.com/agile-digest-tutorial-2/sprint-planning-agile-scrum-n/
+					</a>
+				</li>
+				<li>
+					MAHAPATRA, Niladri. <b>What is Agile Estimation?</b>. AGILE DIGEST, 2017. Disponível em:
+					<a href="https://agiledigest.com/agile-digest-tutorial-2/agile-estimation-2/">
+						https://agiledigest.com/agile-digest-tutorial-2/agile-estimation-2/
+					</a>
+				</li>
+			</ul>
+		</section>
 
-			<section class="topic" id="topico_executar_atividades">
-				<h1>
-					5. Executar atividades da <i>Sprint</i>
-				</h1>
-				<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-				<hr />
-				<h2>Descrição</h2>
-				<p>
+		<section class="topic" id="topico_executar_atividades">
+			<h1>
+				5. Executar atividades da <i>Sprint</i>
+			</h1>
+			<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+			<hr />
+			<h2>Descrição</h2>
+			<p>
 				A execução das atividades da <i>Sprint</i> se referem às atividades do <i>Sprint Backlog</i> definido
 				anteriormente.
 				Essas atividades serão executadas por todo o Time de Desenvolvimento no período estipulado para a
 				<i>Sprint</i>, sem mais
 				ou menos atividades: a <i>Sprint Backlog</i> e a Definição de Pronto não podem ser alterada durante essa
 				execução.
-				</p>
-				<p>
+			</p>
+			<p>
 				O incremento a ser desenvolvido durante essa etapa pode ser constituído por diversos artefatos, como
 				<b>documentação, codificação e elaboração de casos de testes.</b> Os métodos e ferramentas já devem ter
 				sido definidos
-				na atividade de <a href="#topico_definir_ferramentas">"3.1 Definir ferramentas, métodos e duração da Sprint"</a>,
+				na atividade de <a href="#topico_definir_ferramentas">"3.1 Definir ferramentas, métodos e duração da
+					Sprint"</a>,
 				utilizando padrões
 				como a UML e técnicas como o <i>Test-Driven Development</i>.
-				</p>
-				<p>
+			</p>
+			<p>
 				Para se ter um desenvolvimento fluido, é importante se ter uma paralelização do desenvolvimento, com
 				cada membro
 				do Time de Desenvolvimento se encarregando por um conjunto de atividades de uma parte do incremento.
@@ -433,20 +439,20 @@
 				concluída,
 				precisam atingir o requisito da Definição de Pronto (definido na atividade <a
 					href="#topico_planejar_sprint">"4. Planejar sprint"</a>).
-				</p>
-				<p>
+			</p>
+			<p>
 				Para manter o progresso das atividades, o Time de Desenvolvimento precisa registrar elas em um quadro
 				visual, com cada
 				atividade encarregada para algum membro. Pode ser utilizado ferramentas como o ZenHub (2021), Trello
 				(2021), Jira (2021) ou até mesmo
 				um quadro Kanban físico. Sugere-se o uso do ZenHub ou Trello, ambos são gratuitos.
-				</p>
-				<p>
+			</p>
+			<p>
 				O Time de Desenvolvimento deve realizar a <a href="#topico_reuniao">reunião diária</a> para esclarecer
 				qualquer problema e manter
 				uma fluidez com o desenvolvimento.
-				</p>
-				<p>
+			</p>
+			<p>
 				Para acompanhar o progresso do desenvolvimento, o Time de Desenvolvimento pode utilizar o gráfico de
 				<i>Burndown</i>, que mede
 				uma linha ideal de progresso de conclusão das atividades durante o tempo da <i>Sprint</i>. Se a equipe
@@ -455,308 +461,324 @@
 				noção de como o Time de Desenvolvimento
 				está com o desenvolvimento. O ZenHub já possui um <i>Burndown</i> integrado, e o Trello aceita como uma
 				extensão ao projeto.
-				</p>
-				<p>
+			</p>
+			<p>
 				Ao fim da execução das atividades, se espera ter um incremento pronto. É possível que nem todas as
 				atividades possam ter sido realizadas
 				com sucesso, as quais devem ser encarregadas para uma próxima <i>Sprint</i>. Caso isso ocorra, é
 				importante discutir futuramente na retrospectiva
 				da <i>Sprint</i> os problemas enfrentados pelos membros do Time de Desenvolvimento.
-				</p>
-				<h2>Responsáveis</h2>
-				<p>
+			</p>
+			<h2>Responsáveis</h2>
+			<p>
 				Apenas o Time de Desenvolvimento trabalham nessa atividade. Caso surja dúvidas com alguma História de
 				Usuário, essas dúvidas devem ser registradas
 				futuramente para ser discutida com o P.O. (mas sempre lembrando que a <i>Sprint Backlog</i> atual não
 				pode ser alterada).
 				Observe que o Scrum Master também pode atuar como desenvolvedor e fazer parte do Time de
 				Desenvolvimento.
-				</p>
-				<h2>Entradas e saídas</h2>
-				<h3>Entrada</h3>
+			</p>
+			<h2>Entradas e saídas</h2>
+			<h3>Entrada</h3>
+			<ul>
+				<li><i>Sprint Backlog</i></li>
+				<li>Definição de Pronto</li>
+			</ul>
+			<h3>Saída</h3>
+			<ul>
+				<li>Um incremento desenvolvido, constituído por:</li>
 				<ul>
-					<li><i>Sprint Backlog</i></li>
-					<li>Definição de Pronto</li>
+					<li>Documentação</li>
+					<li>Código da funcionalidade</li>
+					<li>Casos de testes</li>
 				</ul>
-				<h3>Saída</h3>
-				<ul>
-					<li>Um incremento desenvolvido, constituído por:</li>
-					<ul>
-						<li>Documentação</li>
-						<li>Código da funcionalidade</li>
-						<li>Casos de testes</li>
-					</ul>
-				</ul>
-				<h2>Tarefas</h2>
-				<ul>
-					<li>Executar as atividades planejadas no <i>Sprint Backlog</i></li>
-					<li>Elaborar a documentação do incremento</li>
-					<li>Codificar as funcionalidades principais</li>
-					<li>Escrever e codificar os casos de testes</li>
-					<li>Realizar as reuniões diárias</li>
-				</ul>
-				<h2>Ferramentas/técnicas auxiliares</h2>
-				<ul>
-					<li>
-						<a
-							href="ferramentas.html#zenhub">
-							Zenhub para Github
-						</a> para manter o progresso das atividades.
-					</li>
-					<li>
-						<a href="https://trello.com/pt-BR">
-							Trello
-						</a> para manter o progresso das atividades.
-					</li>
-					<li>
-						<a href="https://www.atlassian.com/br/software/jira">
-							Jira
-						</a> para manter o progresso das atividades.
-					</li>
-				</ul>
-				<h2>Materiais e referências</h2>
-				<ul>
-					<li>
-						BUTTLER, Matt. <b>How the ZenHub Team Uses ZenHub Boards on GitHub</b>. 2014. Disponível em:
-						<a href="https://blog.zenhub.com/how-the-zenhub-team-uses-zenhub-boards-on-github/">
-							https://blog.zenhub.com/how-the-zenhub-team-uses-zenhub-boards-on-github/
-						</a>
-					</li>
-					<li>
-						CAMARGO, Robson. <b>Burndown:</b> conheça o gráfico que mede produtividade. 2020. Disponível em:
-						<a href="https://robsoncamargo.com.br/blog/Burndown/">
-							https://robsoncamargo.com.br/blog/Burndown/
-						</a>
-					</li>
-				</ul>
-			</section>
+			</ul>
+			<h2>Tarefas</h2>
+			<ul>
+				<li>Executar as atividades planejadas no <i>Sprint Backlog</i></li>
+				<li>Elaborar a documentação do incremento</li>
+				<li>Codificar as funcionalidades principais</li>
+				<li>Escrever e codificar os casos de testes</li>
+				<li>Realizar as reuniões diárias</li>
+			</ul>
+			<h2>Ferramentas auxiliares</h2>
+			<ul>
+				<li>
+					<a href="https://trello.com/pt-BR">
+						Trello
+					</a> para manter o progresso das atividades.
+				</li>
+				<li>
+					<a href="https://www.atlassian.com/br/software/jira">
+						Jira
+					</a> para manter o progresso das atividades.
+				</li>
+			</ul>
+			<h2>Referências</h2>
+			<ul>
+				<li>
+					BUTTLER, Matt. <b>How the ZenHub Team Uses ZenHub Boards on GitHub</b>. 2014. Disponível em:
+					<a href="https://blog.zenhub.com/how-the-zenhub-team-uses-zenhub-boards-on-github/">
+						https://blog.zenhub.com/how-the-zenhub-team-uses-zenhub-boards-on-github/
+					</a>
+				</li>
+				<li>
+					CAMARGO, Robson. <b>Burndown:</b> conheça o gráfico que mede produtividade. 2020. Disponível em:
+					<a href="https://robsoncamargo.com.br/blog/Burndown/">
+						https://robsoncamargo.com.br/blog/Burndown/
+					</a>
+				</li>
+			</ul>
+		</section>
 
-			<section class="topic" id="topico_reuniao">
-				<h1>6. Realizar reunião diária</h1>
-				<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-				<hr />
-				<h2>Descrição</h2>
-				<p>
+		<section class="topic" id="topico_reuniao">
+			<h1>6. Realizar reunião diária</h1>
+			<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+			<hr />
+			<h2>Descrição</h2>
+			<p>
 				É uma reunião rápida com duração de até 15 minutos realizada todos os dias.
-				É importante que a reunião seja realizada no início do expediente. Essa reunião pode ser realizada 
-				na vida real em um local, por chamada de áudio, ou também por texto, dependendo da disponibilidade da equipe.
-				</p>
-				<h2>Responsáveis</h2>
-				<p>
+				É importante que a reunião seja realizada no início do expediente. Essa reunião pode ser realizada
+				na vida real em um local, por chamada de áudio, ou também por texto, dependendo da disponibilidade da
+				equipe.
+			</p>
+			<h2>Responsáveis</h2>
+			<p>
 				Os responsáveis pelas reuniões são todos da equipe de desenvolvedores. O <i>Product Owner</i> e o
 				<i>Scrum
 					Master</i> podem participar das reuniões como ouvintes.
-				</p>
-				<h2>Entradas e saídas</h2>
-				<h3>Entrada</h3>
-				<ul>
-					<li>Sprint Backlog</li>
-					<li><i>Feedback</i> do dia anterior da equipe, que pode ficar registrados em ferramentas como o Discord</li>
-				</ul>
-				<h3>Saída</h3>
-				<ul>
-					<li><i>Feedback</i> da equipe no presente dia</li>
-				</ul>
-				<h2>Tarefas</h2>
-				<ul>
-					<li>Levantar o que fei feito desde a última reunião</li>
-					<li>Levantar o que será feito no dia em questão</li>
-					<li>Discutir quais os impedimentos para a realização do trabalho</li>
-				</ul>
-				<h2>Ferramentas/técnicas auxiliares</h2>
-				<ul>
-					<li>Discord</li>
-				</ul>
-			</section>
+			</p>
+			<h2>Entradas e saídas</h2>
+			<h3>Entrada</h3>
+			<ul>
+				<li>Sprint Backlog</li>
+				<li><i>Feedback</i> do dia anterior da equipe, que pode ficar registrados em ferramentas como o Discord
+				</li>
+			</ul>
+			<h3>Saída</h3>
+			<ul>
+				<li><i>Feedback</i> da equipe no presente dia</li>
+			</ul>
+			<h2>Tarefas</h2>
+			<ul>
+				<li>Levantar o que fei feito desde a última reunião</li>
+				<li>Levantar o que será feito no dia em questão</li>
+				<li>Discutir quais os impedimentos para a realização do trabalho</li>
+			</ul>
+			<h2>Ferramentas auxiliares</h2>
+			<ul>
+				<li>Discord</li>
+				<li>Google Meet</li>
+			</ul>
+			<h2>Referências</h2>
+			<p>DUARTE, Luiz. As cerimônias do Scrum. <strong>Escritório de Projetos</strong>, 2022. Disponível em:
+				https://escritoriodeprojetos.com.br/cerimonias-do-scrum
+			</p>
+		</section>
 
-			<section class="topic" id="topico_revisao_sprint">
-				<h1>
-					7. Revisar sprint (sprint review meeting)
-				</h1>
-				<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-				<hr />
-				<h2>Descrição</h2>
-				<p>A Sprint review é o momento em que a equipe e as partes interessadas conversam sobre o andamento final da
+		<section class="topic" id="topico_revisao_sprint">
+			<h1>
+				7. Revisar sprint (sprint review meeting)
+			</h1>
+			<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+			<hr />
+			<h2>Descrição</h2>
+			<p>A Sprint review é o momento em que a equipe e as partes interessadas conversam sobre o andamento final da
 				sprint, validando
 				as entregas da equipe, verificando se o projeto está de acordo com o estabelecido inicialmente e também
 				o mais importante, que é a coleta
 				do <i>feedback</i> do que foi construido pela equipe.
-				</p>
-				<h2>Responsáveis</h2>
-				<p>
+			</p>
+			<h2>Responsáveis</h2>
+			<p>
 				O Scrum Team e os <i>stakeholders</i>. Caso não seja possível a presença de todos stakeholders, apenas a
 				presença do P.O. para representatividade para os <i>stakeholders</i>
-				</p>
-				<h2>Entradas e saídas</h2>
-				<h3>Entrada</h3>
-				<ul>
-					<li>Incremento desenvolvido</li>
-				</ul>
+			</p>
+			<h2>Entradas e saídas</h2>
+			<h3>Entrada</h3>
+			<ul>
+				<li>Incremento desenvolvido</li>
+			</ul>
 
-				<h3>Saída</h3>
-				<ul>
-					<li><i>Feedback</i> sobre o produto das partes interessadas</li>
-				</ul>
-				<h2>Tarefas</h2>
-				<ul>
-					<li>Apresentação das entregas feitas pela equipe</li>
-					<li>Feedback do <i>Product Owner</i> e/ou <i>Stakeholders</i></li>
-					<li>Validação de conclusão da entrega de acordo com os requisitos necessários para a conclusão da sprint
-					</li>
-					<li>Verificar se a entrega está de acordo com a definição de pronto da sprint</li>
-				</ul>
-				<h2>Ferramentas/técnicas auxiliares</h2>
-				<ul>
-					<li>
-						<a href="ferramentas.html#github">
-							Github
-						</a>
-					</li>
-					<li>
-						<a
-							href="ferramentas.html#zenhub">
-							Zenhub para Github
-						</a>
-					</li>
-				</ul>
-			</section>
+			<h3>Saída</h3>
+			<ul>
+				<li><i>Feedback</i> sobre o produto das partes interessadas</li>
+			</ul>
+			<h2>Tarefas</h2>
+			<ul>
+				<li>Apresentação das entregas feitas pela equipe</li>
+				<li>Feedback do <i>Product Owner</i> e/ou <i>Stakeholders</i></li>
+				<li>Validação de conclusão da entrega de acordo com os requisitos necessários para a conclusão da sprint
+				</li>
+				<li>Verificar se a entrega está de acordo com a definição de pronto da sprint</li>
+			</ul>
+			<h2>Ferramentas auxiliares</h2>
+			<ul>
+				<li>
+					<a href="ferramentas.html#github">
+						Github
+					</a>
+				</li>
+				<li>
+					<a href="ferramentas.html#trello">
+						Trello
+					</a>
+				</li>
+			</ul>
+			<h2>Referências</h2>
+			<p>DUARTE, Luiz. As cerimônias do Scrum. <strong>Escritório de Projetos</strong>, 2022. Disponível em:
+				https://escritoriodeprojetos.com.br/cerimonias-do-scrum
+			</p>
+		</section>
 
-			<section class="topic" id="topico_realizar_retrospectiva">
-				<h1>
-					8. Realizar retrospectiva da sprint
-				</h1>
-				<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-				<hr />
-				<h2>Descrição</h2>
-				<p>
+		<section class="topic" id="topico_realizar_retrospectiva">
+			<h1>
+				8. Realizar retrospectiva da sprint
+			</h1>
+			<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+			<hr />
+			<h2>Descrição</h2>
+			<p>
 				Esta atividade consiste numa reunião realizada ao final da sprint a fim de gerar ações para melhorar o
 				processo de trabalho, melhorando de forma contínua
 				e incremental, ou seja, melhore de pouquinho em pouquinho, de forma regular e consistente.
-				</p>
-				<h2>Responsáveis</h2>
-				<p>
+			</p>
+			<h2>Responsáveis</h2>
+			<p>
 				Todo o <i>Team</i>
-				</p>
-				<h2>Entradas e saídas</h2>
-				<h3>Entrada</h3>
-				<ul>
-					<li><i>Feedback</i> do incremento</li>
-					<li>Sprint Backlog</li>
-					<li>Product Backlog</li>
-				</ul>
+			</p>
+			<h2>Entradas e saídas</h2>
+			<h3>Entrada</h3>
+			<ul>
+				<li><i>Feedback</i> do incremento</li>
+				<li>Sprint Backlog</li>
+				<li>Product Backlog</li>
+			</ul>
 
-				<h3>Saída</h3>
-				<ul>
-					<li><i>Feedback</i> e avaliação da <i>Sprint</i></li>
-				</ul>
-				<h2>Tarefas</h2>
-				<ul>
-					<li>Reunir com a equipe de desenvolvimento</li>
-					<li>Cada integrante do time menciona um ponto positivo, negativo e o que melhorar e o explica para a
-						equipe</li>
-					<li>Anotar os pontos positivos e negativos, para aplicar futuramente na próxima <i>Sprint Planning</i>
-					</li>
-				</ul>
-				<h2>Ferramentas/técnicas auxiliares</h2>
-				<ul>
-					<li>
-						<a href="ferramentas.html#github">
-							Github
-						</a>
-					</li>
-					<li>
-						<a
-							href="ferramentas.html#zenhub">
-							Zenhub para Github
-						</a>
-					</li>
-				</ul>
-			</section>
+			<h3>Saída</h3>
+			<ul>
+				<li><i>Feedback</i> e avaliação da <i>Sprint</i></li>
+			</ul>
+			<h2>Tarefas</h2>
+			<ul>
+				<li>Reunir com a equipe de desenvolvimento</li>
+				<li>Cada integrante do time menciona um ponto positivo, negativo e o que melhorar e o explica para a
+					equipe</li>
+				<li>Anotar os pontos positivos e negativos, para aplicar futuramente na próxima <i>Sprint Planning</i>
+				</li>
+			</ul>
+			<h2>Ferramentas auxiliares</h2>
+			<ul>
+				<li>
+					<a href="ferramentas.html#github">
+						Github
+					</a>
+				</li>
+				<li>
+					<a href="ferramentas.html#trello">
+						Trello
+					</a>
+				</li>
+			</ul>
+			<h2>Referências</h2>
+			<p>DUARTE, Luiz. As cerimônias do Scrum. <strong>Escritório de Projetos</strong>, 2022. Disponível em:
+				https://escritoriodeprojetos.com.br/cerimonias-do-scrum
+			</p>
+		</section>
 
-			<section class="topic" id="topico_verificar_product_backlog">
-				<h1>9. Verificar itens restantes no Product Backlog</h1>
-				<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-				<hr />
-				<h2>Descrição</h2>
-				<p>
-				Nesta atividade é realizado a verificação do <i>Product Backlog</i> para ver se ainda restam itens que devem ser concluídos. 
-				Caso existam, é importante dar continuidade ao projeto, e caso contrário, o projeto poderá ser dado como finalizado.
-				</p>
-				<h2>Responsáveis</h2>
-				P.O.
-				<p>
-				</p>
-				<h2>Entradas e saídas</h2>
-				<h3>Entrada</h3>
-				<ul>
-					<li><i>Product Backlog</i></li>
-				</ul>
-				<h3>Saída</h3>
-				<ul>
-					<li>Avaliação do estado do <i>Product Backlog</i></li>
-				</ul>
-				<h2>Tarefas</h2>
-				<ul>
-					<li>Avaliar o estado atual do <i>Product Backlog</i></li>
-					<li>Verificar quantidade de itens já atendidos</li>
-				</ul>
-				<h2>Ferramentas/técnicas auxiliares</h2>
-				<ul>
-					<li>
-						<a href="https://github.com/">
-							Github
-						</a>
-					</li>
-					<li>
-						<a
-							href="ferramentas.html#zenhub">
-							Zenhub para Github
-						</a>
-					</li>
-				</ul>
-			</section>
+		<section class="topic" id="topico_verificar_product_backlog">
+			<h1>9. Verificar itens restantes no Product Backlog</h1>
+			<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+			<hr />
+			<h2>Descrição</h2>
+			<p>
+				Nesta atividade é realizado a verificação do <i>Product Backlog</i> para ver se ainda restam itens que
+				devem ser concluídos.
+				Caso existam, é importante dar continuidade ao projeto, e caso contrário, o projeto poderá ser dado como
+				finalizado.
+			</p>
+			<h2>Responsáveis</h2>
+			P.O.
+			<p>
+			</p>
+			<h2>Entradas e saídas</h2>
+			<h3>Entrada</h3>
+			<ul>
+				<li><i>Product Backlog</i></li>
+			</ul>
+			<h3>Saída</h3>
+			<ul>
+				<li>Avaliação do estado do <i>Product Backlog</i></li>
+			</ul>
+			<h2>Tarefas</h2>
+			<ul>
+				<li>Avaliar o estado atual do <i>Product Backlog</i></li>
+				<li>Verificar quantidade de itens já atendidos</li>
+			</ul>
+			<h2>Ferramentas auxiliares</h2>
+			<ul>
+				<li>
+					<a href="https://github.com/">
+						Github
+					</a>
+				</li>
+				<li>
+					<a href="ferramentas.html#trello">
+						Trello
+					</a>
+				</li>
+			</ul>
+			<h2>Referências</h2>
+			<p>DUARTE, Luiz. As cerimônias do Scrum. <strong>Escritório de Projetos</strong>, 2022. Disponível em:
+				https://escritoriodeprojetos.com.br/cerimonias-do-scrum
+			</p>
+		</section>
 
-			<section class="topic" id="topico_verificar_historias">
-				<h1>10. Verificar qualidade das histórias de usuários</h1>
-				<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-				<hr />
-				<h2>Descrição</h2>
-				Esta atividade é onde o P.O. avalia se alguma história dificultou o progresso do <i>Team</i> com o andamento
-				da <i>Sprint</i>,
-				avaliando principalmente através do <i>feedback</i> recebido durante a <i>Sprint Retrospective</i>.
-				<h2>Responsáveis</h2>
-				P.O.
-				<h2>Entradas e saídas</h2>
-				<h3>Entrada</h3>
-				<ul>
-					<li><i>Feedback</i> do <i>Team</i></li>
-					<li>Histórias de usuários</li>
-				</ul>
-				<h3>Saída</h3>
-				<ul>
-					<li><strong>Histórias de Usuários</strong> Avaliadas </li>
-				</ul>
-				<h2>Tarefas</h2>
-				<ul>
-					<li>Avaliar a conformidade das Histórias de Usuários perante as definições de entrega do produto</li>
-					<li>Identificar dificuldades no entendimento do ambiente de negócio através das histórias de usuários e os feedbacks do Team</li>
-				</ul>
-				<h2>Ferramentas/técnicas auxiliares</h2>
-				<ul>
-					<li>
-						<a href="ferramentas.html#github">
-							Github
-						</a>
-					</li>
-					<li>
-						<a
-							href="ferramentas.html#zenhub">
-							Zenhub para Github
-						</a>
-					</li>
-				</ul>
-			</section>
-		</div>
-	</body>
+		<section class="topic" id="topico_verificar_historias">
+			<h1>10. Verificar qualidade das histórias de usuários</h1>
+			<a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+			<hr />
+			<h2>Descrição</h2>
+			Esta atividade é onde o P.O. avalia se alguma história dificultou o progresso do <i>Team</i> com o andamento
+			da <i>Sprint</i>,
+			avaliando principalmente através do <i>feedback</i> recebido durante a <i>Sprint Retrospective</i>.
+			<h2>Responsáveis</h2>
+			P.O.
+			<h2>Entradas e saídas</h2>
+			<h3>Entrada</h3>
+			<ul>
+				<li><i>Feedback</i> do <i>Team</i></li>
+				<li>Histórias de usuários</li>
+			</ul>
+			<h3>Saída</h3>
+			<ul>
+				<li><strong>Histórias de Usuários</strong> Avaliadas </li>
+			</ul>
+			<h2>Tarefas</h2>
+			<ul>
+				<li>Avaliar a conformidade das Histórias de Usuários perante as definições de entrega do produto</li>
+				<li>Identificar dificuldades no entendimento do ambiente de negócio através das histórias de usuários e
+					os feedbacks do Team</li>
+			</ul>
+			<h2>Ferramentas auxiliares</h2>
+			<ul>
+				<li>
+					<a href="ferramentas.html#github">
+						Github
+					</a>
+				</li>
+				<li>
+					<a href="ferramentas.html#trello">
+						Trello
+					</a>
+				</li>
+			</ul>
+			<h2>Referências</h2>
+			<p>DUARTE, Luiz. As cerimônias do Scrum. <strong>Escritório de Projetos</strong>, 2022. Disponível em:
+				https://escritoriodeprojetos.com.br/cerimonias-do-scrum
+			</p>
+		</section>
+	</div>
+</body>
 
 </html>
