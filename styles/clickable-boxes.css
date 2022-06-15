@@ -37,68 +37,68 @@
     width: 13.4%;
     height: 4.4%;
     top: 18.8%;
-    left: 16.8%;
+    left: 32.8%;
 } 
 
 #revisao_historias {
     width: 13.8%;
     height: 4.4%;
-    top: 31%;
-    left: 16.7%;
+    top: 29%;
+    left: 32%;
 }
 
 #definir_ferramentas {
     width: 10.7%;
     height: 7.4%;
-    top: 47.9%;
-    left: 12.2%;
+    top: 47.5%;
+    left: 52%;
 }
 
 #elaboracao_backlog {
     width: 10.5%;
     height: 4.4%;
-    top: 48.0%;
-    left: 23.8%;
+    top: 48.5%;
+    left: 30%;
 }
 #planejar_sprint {
     width: 12.1%;
     height: 2.5%;
-    top: 12.0%;
-    left: 69.8%;
+    top: 11.5%;
+    left: 61.5%;
 }
 #executar_atividades {
-    width: 15%;
+    width: 14%;
     height: 4.4%;
     top: 23.6%;
-    left: 68.3%;
+    left: 61%;
 }
 #reuniao {
     width: 11.8%;
     height: 4.4%;
     top: 24.0%;
-    left: 85.4%;
+    left: 77%;
 }
 #revisao_sprint {
     width: 14.4%;
     height: 4.4%;
     top: 38%;
-    left: 68.6%;
+    left: 61%;
 }
 #realizar_retrospectiva {
-    width: 15.7%;
+    width: 15%;
     height: 4.4%;
-    top: 65%;
-    left: 68.0%;
+    top: 73.3%;
+    left: 61.0%;
 }
 #verificar_product_backlog {
-    width: 15.6%;
+    width: 15%;
     height: 4.4%;
-    top: 65.0%;
-    left: 38.9%;
+    top: 73.3%;
+    left: 35%;
 }
 #verificar_historias {
     width: 16.7%;
     height: 4.4%;
-    top: 77%;
-    left: 15.2%;
+    top: 80%;
+    left: 13.5%;
 }
