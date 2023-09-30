@@ -8,8 +8,8 @@
 .clickable {
     position: absolute;
     display: block;
-	/*background-color: red;*/
-	/*opacity:  0.2;*/
+    /*background-color: red;*/
+    /*opacity:  0.2;*/
 }
 
 .round {
@@ -33,72 +33,162 @@
     transition: background-color 0.3s;
 }
 
-#captacao {
-    width: 13.4%;
-    height: 4.4%;
-    top: 18.8%;
-    left: 32.8%;
-} 
-
-#revisao_historias {
-    width: 13.8%;
-    height: 4.4%;
-    top: 29%;
-    left: 32%;
+#elencar_necessidades {
+    width: 10.4%;
+    height: 4%;
+    top: 16.9%;
+    left: 16.9%;
 }
 
-#definir_ferramentas {
-    width: 10.7%;
-    height: 7.4%;
-    top: 47.5%;
-    left: 52%;
+#criar_product_backlog {
+    width: 12.5%;
+    height: 6%;
+    top: 26%;
+    left: 30.5%;
 }
 
-#elaboracao_backlog {
-    width: 10.5%;
-    height: 4.4%;
-    top: 48.5%;
-    left: 30%;
-}
-#planejar_sprint {
-    width: 12.1%;
-    height: 2.5%;
-    top: 11.5%;
-    left: 61.5%;
-}
-#executar_atividades {
-    width: 14%;
-    height: 4.4%;
-    top: 23.6%;
-    left: 61%;
-}
-#reuniao {
+#atualizar_product_backlog {
     width: 11.8%;
-    height: 4.4%;
-    top: 24.0%;
-    left: 77%;
+    height: 5.74%;
+    top: 31.45%;
+    left: 5.8%;
 }
+
+#definir_ferramentas_metodos_sprint {
+    width: 8.2%;
+    height: 5.7%;
+    top: 41%;
+    left: 45.4%;
+}
+
+#criar_documentacao {
+    width: 8.8%;
+    height: 2.2%;
+    top: 43%;
+    left: 58%;
+}
+
+#planejar_sprint {
+    width: 6.9%;
+    height: 3.5%;
+    top: 33.6%;
+    left: 67.4%;
+}
+
+#executar_atividades_sprint {
+    width: 8%;
+    height: 5.2%;
+    top: 32.6%;
+    left: 85.4%;
+}
+
+#realizar_reuniao_periodica {
+    width: 6.5%;
+    height: 6.7%;
+    top: 16.5%;
+    left: 86.15%;
+}
+
 #revisao_sprint {
-    width: 14.4%;
-    height: 4.4%;
-    top: 38%;
-    left: 61%;
+    width: 7%;
+    height: 2.8%;
+    top: 46.9%;
+    left: 86%;
 }
-#realizar_retrospectiva {
-    width: 15%;
-    height: 4.4%;
-    top: 73.3%;
-    left: 61.0%;
+
+#retrospectiva_sprint {
+    width: 8.8%;
+    height: 3.2%;
+    top: 65.1%;
+    left: 78.65%;
 }
-#verificar_product_backlog {
-    width: 15%;
-    height: 4.4%;
-    top: 73.3%;
-    left: 35%;
+
+#atualizar_documentacao {
+    width: 11.1%;
+    height: 3.5%;
+    top: 65%;
+    left: 55.1%;
 }
-#verificar_historias {
-    width: 16.7%;
-    height: 4.4%;
-    top: 80%;
-    left: 13.5%;
+
+#conferir_novas_necessidades {
+    width: 7.9%;
+    height: 4.8%;
+    top: 51.3%;
+    left: 15.5%;
+}
+
+#conferir_produto_finalizado {
+    width: 7.9%;
+    height: 4.82%;
+    top: 70.6%;
+    left: 15.5%;
+}
+
+#product_backlog1{
+    width: 7.5%;
+    height: 2.3%;
+    top: 20.9%;
+    left: 47%;
+}
+
+#product_backlog2{
+    width: 6.1%;
+    height: 2.3%;
+    top: 39.7%;
+    left: 72%;
+}
+
+#product_backlog3{
+    width: 8.6%;
+    height: 2.7%;
+    top: 74.7%;
+    left: 84.2%;
+}
+
+#product_backlog4{
+    width: 6.6%;
+    height: 2.3%;
+    top: 66.6%;
+    left: 10%;
+}
+
+#product_backlog5{
+    width: 6.7%;
+    height: 2.2%;
+    top: 84.7%;
+    left: 9%;
+}
+
+#product_backlog6{
+    width: 6.7%;
+    height: 2.2%;
+    top: 39.5%;
+    left: 3.1%;
+}
+
+#sprint_backlog{
+    width: 5.15%;
+    height: 3.5%;
+    top: 26.5%;
+    left: 78.35%;
+}
+
+#relatorio_sprint{
+    width: 6.6%;
+    height: 3.5%;
+    top: 51.8%;
+    left: 73%;
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+btn:hover {
+    background-color: RoyalBlue;
 }

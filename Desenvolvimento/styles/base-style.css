@@ -2,18 +2,19 @@ html {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-*,*:before,*:after {
+*, *:before, *:after {
     box-sizing: inherit;
 }
 
-body,h1,h2,h3,h4,h5,h6,p,ol,ul {
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
 }
+
 
 img {
     max-width: 100%;
@@ -21,23 +22,313 @@ img {
 }
 
 a {
-	color: royalblue;
-	text-decoration: none;
+    color: royalblue;
+    text-decoration: none;
 }
+
+
 
 a:hover {
-	opacity: .7;
+    opacity: .7;
 }
 
-.subir {
-	background-color: white;
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
-	margin: 20px;
-	padding: 10px;
+.ul-materiais li{
+    padding: 10px 0 0 0;
+}
 
+.body_escuro{
+    background: #444654;
+}
+
+.body_normal h1,
+.body_normal p,
+.body_normal h2,
+.body_normal h3,
+.body_normal li {
+  color: black;
+}
+
+.body_escuro h1,
+.body_escuro p,
+.body_escuro h2,
+.body_escuro h3,
+.body_escuro li {
+  color: white;
+}
+
+.body_escuro section{
+    padding: 25px;
+	border-color: white;
+	border-style: solid;
 	border-width: 1px;
 	border-radius: 8px;
 	box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+
+	margin-bottom: 1.5rem;
+}
+
+.subir {
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 20px;
+    padding: 10px;
+
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+}
+
+.costumizar {
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    margin: 20px;
+    padding: 10px;
+
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+}
+
+.costumizar:hover {
+    cursor: pointer;
+}
+
+.escolhas {
+    background-color: white;
+    position: fixed;
+    bottom: 7%;
+    left: -50%;
+    margin: 20px;
+    padding: 10px;
+
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+}
+
+.escolhas_animacao_ir {
+    background-color: white;
+    position: fixed;
+    bottom: 7%;
+    left: 0%;
+    margin: 20px;
+    padding: 10px;
+
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    animation: go 1s;
+}
+
+.escolhas_animacao_voltar {
+    background-color: white;
+    position: fixed;
+    bottom: 7%;
+    left: -50%;
+    margin: 20px;
+    padding: 10px;
+
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    animation: go-back 1s;
+}
+
+.mostrar_atividade {
+    background-color: white;
+    position: fixed;
+    bottom: 7%;
+    right: -150%;
+    margin: 20px;
+    padding: 10px;
+
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+}
+
+.mostrar_atividade_vir {
+    background-color: white;
+    position: fixed;
+    bottom: 7%;
+    right: 0%;
+    margin: 20px;
+    padding: 10px;
+
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    animation: vir 1s;
+}
+
+.mostrar_atividade_voltar {
+    background-color: white;
+    position: fixed;
+    bottom: 7%;
+    right: -150%;
+    margin: 20px;
+    padding: 10px;
+
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    animation: voltar 1s;
+}
+
+.escolhas_escolher {
+    background-color: white;
+    position: fixed;
+    bottom: 7%;
+    left: 0%;
+    margin: 20px;
+    padding: 10px;
+
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+}
+
+.select {
+    width: 100%;
+    height: 35px;
+}
+
+.button {
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgba(149, 157, 165);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+hr.style-six {
+    padding: 0;
+    border: none;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    color: #333;
+    text-align: center;
+}
+
+hr.style-six:after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: -2.1em;
+    font-size: 1.5em;
+    padding: 19px 1.75em;
+    background: #fff url(image/cartoon_1.png) no-repeat scroll center;
+    background-size: 90px 90px;
+    height: 50px;
+}
+
+hr.style-three {
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr.style-three:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+@keyframes vir {
+    0% {
+        right: -150%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
+@keyframes voltar {
+    0% {
+        right: 0%;
+    }
+
+    100% {
+        right: -150%;
+    }
+}
+
+@keyframes go {
+    0% {
+        left: -50%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes go-back {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .escolhas {
+        bottom: 15%;
+    }
+
+    .escolhas_escolher {
+        bottom: 15%;
+    }
+
+    .escolhas_animacao_ir {
+        bottom: 15%;
+    }
+
+    .escolhas_animacao_voltar {
+        bottom: 15%;
+    }
+    
+    section {
+       overflow: hidden;
+    }
+
+    .button{
+        height: 20px;
+        padding: 0 10px 10px 10px;
+        font-size: 10px;
+    }
+    
+
 }
