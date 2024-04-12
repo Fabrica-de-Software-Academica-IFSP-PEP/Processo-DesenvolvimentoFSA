@@ -7,7 +7,7 @@ function costumizar() {
         div_escolher.classList.add("escolhas_animacao_ir");
         bot_costumize.innerHTML = "Salvar";
     } else {
-        bot_costumize.innerHTML = "Costumize";
+        bot_costumize.innerHTML = "Personalizar";
         div_escolher.classList.remove("escolhas_animacao_ir");
         div_escolher.classList.add("escolhas_animacao_voltar");
     }
