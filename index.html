@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,1024 +8,1309 @@
     <link rel="stylesheet" href="./Desenvolvimento/styles/clickable-boxes.css" />
     <link rel="stylesheet" href="./Desenvolvimento/styles/topics.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
     <script src="./Desenvolvimento/scripts/costumizar.js"></script>
     <script src="./Desenvolvimento/scripts/click_effect.js"></script>
-    <link rel="shortcut icon" href="./Desenvolvimento/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./Desenvolvimento/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./Desenvolvimento/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./Desenvolvimento/favicon.ico" type="image/x-icon" />
     <title>Processo de Desenvolvimento FSA</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="escolhas col" id="escolher">
-        Selecione
-        <select style="margin-top: 10px" id="select_mao" class="select" aria-label="opções" onchange="mudou()">
-            <option value="1">👆</option>
-            <option value="2">👆🏿</option>
-            <option value="3">👆🏾</option>
-            <option value="4">👆🏽</option>
-            <option value="5">👆🏼</option>
-            <option value="6">👆🏻</option>
-        </select>
-        <hr class="style-six" />
-        Atividade
+      Selecione
+      <select style="margin-top: 10px" id="select_mao" class="select" aria-label="opções" onchange="mudou()">
+        <option value="1">👆</option>
+        <option value="2">👆🏿</option>
+        <option value="3">👆🏾</option>
+        <option value="4">👆🏽</option>
+        <option value="5">👆🏼</option>
+        <option value="6">👆🏻</option>
+      </select>
+      <hr class="style-six" />
+      Atividade
 
-        <br />
-        <input id="input_mostrar" onclick="mostrar()" style="margin-top: 10px" type="checkbox"> Mostrar
+      <br />
+      <input id="input_mostrar" onclick="mostrar()" style="margin-top: 10px" type="checkbox" />
+      Mostrar
     </div>
-    <div onclick="costumizar()" class="costumizar" id="costumize">
-        Personalizar
-    </div>
-    <div class="mostrar_atividade" id="mostrar_atividade">
-        Atividade
-    </div>
+    <div onclick="costumizar()" class="costumizar" id="costumize">Personalizar</div>
+    <div class="mostrar_atividade" id="mostrar_atividade">Atividade</div>
 
     <a href="#diagrama_scrum" class="subir bot_voltar" id="voltar">👆️ Diagrama</a>
     <h1>Processo de Desenvolvimento de Software da FSA - IFSP/PEP</h1>
     <div id="diagrama_scrum">
-        <a href="#topico_elencar_necessidades" id="elencar_necessidades" class="clickable round green"></a>
-        <a href="#topico_criar_product_backlog" id="criar_product_backlog" class="clickable round green"></a>
-        <a href="#topico_atualizar_product_backlog" id="atualizar_product_backlog" class="clickable round green"></a>
-        <a href="#topico_definir_ferramentas_metodos_sprint" id="definir_ferramentas_metodos_sprint"
-            class="clickable round green"></a>
-        <a href="#topico_criar_documentacao" id="criar_documentacao" class="clickable round green"></a>
-        <a href="#topico_planejar_sprint" id="planejar_sprint" class="clickable round green"></a>
-        <a href="#topico_executar_atividades_sprint" id="executar_atividades_sprint" class="clickable round green"></a>
-        <a href="#topico_realizar_reuniao_periodica" id="realizar_reuniao_periodica" class="clickable round green"></a>
-        <a href="#topico_revisao_sprint" id="revisao_sprint" class="clickable round green"></a>
-        <a href="#topico_retrospectiva_sprint" id="retrospectiva_sprint" class="clickable round green"></a>
-        <a href="#topico_atualizar_documentacao" id="atualizar_documentacao" class="clickable round green"></a>
-        <a href="#topico_conferir_novas_necessidades" id="conferir_novas_necessidades"
-            class="clickable round green"></a>
-        <a href="#topico_conferir_produto_finalizado" id="conferir_produto_finalizado"
-            class="clickable round green"></a>
-        <a href="#topico_anexo1" id="product_backlog1" class="clickable round green"></a>
-        <a href="#topico_anexo1" id="product_backlog2" class="clickable round green"></a>
-        <a href="#topico_anexo1" id="product_backlog3" class="clickable round green"></a>
-        <a href="#topico_anexo1" id="product_backlog4" class="clickable round green"></a>
-        <a href="#topico_anexo1" id="product_backlog5" class="clickable round green"></a>
-        <a href="#topico_anexo1" id="product_backlog6" class="clickable round green"></a>
-        <a href="#topico_anexo2" id="sprint_backlog" class="clickable round green"></a>
-        <a href="#topico_anexo3" id="relatorio_sprint" class="clickable round green"></a>
-        <a href="#topico_anexo3" id="relatorio_sprint2" class="clickable round green"></a>
-        <img src="./Desenvolvimento/images/DiagramaDoProcessoDeDesenvolvimento.png" alt="Diagrama do SCRUM" />
+      <a href="#topico_elencar_necessidades" id="elencar_necessidades" class="clickable round green"></a>
+      <a href="#topico_criar_product_backlog" id="criar_product_backlog" class="clickable round green"></a>
+      <a href="#topico_atualizar_product_backlog" id="atualizar_product_backlog" class="clickable round green"></a>
+      <a href="#topico_definir_ferramentas_metodos_sprint" id="definir_ferramentas_metodos_sprint" class="clickable round green"></a>
+      <a href="#topico_criar_documentacao" id="criar_documentacao" class="clickable round green"></a>
+      <a href="#topico_planejar_sprint" id="planejar_sprint" class="clickable round green"></a>
+      <a href="#topico_executar_atividades_sprint" id="executar_atividades_sprint" class="clickable round green"></a>
+      <a href="#topico_realizar_reuniao_periodica" id="realizar_reuniao_periodica" class="clickable round green"></a>
+      <a href="#topico_revisao_sprint" id="revisao_sprint" class="clickable round green"></a>
+      <a href="#topico_retrospectiva_sprint" id="retrospectiva_sprint" class="clickable round green"></a>
+      <a href="#topico_atualizar_documentacao" id="atualizar_documentacao" class="clickable round green"></a>
+      <a href="#topico_conferir_novas_necessidades" id="conferir_novas_necessidades" class="clickable round green"></a>
+      <a href="#topico_conferir_produto_finalizado" id="conferir_produto_finalizado" class="clickable round green"></a>
+      <a href="#topico_anexo1" id="product_backlog1" class="clickable round green"></a>
+      <a href="#topico_anexo1" id="product_backlog2" class="clickable round green"></a>
+      <a href="#topico_anexo1" id="product_backlog3" class="clickable round green"></a>
+      <a href="#topico_anexo1" id="product_backlog4" class="clickable round green"></a>
+      <a href="#topico_anexo1" id="product_backlog5" class="clickable round green"></a>
+      <a href="#topico_anexo1" id="product_backlog6" class="clickable round green"></a>
+      <a href="#topico_anexo2" id="sprint_backlog" class="clickable round green"></a>
+      <a href="#topico_anexo3" id="relatorio_sprint" class="clickable round green"></a>
+      <a href="#topico_anexo3" id="relatorio_sprint2" class="clickable round green"></a>
+      <img src="./Desenvolvimento/images/DiagramaDoProcessoDeDesenvolvimento.png" alt="Diagrama do SCRUM" />
     </div>
     <div class="topics">
-        <section class="topic" id="topico_elencar_necessidades">
-            <h1>A1. Elencar as necessidades e expectativas</h1>
-            <hr />
-            <h2>Descrição</h2>
-            <p>
-                O Product Owner irá levantar as necessidades, caso necessário, um membro do Scrum Team pode auxiliar o
-                Product Owner a conduzir a escrita das necessidades.
-            </p>
-            <h2>Responsáveis e responsabilidades</h2>
-            <p>Product Owner</p>
-            <h2>Entrada</h2>
-            <ul>
-                <li>Necessidades e expectativas dos stakeholders</li>
-            </ul>
-            <h2>Saída</h2>
-            <ul>
-                <li>Requisitos</li>
-            </ul>
-            <h2>Tarefas</h2>
-            <ul>
-                <li><strong>A1.1</strong> Efetuar o levantamento das necessidades e expectativas utilizando as técnicas
-                    escolhidas;</li>
-                <li><strong>A1.2</strong> Analisar a viabilidade das necessidades e expectativas que foram levantadas;
-                </li>
-                <li><strong>A1.3</strong> Elaborar os requisitos para uso posterior;</li>
-            </ul>
-            <h2>Recursos</h2>
-            <ul>
-                <li>Entrevistas;</li>
-                <li>Formulários ou questionários;</li>
-                <li>Ferramentas de Edição de Texto</li>
-                <ul>
-                    <li>Microsoft Word;</li>
-                    <li>LibreOffice Writer;</li>
-                    <li>Google Docs;</li>
-                </ul>
-                <li>Brainstorming;</li>
-            </ul>
-            <h2>Materiais de apoio/referências</h2>
-            <p>
-                Tutorial do Google Form <a href="https://www.youtube.com/watch?v=mbrAY-bRUDE">Vídeo</a>
-            </p>
-            <br>
-            <p>
-                MORAES, Janaína B. D. <strong>Técnicas para o levantamento de requisitos.</strong> 2009. Disponível em:
-                <a
-                    href="https://www.devmedia.com.br/tecnicas-para-levantamento-de-requisitos/9151">https://www.devmedia.com.br/tecnicas-para-levantamento-de-requisitos/9151</a>
-                Acesso em: 09 de mar. de 2023.
-            </p>
-            <br>
-            <p>
-                RETRAINING. <strong>Técnicas de elicitação de requisitos em entrevista.</strong> [S. l.], 2020.
-                Disponível em:
-                <a
-                    href="https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-entrevista">
-                    https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-entrevista\
-                </a>.
-                Acesso em: 10 mar. 2023.
-            </p>
-            <br>
-            <p>
-                RETRAINING. Brainstorming. [S. l.], 2020. Disponível em:
-                <a
-                    href="https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-brainstorming">
-                    https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-brainstorming
-                </a>.
-                Acesso em: 10 mar. 2023.
-            </p>
-        </section>
+      <section class="topic" id="topico_elencar_necessidades">
+        <h1>A1. Elencar as necessidades e expectativas</h1>
+        <hr />
 
+        <h2>Descrição</h2>
+        <p>
+          O Product Owner irá levantar as necessidades, caso necessário, um membro do Scrum Team pode auxiliar o Product Owner a conduzir a escrita das
+          necessidades.
+        </p>
 
-        <section class="topic" id="topico_criar_product_backlog">
-            <h1>A2. Criar Product Backlog</h1>
-            <hr />
-            <h2>Descrição</h2>
-            <p>
-                O Product Owner, a partir dos requisitos coletados, irá transformar os requisitos em histórias de
-                usuário para ser feita a introdução no product backlog. O Product Owner pode ser auxiliado pelos membros
-                do Scrum Team durante esta ativide.
-            </p>
-            <h2>Responsáveis e responsabilidades</h2>
-            <p>Product Owner</p>
-            <h2>Entrada</h2>
-            <ul>
-                <li>Requisitos</li>
-            </ul>
-            <h2>Saída</h2>
-            <ul>
-                <li>Product Backlog</li>
-            </ul>
-            <h2>Tarefas</h2>
-            <ul>
-                <li><strong>A2.1</strong> Transformar os requisitos coletados em história de usuário;</li>
-                <li><strong>A2.2</strong> Priorizar os itens do Product Backlog;</li>
-                <li><strong>A2.3</strong> Estimar o esforço necessário para cada item do Product Backlog;</li>
-                <li><strong>A2.4</strong> Elaborar o Product Backlog de acordo com o <a href="#topico_anexo1">ANEXO I</a>;</li>
-            </ul>
-            <h2>Recursos</h2>
-            <ul>
-                <li>Ferramentas de Edição de Texto</li>
-                <ul>
-                    <li>Microsoft Word;</li>
-                    <li>LibreOffice Writer;</li>
-                    <li>Google Docs;</li>
-                </ul>
-                <li>Técnicas para estimar o esforço</li>
-                <ul>
-                    <li>Planning Poker;</li>
-                    <li>Pomodoro;</li>
-                </ul>
-                <li>Ferramenta para acompanhamento do projeto</li>
-                <ul>
-                    <li>Trello;</li>
-                </ul>
-            </ul>
-            <h2>Materiais de apoio/referências</h2>
-            <p>
-                Tutorial de uso do Trello: <a href="https://trello.com/tour">https://trello.com/tour</a>
-            </p>
-            <br>
-            <p>
-                SCHWABER, Ken; SUTHERLAND, Jeff. The Scrum Guide. 2019. Scrum.org. Disponível em:
-                <a href="https://www.scrum.org/resources/scrum-guide">https://www.scrum.org/resources/scrum-guide</a>.
-                Acesso em: 24 mar. 2023.
-            </p>
-            <br>
-            <p>
-                CAMARGO, Robson. Quer estimar melhor seu projeto? Invista na técnica Planning Poker. Blog do Robson
-                Camargo, 17 mar. 2021. Disponível em:
-                <a
-                    href="https://robsoncamargo.com.br/blog/Quer-estimar-melhor-seu-projeto-Invista-na-tecnica-Planning-Poker">https://robsoncamargo.com.br/blog/Quer-estimar-melhor-seu-projeto-Invista-na-tecnica-Planning-Poker</a>.
-                Acesso em: 24 mar. 2023.
-            </p>
-            <br>
-            <p>
-                XP EDUCACAO. Ferramentas Scrum: Conheça as principais para a gestão de projetos ágeis. Blog XP Educacao,
-                20 ago. 2020. Disponível em:
-                <a
-                    href="https://blog.xpeducacao.com.br/ferramentas-scrum/">https://blog.xpeducacao.com.br/ferramentas-scrum/</a>.
-                Acesso em: 24 mar. 2023.
-            </p>
-            <br>
-            <p>
-                JÚNIOR, Orlando. Aprenda o que fazer para estimar o esforço de desenvolvimento de Software. Disponível
-                em:
-                <a
-                    href="https://blog.cronapp.io/esforco-desenvolvimento-de-software/">https://blog.cronapp.io/esforco-desenvolvimento-de-software/</a>.
-                Acesso em: 12 mai. 2023.
-            </p>
-        </section>
+        <h2>Responsáveis e responsabilidades</h2>
+        <p>Product Owner</p>
 
+        <h2>Entrada e Saída</h2>
+        <h3>Entrada:</h3>
 
-        <section class="topic" id="topico_atualizar_product_backlog">
-            <h1>A3. Atualizar o Product Backlog</h1>
-            <hr />
-            <h2>Descrição</h2>
-            <p>
-                Caso ocorra um novo levantamento, é responsabilidade do Product Owner alterar a documentação do Product
-                Backlog com o objetivo de mantê-lo atualizado antes do planejamento da próxima Sprint. O Product Owner pode ser auxiliado pelos membros
-                do Scrum Team durante esta ativide.
-            </p>
-            <h2>Responsáveis e responsabilidades</h2>
-            <p>Product Owner</p>
-            <h2>Entrada</h2>
-            <ul>
-                <li>Requisitos e Product Backlog</li>
-            </ul>
-            <h2>Saída</h2>
-            <ul>
-                <li>Product Backlog Atualizado</li>
-            </ul>
-            <h2>Tarefas</h2>
-            <ul>
-                <li><strong>A3.1</strong> Reavaliar os atuais itens não realizados;</li>
-                <li><strong>A3.2</strong> Excluir atuais itens do Product Backlog caso seja necessário;</li>
-                <li><strong>A3.3</strong> Transformar os novos requisitos coletados em história de usuário;</li>
-                <li><strong>A3.5</strong> Priorizar os novos itens do Product Backlog;</li>
-                <li><strong>A3.6</strong> Analisar o impacto dos novos itens do Product Backlog;</li>
-                <li><strong>A3.7</strong> Estimar o esforço necessário para cada novo item do Product Backlog;</li>
-            </ul>
-            <h2>Recursos</h2>
-            <ul>
-                <li>Ferramentas de Edição de Texto</li>
-                <ul>
-                    <li>Microsoft Word;</li>
-                    <li>LibreOffice Writer;</li>
-                    <li>Google Docs;</li>
-                </ul>
-                <li>Técnicas para estimar o esforço</li>
-                <ul>
-                    <li>Planning Poker;</li>
-                    <li>Pomodoro;</li>
-                </ul>
-                <li>Ferramenta para acompanhamento do projeto</li>
-                <ul>
-                    <li>Trello;</li>
-                </ul>
-            </ul>
-            <h2>Materiais de apoio/referências</h2>
-            <br>
-            <p>
-                Tutorial de uso do Trello: <a href="https://trello.com/tour">https://trello.com/tour</a>
-            </p>
-            <br>
-            <p>
-                PRODUCT Backlog: O que é e como criar ?: Como manter o Product Backlog saudável?. Brasil-SP, 24 mar.
-                2023. Disponível em:
-                <a
-                    href="https://www.laboneconsultoria.com.br/product-backlog/">https://www.laboneconsultoria.com.br/product-backlog/</a>.
-                Acesso em: 24 mar. 2023.
-            </p>
-            <br>
-            <p>
-                REFINAMENTO e Atualização: Por que Aplicar?. [S. l.], 24 mar. 2023. Disponível em:
-                <a
-                    href="https://pim-go.com/sprints-do-scrum/refinamento-e-atualizacao/">https://pim-go.com/sprints-do-scrum/refinamento-e-atualizacao/</a>.
-                Acesso em: 24 mar. 2023.
-            </p>
-            <br>
-        </section>
+        <ul>
+          <li>Necessidades e expectativas dos stakeholders.</li>
+        </ul>
+        <h3>Saída:</h3>
 
+        <ul>
+          <li>Requisitos,</li>
+          <li>Escopo do sistema,</li>
+          <li>Protótipo do Sistema,</li>
+          <li>Histórias de usuário.</li>
+        </ul>
 
-        <section class="topic" id="topico_definir_ferramentas_metodos_sprint">
-            <h1>A4. Definir ferramentas, métodos e duração da Sprint</h1>
-            <hr />
-            <h2>Descrição</h2>
-            <p>
-                O Scrum Team deverá efetuar uma reunião, onde será planejado como será o trabalho até a conclusão do
-                produto, como a definição das ferramentas utilizadas e a duração das Sprints. O tempo de uma Sprint pode
-                variar de 2 até 4 semanas.
-            </p>
-            <h2>Responsáveis e responsabilidades</h2>
-            <p>Scrum Team</p>
-            <h2>Entrada</h2>
-            <ul>
-                <li>Requisitos</li>
-            </ul>
-            <h2>Saída</h2>
-            <ul>
-                <li>Lista de ferramentas, métodos de teste e metodologia das Sprints</li>
-            </ul>
-            <h2>Tarefas</h2>
-            <ul>
-                <li><strong>A4.1</strong> Encontrar as possíveis ferramentas do mercado e escolher a que melhor se
-                    adequa aos requisitos do sistema;</li>
-                <li><strong>A4.2</strong> Definir o melhor método para teste do sistema, que esteja dentro dos
-                    requisitos necessários;</li>
-                <li><strong>A4.3</strong> Definir o melhor método de execução das Sprints (reuniões) e definir o seu
-                    tempo de duração;</li>
-            </ul>
-            <h2>Recursos</h2>
-            <ul>
-                <li>Ferramentas de Edição de Texto</li>
-                <ul>
-                    <li>Microsoft Word;</li>
-                    <li>LibreOffice Writer;</li>
-                    <li>Google Docs;</li>
-                </ul>
-                <li>(IDEs) Ambientes de Desenvolvimento Integrado;</li>
-                <ul>
-                    <li>Apache Netbeans;</li>
-                    <li>Visual Studio Code e Visual Studio;</li>
-                    <li>Android Studio;</li>
-                    <li>IntelliJ IDEA;</li>
-                </ul>
-                <li>(SGBDs) Sistemas Gerenciadores de Banco de Dados</li>
-                <ul>
-                    <li>MySQL Workbench</li>
-                    <li>MongoDB;</li>
-                    <li>Redis;</li>
-                    <li>Cassandra;</li>
-                    <li>Postgres;</li>
-                </ul>
-                <li>Brainstorming;</li>
-            </ul>
-            <h2>Materiais de apoio/Referências</h2>
-            <p>
-                Netbeans. <a href="https://netbeans.apache.org/">https://netbeans.apache.org/</a>
-            </p>
-            <br>
-            <p>
-                Visual Studio Code. <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
-            </p>
-            <br>
-            <p>
-                Android Studio. <a href="https://developer.android.com/studio?hl=pt-br">https://developer.android.com/studio</a>
-            </p>
-            <br>
-            <p>
-                IntelliJ IDEA. <a href="https://www.jetbrains.com/pt-br/idea/">https://www.jetbrains.com/pt-br/idea/</a>
-            </p>
-            <br>
-            <p>
-                MySQL Workbench. <a href="https://www.mysql.com/products/workbench/">https://www.mysql.com/products/workbench/</a>
-            </p>
-            <br>
-            <p>
-                MongoDB. <a href="https://www.mongodb.com/pt-br">https://www.mongodb.com/pt-br</a>
-            </p>
-            <br>
-            <p>
-                Redis. <a href="https://redis.io/">https://redis.io/</a>
-            </p>
-            <br>
-            <p>
-                Cassandra. <a href="http://cassandra.apache.org/">http://cassandra.apache.org/</a>
-            </p>
-            <br>
-            <p>
-                Postgres. <a href="https://www.postgresql.org/">https://www.postgresql.org/</a>
-            </p>
-            <br>
-            <p>
-                DUARTE, Luiz. As cerimônias do Scrum. Escritório de Projetos, 2022. Disponível em:
-                <a
-                    href="https://escritoriodeprojetos.com.br/cerimonias-do-scrum">https://escritoriodeprojetos.com.br/cerimonias-do-scrum</a>.
-            </p>
-        </section>
+        <h2>Tarefas</h2>
 
+        <ul>
+          <li>
+            <strong>A1.1</strong>
+            Efetuar o levantamento das necessidades e expectativas utilizando as técnicas escolhidas,
+          </li>
+          <li>
+            <strong>A1.2</strong>
+            Analisar a viabilidade das necessidades e expectativas que foram levantadas,
+          </li>
+          <li>
+            <strong>A1.3</strong>
+            Elaborar os requisitos para uso posterior,
+          </li>
+          <li>
+            <strong>A1.4</strong>
+            Escrever o escopo do sistema,
+          </li>
+          <li>
+            <strong>A1.5</strong>
+            Criar o protótipo do sistema.
+          </li>
+        </ul>
 
-        <section class="topic" id="topico_criar_documentacao">
-            <h1>A5. Criar documentação</h1>
-            <hr />
-            <h2>Descrição</h2>
-            <p>
-                O Scrum Team deverá efetuar uma reunião, onde será definida a documentação do projeto, que contém o
-                escopo, requisitos funcionais, requisitos não funcionais, protótipo, etc.
-            </p>
-            <h2>Responsáveis e responsabilidades</h2>
-            <p>Scrum Team</p>
-            <h2>Entrada</h2>
-            <ul>
-                <li>Lista de ferramentas, métodos de teste e metodologia das Sprints</li>
-            </ul>
-            <h2>Saída</h2>
-            <ul>
-                <li>Documentação;</li>
-            </ul>
-            <h2>Tarefas</h2>
-            <ul>
-                <li><strong>A5.1</strong> Elaborar o escopo do produto;</li>
-                <li><strong>A5.2</strong> Definir os requisitos funcionais e não funcionais;</li>
-                <li><strong>A5.3</strong> Anexar a arquitetura lógica e arquitetura de implantação do sistema;</li>
-                <li><strong>A5.4</strong> Anexar o modelo do banco de dados;</li>
-                <li><strong>A5.5</strong> Anexar o protótipo do produto;</li>
-                <li><strong>A5.6</strong> Anexar documentos adicionais se necessário;</li>
-            </ul>
-            <h2>Recursos</h2>
-            <ul>
-                <li>Ferramentas de Edição de Texto</li>
-                <ul>
-                    <li>Microsoft Word;</li>
-                    <li>LibreOffice Writer;</li>
-                    <li>Google Docs;</li>
-                </ul>
-                <li>Ferramentas para modelagem de bancos de dados</li>
-                <ul>
-                    <li>MySQL Workbench</li>
-                </ul>
-                <li>Ferramentas de criação de protótipos</li>
-                <ul>
-                    <li>Pencil;</li>
-                    <li>Figma;</li>
-                </ul>
-                <li>Astah Community;</li>
-                <li>Brainstorming;</li>
-            </ul>
-            <h2>Materiais de apoio/Referências</h2>
-            <p>Pencil. <a href="https://pencil.evolus.vn/">https://pencil.evolus.vn/</a>.</p>
-            <br>
-            <p>Figma. <a href="https://www.figma.com/">https://www.figma.com/</a>.</p>
-            <br>
-            <p>Astah Community. <a href="https://astah.net/products/astah-community/">https://astah.net/products/astah-community/</a>.</p>
-            <br>
-            <p><a>MySQL Workbench. <a href="https://www.mysql.com/products/workbench/">https://www.mysql.com/products/workbench/</a>.</p>
-            <br>
-            <p>
-                HANSON, Kevin. How to Write Documentation For Your Next Software Development Project. [S. l.], 7 abr.
-                2021. Disponível em:
-                <a
-                    href="https://www.freecodecamp.org/news/how-to-write-documentation-for-your-next-software-development-project/">https://www.freecodecamp.org/news/how-to-write-documentation-for-your-next-software-development-project/</a>.
-                Acesso em: 18 set. 2023.
-            </p>
-            <br>
-            <p>
-                SOMASUNDARAM, Pradeepa. 20 Best Software Documentation Tools of 2023. [S. l.], 25 jul. 2023. Disponível
-                em:
-                <a
-                    href="https://document360.com/blog/software-documentation-tools/">https://document360.com/blog/software-documentation-tools/</a>.
-                Acesso em: 19 set. 2023.
-            </p>
-        </section>
+        <h2>Recursos</h2>
+        <ul>
+          <li>Entrevistas,</li>
+          <li>Formulários ou questionários,</li>
+          <li>Ferramentas de Edição de Texto:</li>
+          <ul>
+            <li>
+              <a href="https://workspace.google.com/products/docs/">Google Docs,</a>
+            </li>
+            <li>
+              <a href="https://pt-br.libreoffice.org/">LibreOffice Writer,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-365/word?">Microsoft Word.</a>
+            </li>
+          </ul>
+          <li>Ferramentas de criação de protótipos:</li>
+          <ul>
+            <li><a href="https://www.figma.com/"> Figma, </a></li>
+            <li><a href="https://pencil.evolus.vn/"> Pencil.</a></li>
+          </ul>
+          <li>Brainstorming.</li>
+        </ul>
 
+        <h2>Materiais de apoio/referências</h2>
+        <p>
+          CAMPOS, Vladimir. <strong>Como usar o Google Forms (2020)</strong>. Youtube, 2020. 16min19s. Disponível em
+          <a href="https://www.youtube.com/watch?v=mbrAY-bRUDE"> https://www.youtube.com/watch?v=mbrAY-bRUDE </a>. Acesso em: 03 abr. 2024.
+        </p>
 
-        <section class="topic" id="topico_planejar_sprint_atual">
-            <h1>A6. Planejar Sprint Atual</h1>
-            <hr />
-            <h2>Descrição</h2>
-            <p>
-                O Scrum Team deverá efetuar reuniões de até no máximo 2 horas por semana, onde será planejado como 
-                será o trabalho e a divisão dos itens do Product Backlog para serem implementados durante a Sprint. 
-                O tempo de uma Sprint pode variar de 1 até 4 semanas.
-            </p>
-            <h2>Responsáveis e responsabilidades</h2>
-            <p>Scrum Team</p>
-            <h2>Entrada</h2>
-            <ul>
-                <li>Product Backlog e/ou Relatório da Sprint</li>
-            </ul>
-            <h2>Saída</h2>
-            <ul>
-                <li>Sprint Backlog e/ou Product Backlog Atualizado</li>
-            </ul>
-            <h2>Tarefas</h2>
-            <ul>
-                <li><strong>A6.1</strong> Elencar itens da última Sprint Backlog, caso não tenham sido feitos ou
-                    concluídos;</li>
-                <li><strong>A6.2</strong> Definir quais atividades serão feitas na sprint atual de acordo com o 
-                    relatório da última Sprint Backlog e o Product Backlog;</li>
-                <li><strong>A6.3</strong> Selecionar os itens do Product Backlog relevantes para o objetivo da Sprint.
-                </li>
-                <li><strong>A6.4</strong> Estimar os pontos de esforço das atividades escolhidas;</li>
-                <li><strong>A6.5</strong> Definir as atividades de cada membro da equipe durante a Sprint atual;</li>
-                <li><strong>A6.6</strong> Elaborar o Sprint Backlog de acordo com o <a href="#topico_anexo2">ANEXO
-                        II</a>;</li>
-            </ul>
-            <h2>Recursos</h2>
-            <ul>
-                <li>Ferramentas de Edição de Texto</li>
-                <ul>
-                    <li>Microsoft Word;</li>
-                    <li>LibreOffice Writer;</li>
-                    <li>Google Docs;</li>
-                </ul>
-                <li>Técnicas para estimar o esforço
-                    <ul>
-                        <li>Planning Poker;</li>
-                        <li>Pomodoro;</li>
-                    </ul>
-                </li>
-                <li>Ferramentas para acompanhamento do projeto</li>
-                <ul>
-                    <li>Github;</li>
-                    <li>Trello;</li>
-                </ul>
-            </ul>
-            <h2>Materiais de apoio/Referências</h2>
-            <p>
-                Tutorial de uso do Trello: <a href="https://trello.com/tour">https://trello.com/tour</a>
-            </p>
-            <br>
-            <p>
-                Tutorial de introdução do GitHub: <a href="https://docs.github.com/pt/get-started">https://docs.github.com/pt/get-started</a>
-            </p>
-            <br>
-            <p>
-                WEST, Dave. Planejamento do Sprint. [S. l.], [2018]. Disponível em: <a
-                    href="https://www.atlassian.com/br/agile/scrum/sprint-planning">https://www.atlassian.com/br/agile/scrum/sprint-planning</a>.
-                Acesso em: 10 mar. 2023.
-            </p>
-            <br>
-            <p>
-                CARVALHO, Técia. O que é Planning Poker? Aprenda seu funcionamento junto ao Scrum!. [S. l.], 8 nov.
-                2019. Disponível em: <a
-                    href="https://www.voitto.com.br/blog/artigo/planning-poker">https://www.voitto.com.br/blog/artigo/planning-poker</a>.
-                Acesso em: 10 mar. 2023.
-            </p>
-            <br>
-            <p>
-                JÚNIOR, Orlando. Aprenda o que fazer para estimar o esforço de desenvolvimento de Software. CronoApp,
-                2019. Disponível em: <a
-                    href="https://blog.cronapp.io/esforco-desenvolvimento-de-software/">https://blog.cronapp.io/esforco-desenvolvimento-de-software/</a>.
-                Acesso em: 12 mai. 2023.
-            </p>
-        </section>
+        <p>
+          MORAES, Janaína B. D.<strong> Técnicas para o levantamento de requisitos</strong>. 2009. Disponível em:
+          <a href="https://www.devmedia.com.br/tecnicas-para-levantamento-de-requisitos/9151">
+            https://www.devmedia.com.br/tecnicas-para-levantamento-de-requisitos/9151 </a
+          >. Acesso em: 09 de mar. de 2023.
+        </p>
 
+        <p>
+          RETRAINING.
+          <strong>Técnicas de elicitação de requisitos em entrevista</strong>. 2020. Disponível em:
+          <a
+            href="https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-entrevista"
+          >
+            https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-entrevista\ </a
+          >. Acesso em: 10 mar. 2023.
+        </p>
 
-        <section class="topic" id="topico_executar_atividades_sprint">
-            <h1>A7. Executar as atividades da Sprint</h1>
-            <hr />
-            <h2>Descrição</h2>
-            <p>
-                O Scrum Team deve realizar as tarefas que foram planejadas e priorizadas pelo time de desenvolvimento,
-                de acordo com os critérios definidos pelo Product Owner.
-            </p>
-            <h2>Responsáveis e responsabilidades</h2>
-            <p>Scrum Team</p>
-            <h2>Entrada</h2>
-            <ul>
-                <li>Sprint Backlog e Feedback da Sprint</li>
-            </ul>
-            <h2>Saída</h2>
-            <ul>
-                <li>Feedback da Sprint Atualizado e Incremento;</li>
-            </ul>
-            <h2>Tarefas</h2>
-            <ul>
-                <li><strong>A7.1</strong> Implementar as atividades da Sprint Backlog;</li>
-                <li><strong>A7.2</strong> Testar as atividades desenvolvidas;</li>
-                <li><strong>A7.3</strong> Coletar o feedback da sprint para abordá-lo na reunião periódica;</li>
-            </ul>
-            <h2>Recursos</h2>
-            <ul>
-                <li>Ferramentas de Edição de Texto</li>
-                <ul>
-                    <li>Microsoft Word;</li>
-                    <li>LibreOffice Writer;</li>
-                    <li>Google Docs;</li>
-                </ul>
-                <li>(IDEs) Ambientes de Desenvolvimento Integrado;</li>
-                <ul>
-                    <li>Apache Netbeans;</li>
-                    <li>Visual Studio Code e Visual Studio;</li>
-                    <li>Android Studio;</li>
-                </ul>
-                <li>(SGBDs) Sistemas Gerenciadores de Banco de Dados</li>
-                <ul>
-                    <li>MySQL Workbench</li>
-                    <li>MongoDB;</li>
-                    <li>Redis;</li>
-                    <li>Cassandra;</li>
-                    <li>Postgres;</li>
-                </ul>
-                <li>Ferramenta para acompanhamento do projeto</li>
-                <ul>
-                    <li>Trello;</li>
-                </ul>
-            </ul>
-            <h2>Materiais de apoio/Referências</h2>
-            <p>
-                SCHWABER, Ken; SUTHERLAND, Jeff. O Guia do Scrum. In: The Scrum Guide: The Definitive Guide to Scrum:
-                The Rules of the Game. [S. l.], 1 nov. 2020. Disponível em: <a
-                    href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf">https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf</a>.
-            </p>
-            <br>
-            <p>
-                Project Builder. Scrum: o que é sprint e como executá-lo?. Disponível em: <a
-                    href="https://www.projectbuilder.com.br/blog/scrum-o-que-e-sprint-e-como-executa-lo/">https://www.projectbuilder.com.br/blog/scrum-o-que-e-sprint-e-como-executa-lo/</a>.
-                Acesso em 5 abr. 2024.
-            </p>
-        </section>
+        <p>
+          RETRAINING. <strong>Brainstorming</strong>. 2020. Disponível em:
+          <a
+            href="https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-brainstorming"
+          >
+            https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-brainstorming </a
+          >. Acesso em: 10 mar. 2023.
+        </p>
+      </section>
 
-        <section class="topic" id="topico_realizar_reuniao_periodica">
-            <h1>A8. Realizar reunião periódica</h1>
-            <hr />
-            <h2>Descrição</h2>
-            <p>
-                O Scrum Team deve efetuar uma reunião periódica em um período previamente definido. Nela, os membros de
-                equipe compartilham o que implementaram, quais as implementações futuras e quais são os impedimentos ou
-                dificuldades que enfrentam. A reunião tem como objetivo sincronizar o trabalho do time e identificar
-                potenciais riscos e oportunidades de melhoria.
-            </p>
-            <h2>Responsáveis e responsabilidades</h2>
-            <p>Scrum Team</p>
-            <h2>Entrada</h2>
-            <ul>
-                <li>Feedback da Sprint</li>
-            </ul>
-            <h2>Saída</h2>
-            <ul>
-                <li>Feedback da Sprint Atualizado</li>
-            </ul>
-            <h2>Tarefas</h2>
-            <ul>
-                <li><strong>A8.1</strong> Preparar uma agenda com os objetivos, os participantes e a duração da reunião.
-                </li>
-                <li><strong>A8.2</strong> Analisar o feedback da sprint;</li>
-                <li><strong>A8.3</strong> Discutir as tarefas já realizadas, tarefas que serão feitas e possíveis
-                    impedimentos na realização;</li>
-                <li><strong>A8.4</strong> Discutir os problemas enfrentados e as oportunidades de melhoria;</li>
-                <li><strong>A8.5</strong> Encerrar a reunião com anotações dos resultados;</li>
-            </ul>
-            <h2>Recursos</h2>
-            <ul>
-                <li>Ferramentas para elaboração do quadro Kanban;</li>
-            </ul>
-            <h2>Materiais de apoio/Referências</h2>
-            <p>
-                SCHWABER, Ken; SUTHERLAND, Jeff. O Guia do Scrum. In: The Scrum Guide: The Definitive Guide to Scrum:
-                The Rules of the Game. [S. l.], 1 nov. 2020. Disponível em: <a
-                    href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf">https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf</a>.
-                Acesso em: 24 mar. 2023.
-            </p>
-            <br>
-            <p>
-                WEST, Dave. Planejamento do Sprint. [S. l.], [2018]. Disponível em: <a
-                    href="https://www.atlassian.com/br/agile/scrum/sprint-planning">https://www.atlassian.com/br/agile/scrum/sprint-planning</a>.
-                Acesso em: 10 mar. 2023.
-            </p>
-        </section>
+      <section class="topic" id="topico_criar_product_backlog">
+        <h1>A2. Criar Product Backlog</h1>
+        <hr />
 
+        <h2>Descrição</h2>
+        <p>
+          O Product Owner, a partir dos requisitos coletados, irá transformar os requisitos em histórias de usuário para ser feita a introdução no product
+          backlog. O Product Owner pode ser auxiliado pelos membros do Scrum Team durante esta atividade.
+        </p>
 
-        <section class="topic" id="topico_revisao_sprint">
-            <h1>A9. Revisão da Sprint</h1>
-            <hr />
-            <h2>Descrição</h2>
-            <p>
-                O Scrum Team e os Stakeholders devem revisar a sprint, validando as entregas da equipe com relação à
-                Sprint e se o projeto está de acordo com o que foi estabelecido inicialmente pelos Stakeholders. A revisão da sprint deve ser
-                de até 4 horas quando a sprint tem duração de um mês, para sprints mais curtas a revisão deve ser mais curta.
-            </p>
-            <h2>Responsáveis e responsabilidades</h2>
-            <p>
-                O Scrum Team e os Stakeholders. Caso não seja possível a presença de todos Stakeholders, apenas a
-                presença do Product Owner, para representatividade dos Stakeholders.
-            </p>
-            <h2>Entrada</h2>
-            <ul>
-                <li>Incremento;</li>
-            </ul>
-            <h2>Saída</h2>
-            <ul>
-                <li>Relatório da Sprint</li>
-            </ul>
-            <h2>Tarefas</h2>
-            <ul>
-                <li><strong>A9.1</strong> Revisar e apresentar as entregas feitas pelo Scrum Team;</li>
-                <li><strong>A9.2</strong> Coletar Feedback do Product Owner e Stakeholders;</li>
-                <li><strong>A9.3</strong> Validar a entrega de acordo com os requisitos necessários para conclusão da
-                    Sprint;</li>
-                <li><strong>A9.4</strong> Verificar se é necessário o replanejamento da Sprint;</li>
-            </ul>
-            <h2>Recursos</h2>
-            <ul>
-                <li>Ferramentas de Edição de Texto</li>
-                <ul>
-                    <li>Microsoft Word;</li>
-                    <li>LibreOffice Writer;</li>
-                    <li>Google Docs;</li>
-                </ul>
-                <li>(IDEs) Ambientes de Desenvolvimento Integrado;</li>
-                <ul>
-                    <li>Apache Netbeans;</li>
-                    <li>Visual Studio Code e Visual Studio;</li>
-                    <li>Android Studio;</li>
-                </ul>
-                <li>(SGBDs) Sistemas Gerenciadores de Banco de Dados</li>
-                <ul>
-                    <li>MySQL Workbench</li>
-                    <li>MongoDB;</li>
-                    <li>Redis;</li>
-                    <li>Cassandra;</li>
-                    <li>Postgres;</li>
-                </ul>
-                <li>Ferramenta para acompanhamento do projeto</li>
-                <ul>
-                    <li>GitHub;</li>
-                    <li>Trello;</li>
-                </ul>
-            </ul>
-            <h2>Materiais de apoio/Referências</h2>
-            <p>
-                Netbeans. <a href="https://netbeans.apache.org/">https://netbeans.apache.org/</a>
-            </p>
-            <br>
-            <p>
-                Visual Studio Code. <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
-            </p>
-            <br>
-            <p>
-                Android Studio. <a href="https://developer.android.com/studio?hl=pt-br">https://developer.android.com/studio</a>
-            </p>
-            <br>
-            <p>
-                IntelliJ IDEA. <a href="https://www.jetbrains.com/pt-br/idea/">https://www.jetbrains.com/pt-br/idea/</a>
-            </p>
-            <p>
-                MySQL Workbench. <a href="https://www.mysql.com/products/workbench/">https://www.mysql.com/products/workbench/</a>
-            </p>
-            <br>
-            <p>
-                MongoDB. <a href="https://www.mongodb.com/pt-br">https://www.mongodb.com/pt-br</a>
-            </p>
-            <br>
-            <p>
-                Redis. <a href="https://redis.io/">https://redis.io/</a>
-            </p>
-            <br>
-            <p>
-                Cassandra. <a href="http://cassandra.apache.org/">http://cassandra.apache.org/</a>
-            </p>
-            <br>
-            <p>
-                Postgres. <a href="https://www.postgresql.org/">https://www.postgresql.org/</a>
-            </p>
-            <br>
-            <p>
-                Tutorial de uso do Trello: <a href="https://trello.com/tour">https://trello.com/tour</a>
-            </p>
-            <br>
-            <p>
-                Tutorial de introdução do GitHub: <a href="https://docs.github.com/pt/get-started">https://docs.github.com/pt/get-started</a>
-            </p>
-            <br>
-            <p>
-                SCHWABER, Ken; SUTHERLAND, Jeff. O Guia do Scrum. In: The Scrum Guide: The Definitive Guide to Scrum:
-                The Rules of the Game. [S. l.], 1 nov. 2020. Disponível em: <a
-                    href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf">https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf</a>.
-                Acesso em: 24 mar. 2023.
-            </p>
-        </section>
+        <h2>Responsáveis e responsabilidades</h2>
+        <p>Product Owner</p>
 
-        <section class="topic" id="topico_retrospectiva_sprint">
-            <h1>A10. Retrospectiva da Sprint</h1>
-            <hr />
-            <h2>Descrição</h2>
-            <p>
-                O Scrum Team e os Stakeholders realizam uma retrospectiva para inspecionar a última sprint. Nela, a
-                equipe se autoavalia e verifica as interações feitas, processos e ferramentas utilizadas. Discutem
-                sobre o que deu certo e o que não ocorreu conforme o esperado, compartilham como possíveis problemas
-                foram resolvidos, para posteriormente fazer uso desse feedback a fim de aplicar para a próxima Sprint.
-                A reunião de retorspectiva possui duração de no máximo de 3 horas para uma sprint de um mês, para uma sprint
-                mais curta, a reunião será mais curta também.
-            </p>
-            <h2>Responsáveis e responsabilidades</h2>
-            <p>
-                Scrum Team e Stakeholders
-            </p>
-            <h2>Entrada</h2>
-            <ul>
-                <li>Relatório da Sprint</li>
-            </ul>
-            <h2>Saída</h2>
-            <ul>
-                <li>Relatório da Sprint atualizado;</li>
-            </ul>
-            <h2>Tarefas</h2>
-            <ul>
-                <li><strong>A10.1</strong> Revisar e avaliar se as metas do Sprint foram alcançadas;</li>
-                <li><strong>A10.2</strong> Identificar e discutir pontos positivos e negativos do Sprint;</li>
-                <li><strong>A10.3</strong> Realizar uma análise da causa dos principais problemas e discutir como
-                    evitá-los no futuro;</li>
-                <li><strong>A10.4</strong> Avaliar a qualidade do trabalho entregue durante o Sprint e discutir formas
-                    de melhorá-lo;</li>
-                <li><strong>A10.5</strong> Avaliar o desempenho da equipe durante o Sprint e identificar oportunidades
-                    de melhoria;</li>
-                <li><strong>A10.6</strong> Registrar e documentar detalhadamente as atividades concluídas em um
-                    relatório de acordo com o <a href="#topico_anexo3">ANEXO III</a>, a fim de manter um histórico;</li>
-            </ul>
-            <h2>Recursos</h2>
-            <ul>
-                <li>Aplicativos de comunicação;</li>
-                <ul>
-                    <li>Google Meet;</li>
-                    <li>Discord;</li>
-                    <li>Teams;</li>
-                </ul>
-                <li>Ferramentas de Edição de Texto</li>
-                <ul>
-                    <li>Microsoft Word;</li>
-                    <li>LibreOffice Writer;</li>
-                    <li>Google Docs;</li>
-                </ul>
-            </ul>
-            <h2>Materiais de apoio/Referências</h2>
-            <p>
-                SCHWABER, Ken; SUTHERLAND, Jeff. O Guia do Scrum. In: The Scrum Guide: The Definitive Guide to Scrum:
-                The Rules of the Game. [S. l.], 1 nov. 2020. Disponível em: <a
-                    href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf">https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf</a>.
-                Acesso em: 24 mar. 2023.
-            </p>
-        </section>
+        <h2>Entrada e Saída</h2>
+        <h3>Entrada:</h3>
 
-        <section class="topic" id="topico_atualizar_documentacao">
-            <h1>A11. Atualizar Documentação do Sistema</h1>
-            <hr />
-            <h2>Descrição</h2>
-            <p>
-                O Scrum Team deve atualizar a documentação do sistema se a avaliação da revisão da Sprint estiver dentro
-                dos conformes. Esta atividade tem como objetivo manter a documentação relacionada do processo de
-                desenvolvimento atualizada para que possa refletir atualizações feitas durante a Sprint, incluindo
-                atualizações em manuais de usuário, especificações de requisitos, planos de testes, entre outros
-                documentos relevantes.
-            </p>
-            <h2>Responsáveis e responsabilidades</h2>
-            <p>
-                Scrum Team
-            </p>
-            <h2>Entrada</h2>
-            <ul>
-                <li>Relatório da Sprint</li>
-            </ul>
-            <h2>Saída</h2>
-            <ul>
-                <li>Documentação atualizada</li>
-            </ul>
-            <h2>Tarefas</h2>
-            <ul>
-                <li><strong>A11.1</strong>: Revisar a documentação existente para determinar quais documentos precisam
-                    ser atualizados com base nas atualizações feitas durante a sprint;</li>
-                <li><strong>A11.2</strong>: Identificar e definir o escopo da atualização da documentação, que pode
-                    incluir manuais de usuário, especificações de requisitos, planos de testes, diagramas, etc;</li>
-                <li><strong>A11.3</strong>: Realizar as atualizações necessárias nos documentos identificados,
-                    garantindo que as atualizações feitas durante a sprint sejam refletidas com precisão;</li>
-                <li><strong>A11.4</strong>: Garantir que a documentação atualizada seja clara, completa e precisa,
-                    facilitando o entendimento da equipe e outras partes interessadas;</li>
-                <li><strong>A11.5</strong>: Verificar se a documentação atualizada está em conformidade com as normas e
-                    padrões de documentação da organização;</li>
-                <li><strong>A11.6</strong>: Comunicar quaisquer atualizações significativas na documentação para a
-                    equipe e outras partes interessadas, a fim de garantir que todos estejam cientes das atualizações
-                    realizadas durante a sprint;</li>
-                <li><strong>A11.7</strong>: Arquivar a documentação atualizada de forma adequada, a fim de facilitar a
-                    recuperação de informações relevantes no futuro;</li>
-            </ul>
-            <h2>Recursos</h2>
-            <ul>
-                <li>Ferramentas de Edição de Texto</li>
-                <ul>
-                    <li>Microsoft Word;</li>
-                    <li>LibreOffice Writer;</li>
-                    <li>Google Docs;</li>
-                </ul>
-            </ul>
-            <h2>Materiais de apoio/Referências</h2>
-            <p>
-                PROTOTYPR. Software Documentation: Types and Best Practices. Blog Prototypr, 13 mar. 2018. Disponível
-                em: <a
-                    href="https://blog.prototypr.io/software-documentation-types-and-best-practices-1726ca595c7f">https://blog.prototypr.io/software-documentation-types-and-best-practices-1726ca595c7f</a>.
-                Acesso em: 9 mar. 2023.
-            </p>
-            <br>
-            <p>
-                ISO/IEC. Guide to the Software Engineering Body of Knowledge (SWEBOK), Version 3.0. International
-                Organization for Standardization, 2014.
-            </p>
-        </section>
+        <ul>
+          <li>Requisitos.</li>
+        </ul>
 
-        <section class="topic" id="topico_conferir_novas_necessidades">
-            <h1>A12. Conferir se há novas necessidades</h1>
-            <hr />
-            <h2>Descrição</h2>
-            <p>
-                O Product Owner deve contactar os Stakeholders em busca de novas necessidades ou coletar do próprio
-                Scrum Team.
-            </p>
-            <h2>Responsáveis e Responsabilidades</h2>
-            <p>
-                Product Owner
-            </p>
-            <h2>Entrada</h2>
-            <ul>
-                <li>Product Backlog</li>
-            </ul>
-            <h2>Saída</h2>
-            <ul>
-                <li>Necessidades e/ou Product Backlog Atualizado</li>
-            </ul>
-            <h2>Tarefas</h2>
-            <ul>
-                <li><strong>A12.1</strong>: Contactar os Stakeholders;</li>
-                <li><strong>A12.2</strong>: Contactar o Scrum Team;</li>
-                <li><strong>A12.3</strong>: Caso haja novas necessidades, é necessário armazená-las para elencá-las
-                    posteriormente como novos requisitos;</li>
-            </ul>
-            <h2>Recursos</h2>
-            <ul>
-                <li>Ferramentas de Edição de Texto</li>
-                <ul>
-                    <li>Microsoft Word;</li>
-                    <li>LibreOffice Writer;</li>
-                    <li>Google Docs;</li>
-                </ul>
-            </ul>
-            <h2>Materiais de Apoio/Referências</h2>
-            <p>
-                SCHWABER, Ken; SUTHERLAND, Jeff. O Guia do Scrum. In: The Scrum Guide: The Definitive Guide to Scrum:
-                The Rules of the Game. [S. l.], 1 nov. 2020. Disponível em: <a
-                    href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf">https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf</a>.
-                Acesso em: 24 mar. 2023.
-            </p>
-        </section>
+        <h3>Saída:</h3>
 
-        <section class="topic" id="topico_conferir_produto_finalizado">
-            <h1>A13. Conferir se o produto está finalizado</h1>
-            <hr />
-            <h2>Descrição</h2>
-            <p>
-                O Product Owner deve contactar os Stakeholders e verificar se o Product Backlog está em conformidade com
-                o solicitado pelas partes interessadas. Em caso afirmativo, o produto é declarado como finalizado.
-            </p>
-            <h2>Responsáveis e Responsabilidades</h2>
-            <p>
-                Product Owner
-            </p>
-            <h2>Entrada</h2>
-            <ul>
-                <li>Product Backlog</li>
-            </ul>
-            <h2>Saída</h2>
-            <ul>
-                <li>Product Backlog Finalizado</li>
-                <li>Produto Finalizado</li>
-            </ul>
-            <h2>Tarefas</h2>
-            <ul>
-                <li><strong>A13.1</strong>: Contactar os Stakeholders;</li>
-                <li><strong>A13.2</strong>: Verificar se o produto está em conformidade com o solicitado pelos
-                    Stakeholders;</li>
-                <li><strong>A13.3</strong>: Verificar se o Product Backlog está completo;</li>
-            </ul>
-            <h2>Recursos</h2>
-            <ul>
-                <li>Aplicativos de comunicação;</li>
-                <ul>
-                    <li>Google Meet;</li>
-                    <li>Discord;</li>
-                    <li>Teams;</li>
-                </ul>
-                <li>Ferramentas de Edição de Texto</li>
-                <ul>
-                    <li>Microsoft Word;</li>
-                    <li>LibreOffice Writer;</li>
-                    <li>Google Docs;</li>
-                </ul>
-            </ul>
-            <h2>Materiais de Apoio/Referências</h2>
-            <p>
-                SCHWABER, Ken; SUTHERLAND, Jeff. O Guia do Scrum. In: The Scrum Guide: The Definitive Guide to Scrum:
-                The Rules of the Game. [S. l.], 1 nov. 2020. Disponível em: <a
-                    href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf">https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf</a>.
-                Acesso em: 24 mar. 2023.
-            </p>
-        </section>
+        <ul>
+          <li>Product Backlog.</li>
+        </ul>
 
+        <h2>Tarefas</h2>
+        <ul>
+          <li>
+            <strong>A2.1</strong>
+            Transformar os requisitos coletados em história de usuário,
+          </li>
+          <li>
+            <strong>A2.2</strong>
+            Priorizar os itens do Product Backlog,
+          </li>
+          <li>
+            <strong>A2.3</strong>
+            Estimar o esforço necessário para cada item do Product Backlog,
+          </li>
+          <li>
+            <strong>A2.4</strong>
+            Elaborar o Product Backlog de acordo com o
+            <a href="#topico_anexo1"> ANEXO I </a>.
+          </li>
+        </ul>
 
-        <section class="topic" id="topico_anexo1">
-            <h1>Anexo I - Product Backlog</h1>
-            <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-            <hr />
-            <img id="anexo1" src="./Desenvolvimento/images/anexo/anexo1.jpg" alt="Anexo I" />
-            <a class="button" href="./Desenvolvimento/documentacao/Product-Backlog-TEMPLATE.docx"
-                download="Template do Product Backlog">Baixar Documento</a>
-        </section>
-        <section class="topic" id="topico_anexo2">
-            <h1>Anexo II - Sprint Backlog</h1>
-            <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-            <hr />
-            <img id="anexo2" src="./Desenvolvimento/images/anexo/anexo2.jpg" alt="Anexo II" />
-            <a class="button" href="./Desenvolvimento/documentacao/SprintBacklog-TEMPLATE.docx"
-                download="Template do Sprint Backlog">Baixar Documento</a>
-        </section>
-        <section class="topic" id="topico_anexo3">
-            <h1>Anexo III - Relatório da Sprint</h1>
-            <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
-            <hr />
-            <img id="anexo3" src="./Desenvolvimento/images/anexo/anexo3.jpg" alt="Anexo III" />
-            <a class="button" href="./Desenvolvimento/documentacao/RelatórioSprint-TEMPLATE.docx"
-                download="Template do Relatório da Sprint">Baixar Documento</a>
-        </section>
-        </section>
+        <h2>Recursos</h2>
+        <ul>
+          <li>Técnicas para estimar o esforço:</li>
+          <ul>
+            <li>Planning Poker,</li>
+            <li>Pomodoro.</li>
+          </ul>
+          <li>Ferramentas de Edição de Texto:</li>
+          <ul>
+            <li>
+              <a href="https://workspace.google.com/products/docs/">Google Docs,</a>
+            </li>
+            <li>
+              <a href="https://pt-br.libreoffice.org/">LibreOffice Writer,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-365/word?">Microsoft Word.</a>
+            </li>
+          </ul>
 
+          <li>Ferramenta para acompanhamento do projeto:</li>
+          <ul>
+            <li><a href="https://github.com/">GitHub,</a></li>
+            <li><a href="https://trello.com/pt-BR">Trello,</a></li>
+          </ul>
+        </ul>
+
+        <h2>Materiais de apoio/referências</h2>
+        <p>
+          DOCUMENTAÇÃO DE INTRODUÇÃO AO GITHUB. [<em>s. d.</em>].
+          <strong>GitHub Docs.</strong>
+          Disponível em:
+          <a href="https://docs.github.com/pt/get-started"> https://docs.github.com/pt/get-started</a>. Acesso em: 28 set. 2024.
+        </p>
+
+        <p>
+          CAMARGO, Robson.
+          <strong>Quer estimar melhor seu projeto? Invista na técnica Planning Poker</strong>. Blog do Robson Camargo, 17 mar. 2021. Disponível em:
+          <a href="https://robsoncamargo.com.br/blog/Quer-estimar-melhor-seu-projeto-Invista-na-tecnica-Planning-Poker">
+            https://robsoncamargo.com.br/blog/Quer-estimar-melhor-seu-projeto-Invista-na-tecnica-Planning-Poker </a
+          >. Acesso em: 24 mar. 2023.
+        </p>
+
+        <p>
+          JÚNIOR, Orlando.
+          <strong>Aprenda o que fazer para estimar o esforço de desenvolvimento de Software.</strong>
+          CronoApp, 2019. Disponível em:
+          <a href="https://blog.cronapp.io/esforco-desenvolvimento-de-software/">https://blog.cronapp.io/esforco-desenvolvimento-de-software/ </a>. Acesso em:
+          12 mai. 2023.
+        </p>
+
+        <p>
+          O QUE é o trello: conheça recursos, usos e muito mais. [<em>s. d.</em>]. Disponível em:
+          <a href="https://trello.com/tour">https://trello.com/tour </a>. Acesso em: 03 abr. 2024
+        </p>
+
+        <p>
+          SCHWABER, Ken; SUTHERLAND, Jeff. <strong>The Scrum Guide:</strong> The Definitive Guide to Scrum: The Rules of the Game. [<em>S. l.</em>]. 2020.
+          Disponível em:
+          <a href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf"
+            >https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf </a
+          >. Acesso em : 23 mar. 2023.
+        </p>
+
+        <p>
+          XP EDUCACAO. <strong>Ferramentas Scrum:</strong> Conheça as principais para a gestão de projetos ágeis. Blog XP Educacao, 20 ago. 2020. Disponível em:
+          <a href="https://blog.xpeducacao.com.br/ferramentas-scrum/">https://blog.xpeducacao.com.br/ferramentas-scrum/</a>. Acesso em: 24 mar. 2023.
+        </p>
+      </section>
+
+      <section class="topic" id="topico_atualizar_product_backlog">
+        <h1>A3. Atualizar o Product Backlog</h1>
+        <hr />
+
+        <h2>Descrição</h2>
+        <p>
+          Caso ocorra um novo levantamento, é responsabilidade do Product Owner alterar a documentação do Product Backlog com o objetivo de mantê-lo atualizado
+          antes do planejamento da próxima Sprint. O Product Owner pode ser auxiliado pelos membros do Scrum Team durante esta atividade.
+        </p>
+
+        <h2>Responsáveis e responsabilidades</h2>
+        <p>Product Owner</p>
+
+        <h2>Entrada e Saída</h2>
+        <h3>Entrada:</h3>
+        <ul>
+          <li>Requisitos e Product Backlog.</li>
+        </ul>
+
+        <h3>Saída:</h3>
+        <ul>
+          <li>Product Backlog Atualizado.</li>
+        </ul>
+
+        <h2>Tarefas</h2>
+        <ul>
+          <li>
+            <strong>A3.1</strong>
+            Reavaliar os atuais itens não realizados,
+          </li>
+          <li>
+            <strong>A3.2</strong>
+            Excluir atuais itens do Product Backlog caso seja necessário,
+          </li>
+          <li>
+            <strong>A3.3</strong>
+            Transformar os novos requisitos coletados em história de usuário,
+          </li>
+          <li>
+            <strong>A3.5</strong>
+            Priorizar os novos itens do Product Backlog,
+          </li>
+          <li>
+            <strong>A3.6</strong>
+            Analisar o impacto dos novos itens do Product Backlog,
+          </li>
+          <li>
+            <strong>A3.7</strong>
+            Estimar o esforço necessário para cada novo item do Product Backlog.
+          </li>
+        </ul>
+
+        <h2>Recursos</h2>
+        <ul>
+          <li>Técnicas para estimar o esforço:</li>
+          <ul>
+            <li>Planning Poker,</li>
+            <li>Pomodoro.</li>
+          </ul>
+
+          <li>Ferramentas de Edição de Texto:</li>
+          <ul>
+            <li>
+              <a href="https://workspace.google.com/products/docs/">Google Docs,</a>
+            </li>
+            <li>
+              <a href="https://pt-br.libreoffice.org/">LibreOffice Writer,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-365/word?">Microsoft Word.</a>
+            </li>
+          </ul>
+
+          <li>Ferramenta para acompanhamento do projeto:</li>
+          <ul>
+            <li><a href="https://github.com/">GitHub,</a></li>
+            <li><a href="https://trello.com/pt-BR">Trello,</a></li>
+          </ul>
+        </ul>
+
+        <h2>Materiais de apoio/referências</h2>
+        <p>
+          DOCUMENTAÇÃO DE INTRODUÇÃO AO GITHUB. [<em>s. d.</em>].
+          <strong>GitHub Docs.</strong>
+          Disponível em:
+          <a href="https://docs.github.com/pt/get-started"> https://docs.github.com/pt/get-started</a>. Acesso em: 28 set. 2024.
+        </p>
+
+        <p>
+          PRODUCT Backlog: O que é e como criar? 2021. <strong>Labone</strong>. Disponível em:
+          <a href="https://www.laboneconsultoria.com.br/product-backlog/"> https://www.laboneconsultoria.com.br/product-backlog/ </a>. Acesso em: 24 mar. 2023.
+        </p>
+
+        <p>
+          O QUE é o trello: conheça recursos, usos e muito mais. [<em>s. d.</em>]. Disponível em:
+          <a href="https://trello.com/tour"> https://trello.com/tour </a>. Acesso em: 03 abr. 2024
+        </p>
+
+        <p>
+          REFINAMENTO e Atualização: Por que Aplicar? [<em>s. d.</em>]. <strong>PIM-GO</strong>. Disponível em:
+          <a href="https://pim-go.com/sprints-do-scrum/refinamento-e-atualizacao/"> https://pim-go.com/sprints-do-scrum/refinamento-e-atualizacao/ </a>. Acesso
+          em: 24 mar. 2023.
+        </p>
+      </section>
+
+      <section class="topic" id="topico_definir_ferramentas_metodos_sprint">
+        <h1>A4. Definir ferramentas, métodos e duração da Sprint</h1>
+        <hr />
+
+        <h2>Descrição</h2>
+        <p>
+          O Scrum Team deverá efetuar uma reunião, onde será planejado como será o trabalho até a conclusão do produto, como a definição das ferramentas
+          utilizadas e a duração das Sprints. O tempo de uma Sprint pode variar de 1 até 4 semanas.
+        </p>
+
+        <h2>Responsáveis e responsabilidades</h2>
+        <p>Scrum Team</p>
+
+        <h2>Entrada e Saída</h2>
+        <h3>Entrada:</h3>
+        <ul>
+          <li>Requisitos.</li>
+        </ul>
+
+        <h3>Saída:</h3>
+        <ul>
+          <li>Lista de ferramentas,</li>
+          <li>Métodos de teste.</li>
+          <li>Metodologia das Sprints.</li>
+        </ul>
+
+        <h2>Tarefas</h2>
+        <ul>
+          <li>
+            <strong>A4.1</strong>
+            Encontrar as possíveis ferramentas do mercado e escolher a que melhor se adequa aos requisitos do sistema,
+          </li>
+          <li>
+            <strong>A4.2</strong>
+            Definir o melhor método para teste do sistema, que esteja dentro dos requisitos necessários,
+          </li>
+          <li>
+            <strong>A4.3</strong>
+            Definir o melhor método de execução das Sprints (reuniões) e definir o seu tempo de duração.
+          </li>
+        </ul>
+
+        <h2>Recursos</h2>
+        <ul>
+          <li>Ferramentas de Edição de Texto:</li>
+          <ul>
+            <li>
+              <a href="https://workspace.google.com/products/docs/">Google Docs,</a>
+            </li>
+            <li>
+              <a href="https://pt-br.libreoffice.org/">LibreOffice Writer,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-365/word?">Microsoft Word.</a>
+            </li>
+          </ul>
+
+          <li>(IDEs) Ambientes de Desenvolvimento Integrado:</li>
+          <ul>
+            <li>
+              <a href="https://developer.android.com/studio?hl=pt-br">Android Studio,</a>
+            </li>
+            <li><a href="https://netbeans.apache.org/">Apache Netbeans,</a></li>
+            <li>
+              <a href="https://www.jetbrains.com/pt-br/idea/">IntelliJ IDEA,</a>
+            </li>
+            <li>
+              <a href="https://code.visualstudio.com/">Visual Studio Code.</a>
+            </li>
+          </ul>
+
+          <li>(SGBDs) Sistemas Gerenciadores de Banco de Dados:</li>
+          <ul>
+            <li><a href="http://cassandra.apache.org/">Cassandra,</a></li>
+            <li><a href="https://www.mongodb.com/pt-br">MongoDB,</a></li>
+            <li><a href="https://www.postgresql.org/">Postgres,</a></li>
+            <li>
+              <a href="https://www.mysql.com/products/workbench/">MySQL Workbench,</a>
+            </li>
+            <li><a href="https://redis.io/">Redis.</a></li>
+          </ul>
+
+          <li>Brainstorming.</li>
+        </ul>
+
+        <h2>Materiais de apoio/Referências</h2>
+        <p>
+          MONTES, Eduardo. <strong>Cerimônias Do Scrum</strong>: Um Guia Completo Para Implementar Com Eficiência Em Sua Equipe Ágil. 6 jun. 2024. Disponível
+          em: <a href="https://escritoriodeprojetos.com.br/cerimonias-do-scrum/">https://escritoriodeprojetos.com.br/cerimonias-do-scrum/</a>. Acesso em: 28
+          set. 2024.
+        </p>
+      </section>
+
+      <section class="topic" id="topico_criar_documentacao">
+        <h1>A5. Criar documentação</h1>
+        <hr />
+
+        <h2>Descrição</h2>
+        <p>
+          O Scrum Team deverá efetuar uma reunião, onde será definida a documentação do projeto, que contém o escopo, requisitos funcionais, requisitos não
+          funcionais, protótipo, etc.
+        </p>
+
+        <h2>Responsáveis e responsabilidades</h2>
+        <p>Scrum Team</p>
+
+        <h2>Entrada e Saída</h2>
+        <h3>Entrada:</h3>
+        <ul>
+          <li>Lista de ferramentas,</li>
+          <li>Métodos de teste.</li>
+          <li>Metodologia das Sprints.</li>
+        </ul>
+
+        <h3>Saída:</h3>
+        <ul>
+          <li>Documentação.</li>
+        </ul>
+
+        <h2>Tarefas</h2>
+        <ul>
+          <li>
+            <strong>A5.1</strong>
+            Elaborar o escopo do produto,
+          </li>
+          <li>
+            <strong>A5.2</strong>
+            Definir os requisitos funcionais e não funcionais,
+          </li>
+          <li>
+            <strong>A5.3</strong>
+            Anexar a arquitetura lógica e arquitetura de implantação do sistema,
+          </li>
+          <li>
+            <strong>A5.4</strong>
+            Anexar o modelo do banco de dados,
+          </li>
+          <li>
+            <strong>A5.5</strong>
+            Anexar o protótipo do produto,
+          </li>
+          <li>
+            <strong>A5.6</strong>
+            Anexar documentos adicionais se necessário.
+          </li>
+        </ul>
+
+        <h2>Recursos</h2>
+        <ul>
+          <li>Ferramentas para modelagem de bancos de dados:</li>
+          <ul>
+            <li>
+              <a href="https://www.mysql.com/products/workbench/"> MySQL Workbench. </a>
+            </li>
+          </ul>
+
+          <li>Ferramentas de modelagem de arquitetura:</li>
+          <ul>
+            <li>
+              <a href="https://astah.net/products/astah-community"> Astah Community.</a>
+            </li>
+          </ul>
+
+          <li>Ferramentas de Edição de Texto:</li>
+          <ul>
+            <li>
+              <a href="https://workspace.google.com/products/docs/">Google Docs,</a>
+            </li>
+            <li>
+              <a href="https://pt-br.libreoffice.org/">LibreOffice Writer,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-365/word?">Microsoft Word.</a>
+            </li>
+          </ul>
+
+          <li>Brainstorming.</li>
+        </ul>
+
+        <h2>Materiais de apoio/Referências</h2>
+
+        <p>
+          HANSON, Kevin. How to Write Documentation For Your Next Software Development Project. 7 abr. 2021.
+          <strong>freeCodeCamp.org</strong>. Disponível em:
+          <a href="https://www.freecodecamp.org/news/how-to-write-documentation-for-your-next-software-development-project/">
+            https://www.freecodecamp.org/news/how-to-write-documentation-for-your-next-software-development-project/ </a
+          >. Acesso em: 28 set. 2024.
+        </p>
+
+        <p>
+          SOMASUNDARAM, Pradeepa. Top 20 Software Documentation Tools of 2024. 30 jul. 2021.
+          <strong>Document360</strong>. Disponível em:
+          <a href="https://document360.com/blog/software-documentation-tools/"> https://document360.com/blog/software-documentation-tools/ </a>. Acesso em: 28
+          set. 2024.
+        </p>
+      </section>
+
+      <section class="topic" id="topico_planejar_sprint_atual">
+        <h1>A6. Planejar Sprint Atual</h1>
+        <hr />
+
+        <h2>Descrição</h2>
+        <p>
+          O Scrum Team deverá efetuar reuniões de até no máximo 2 horas por semana, onde será planejado como será o trabalho e a divisão dos itens do Product
+          Backlog para serem implementados durante a Sprint. O tempo de uma Sprint pode variar de 1 até 4 semanas.
+        </p>
+
+        <h2>Responsáveis e responsabilidades</h2>
+        <p>Scrum Team</p>
+
+        <h2>Entrada e Saída</h2>
+        <h3>Entrada:</h3>
+        <ul>
+          <li>Product Backlog e/ou Relatório da Sprint.</li>
+        </ul>
+
+        <h3>Saída:</h3>
+        <ul>
+          <li>Sprint Backlog e/ou Product Backlog Atualizado.</li>
+        </ul>
+
+        <h2>Tarefas</h2>
+        <ul>
+          <li>
+            <strong>A6.1</strong>
+            Elencar itens da última Sprint Backlog, caso não tenham sido feitos ou concluídos,
+          </li>
+          <li>
+            <strong>A6.2</strong>
+            Definir quais atividades serão feitas na sprint atual de acordo com o relatório da última Sprint Backlog e o Product Backlog,
+          </li>
+          <li><strong>A6.3</strong> Selecionar os itens do Product Backlog relevantes para o objetivo da Sprint.</li>
+          <li>
+            <strong>A6.4</strong>
+            Estimar os pontos de esforço das atividades escolhidas,
+          </li>
+          <li>
+            <strong>A6.5</strong>
+            Definir as atividades de cada membro da equipe durante a Sprint atual,
+          </li>
+          <li>
+            <strong>A6.6</strong>
+            Elaborar o Sprint Backlog de acordo com o
+            <a href="#topico_anexo2"> ANEXO II </a>.
+          </li>
+        </ul>
+
+        <h2>Recursos</h2>
+        <ul>
+          <li>Técnicas para estimar o esforço:</li>
+          <ul>
+            <li>Planning Poker,</li>
+            <li>Pomodoro.</li>
+          </ul>
+          <li>Ferramentas de Edição de Texto:</li>
+          <ul>
+            <li>
+              <a href="https://workspace.google.com/products/docs/">Google Docs,</a>
+            </li>
+            <li>
+              <a href="https://pt-br.libreoffice.org/">LibreOffice Writer,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-365/word?">Microsoft Word.</a>
+            </li>
+          </ul>
+
+          <li>Ferramenta para acompanhamento do projeto:</li>
+          <ul>
+            <li><a href="https://github.com/">GitHub,</a></li>
+            <li><a href="https://trello.com/pt-BR">Trello,</a></li>
+          </ul>
+        </ul>
+
+        <h2>Materiais de apoio/Referências</h2>
+        <p>
+          CARVALHO, Técia. <strong>O que é Planning Poker?</strong> Aprenda seu funcionamento junto ao Scrum!. nov. 2019. Disponível em:
+          <a href="https://www.voitto.com.br/blog/artigo/planning-poker">https://www.voitto.com.br/blog/artigo/planning-poker </a>. Acesso em: 10 mar. 2023.
+        </p>
+
+        <p>
+          DOCUMENTAÇÃO DE INTRODUÇÃO AO GITHUB. [<em>s. d.</em>].
+          <strong>GitHub Docs.</strong>
+          Disponível em:
+          <a href="https://docs.github.com/pt/get-started"> https://docs.github.com/pt/get-started</a>. Acesso em: 28 set. 2024.
+        </p>
+
+        <p>
+          JÚNIOR, Orlando.
+          <strong>Aprenda o que fazer para estimar o esforço de desenvolvimento de Software.</strong>
+          CronoApp, 2019. Disponível em:
+          <a href="https://blog.cronapp.io/esforco-desenvolvimento-de-software/">https://blog.cronapp.io/esforco-desenvolvimento-de-software/ </a>. Acesso em:
+          12 mai. 2023.
+        </p>
+
+        <p>
+          O QUE é o trello: conheça recursos, usos e muito mais. [<em>s. d.</em>]. Disponível em:
+          <a href="https://trello.com/tour">https://trello.com/tour </a>. Acesso em: 03 abr. 2024
+        </p>
+
+        <p>
+          WEST, Dave. <strong>Planejamento do Sprint</strong>. [2018]. Disponível em:
+          <a href="https://www.atlassian.com/br/agile/scrum/sprint-planning">https://www.atlassian.com/br/agile/scrum/sprint-planning </a>. Acesso em: 10 mar.
+          2023.
+        </p>
+      </section>
+
+      <section class="topic" id="topico_executar_atividades_sprint">
+        <h1>A7. Executar as atividades da Sprint</h1>
+        <hr />
+
+        <h2>Descrição</h2>
+        <p>
+          O Scrum Team deve realizar as tarefas que foram planejadas e priorizadas pelo time de desenvolvimento, de acordo com os critérios definidos pelo
+          Product Owner.
+        </p>
+
+        <h2>Responsáveis e responsabilidades</h2>
+        <p>Scrum Team</p>
+
+        <h2>Entrada e Saída</h2>
+        <h3>Entrada:</h3>
+        <ul>
+          <li>Sprint Backlog,</li>
+          <li>Feedback da Sprint</li>
+        </ul>
+
+        <h3>Saída:</h3>
+        <ul>
+          <li>Feedback da Sprint Atualizado,</li>
+          <li>Incremento.</li>
+        </ul>
+
+        <h2>Tarefas</h2>
+        <ul>
+          <li>
+            <strong>A7.1</strong>
+            Implementar as atividades da Sprint Backlog,
+          </li>
+          <li>
+            <strong>A7.2</strong>
+            Testar as atividades desenvolvidas,
+          </li>
+          <li>
+            <strong>A7.3</strong>
+            Coletar o feedback da sprint para abordá-lo na reunião periódica.
+          </li>
+        </ul>
+
+        <h2>Recursos</h2>
+        <ul>
+          <li>Ferramentas de Edição de Texto:</li>
+          <ul>
+            <li>
+              <a href="https://workspace.google.com/products/docs/">Google Docs,</a>
+            </li>
+            <li>
+              <a href="https://pt-br.libreoffice.org/">LibreOffice Writer,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-365/word?">Microsoft Word.</a>
+            </li>
+          </ul>
+
+          <li>(IDEs) Ambientes de Desenvolvimento Integrado:</li>
+          <ul>
+            <li>
+              <a href="https://developer.android.com/studio?hl=pt-br">Android Studio,</a>
+            </li>
+            <li><a href="https://netbeans.apache.org/">Apache Netbeans,</a></li>
+            <li>
+              <a href="https://www.jetbrains.com/pt-br/idea/">IntelliJ IDEA,</a>
+            </li>
+            <li>
+              <a href="https://code.visualstudio.com/">Visual Studio Code.</a>
+            </li>
+          </ul>
+
+          <li>(SGBDs) Sistemas Gerenciadores de Banco de Dados:</li>
+          <ul>
+            <li><a href="http://cassandra.apache.org/">Cassandra,</a></li>
+            <li><a href="https://www.mongodb.com/pt-br">MongoDB,</a></li>
+            <li><a href="https://www.postgresql.org/">Postgres,</a></li>
+            <li>
+              <a href="https://www.mysql.com/products/workbench/">MySQL Workbench,</a>
+            </li>
+            <li><a href="https://redis.io/">Redis.</a></li>
+          </ul>
+
+          <li>Ferramenta para acompanhamento do projeto:</li>
+          <ul>
+            <li><a href="https://github.com/">GitHub,</a></li>
+            <li><a href="https://trello.com/pt-BR">Trello,</a></li>
+          </ul>
+        </ul>
+
+        <h2>Materiais de apoio/Referências</h2>
+        <p>
+          DOCUMENTAÇÃO DE INTRODUÇÃO AO GITHUB. [<em>s. d.</em>].
+          <strong>GitHub Docs.</strong>
+          Disponível em:
+          <a href="https://docs.github.com/pt/get-started"> https://docs.github.com/pt/get-started</a>. Acesso em: 28 set. 2024.
+        </p>
+
+        <p>
+          PROJECT BUILDER. Scrum: entenda de uma vez o que é sprint e como executá-lo! 31 maio 2017.
+          <strong>Project Builder.</strong>
+          Disponível em:
+          <a href="https://www.projectbuilder.com.br/blog/scrum-o-que-e-sprint-e-como-executa-lo/">
+            https://www.projectbuilder.com.br/blog/scrum-o-que-e-sprint-e-como-executa-lo/ </a
+          >. Acesso em: 28 set. 2024.
+        </p>
+
+        <p>
+          O QUE é o trello: conheça recursos, usos e muito mais. [<em>s. d.</em>]. Disponível em:
+          <a href="https://trello.com/tour">https://trello.com/tour </a>. Acesso em: 03 abr. 2024
+        </p>
+
+        <p>
+          SCHWABER, Ken; SUTHERLAND, Jeff. <strong>The Scrum Guide</strong>. 2019. Scrum.org. Disponível em:
+          <a href="https://www.scrum.org/resources/scrum-guide">https://www.scrum.org/resources/scrum-guide</a>. Acesso em: 24 mar. 2023.
+        </p>
+      </section>
+
+      <section class="topic" id="topico_realizar_reuniao_periodica">
+        <h1>A8. Realizar reunião periódica</h1>
+        <hr />
+
+        <h2>Descrição</h2>
+        <p>
+          O Scrum Team deve efetuar uma reunião periódica em um período previamente definido. Nela, os membros de equipe compartilham o que implementaram, quais
+          as implementações futuras e quais são os impedimentos ou dificuldades que enfrentam. A reunião tem como objetivo sincronizar o trabalho do time e
+          identificar potenciais riscos e oportunidades de melhoria.
+        </p>
+
+        <h2>Responsáveis e responsabilidades</h2>
+        <p>Scrum Team</p>
+
+        <h2>Entrada e Saída</h2>
+        <h3>Entrada:</h3>
+        <ul>
+          <li>Feedback da Sprint.</li>
+        </ul>
+
+        <h3>Saída:</h3>
+        <ul>
+          <li>Feedback da Sprint Atualizado.</li>
+        </ul>
+
+        <h2>Tarefas</h2>
+        <ul>
+          <li><strong>A8.1</strong> Preparar uma agenda com os objetivos, os participantes e a duração da reunião.</li>
+          <li><strong>A8.2</strong> Analisar o feedback da sprint,</li>
+          <li><strong>A8.3</strong> Discutir as tarefas já realizadas, tarefas que serão feitas e possíveis impedimentos na realização,</li>
+          <li><strong>A8.4</strong> Discutir os problemas enfrentados e as oportunidades de melhoria,</li>
+          <li><strong>A8.5</strong> Encerrar a reunião com anotações dos resultados.</li>
+        </ul>
+
+        <h2>Recursos</h2>
+        <ul>
+          <li>Ferramentas para elaboração do quadro Kanban,</li>
+        </ul>
+
+        <h2>Materiais de apoio/Referências</h2>
+
+        <p>
+          AWARI. Scrum Weekly: Reunião semanal no Scrum para revisar o progresso, identificar obstáculos e planejar as próximas atividades. 24 jun. 2023.
+          <strong>Awari.</strong>
+          Disponível em:
+          <a
+            href="https://awari.com.br/scrum-weekly-reuniao-semanal-no-scrum-para-revisar-o-progresso-identificar-obstaculos-e-planejar-as-proximas-atividades/"
+            >https://awari.com.br/scrum-weekly-reuniao-semanal-no-scrum-para-revisar-o-progresso-identificar-obstaculos-e-planejar-as-proximas-atividades/</a
+          >
+          . Acesso em: 28 set. 2024.
+        </p>
+
+        <p>
+          RADIGAN, Dan. Kanban. [<em>s. d.</em>].
+          <strong>Atlassian.</strong>
+          Disponível em:
+          <a href="https://www.atlassian.com/br/agile/kanban">https://www.atlassian.com/br/agile/kanban</a>
+          . Acesso em: 28 set. 2024.
+        </p>
+
+        <p>
+          REHKOPF, Max. O que é um painel Kanban? [<em>s. d.</em>].
+          <strong>Atlassian.</strong>
+          Disponível em:
+          <a href="https://www.atlassian.com/br/agile/kanban/boards">https://www.atlassian.com/br/agile/kanban/boards</a>
+          . Acesso em: 28 set. 2024.
+        </p>
+
+        <p>
+          SCHWABER, Ken; SUTHERLAND, Jeff. <strong>The Scrum Guide</strong>. 2019. Scrum.org. Disponível em:
+          <a href="https://www.scrum.org/resources/scrum-guide">https://www.scrum.org/resources/scrum-guide</a>. Acesso em: 24 mar. 2023.
+        </p>
+
+        <p>
+          WEST, Dave. <strong>Planejamento do Sprint</strong>. [2018]. Disponível em:
+          <a href="https://www.atlassian.com/br/agile/scrum/sprint-planning">https://www.atlassian.com/br/agile/scrum/sprint-planning </a>. Acesso em: 10 mar.
+          2023.
+        </p>
+        <br />
+      </section>
+
+      <section class="topic" id="topico_revisao_sprint">
+        <h1>A9. Revisão da Sprint</h1>
+        <hr />
+
+        <h2>Descrição</h2>
+        <p>
+          O Scrum Team e os Stakeholders devem revisar a sprint, validando as entregas da equipe com relação à Sprint e se o projeto está de acordo com o que
+          foi estabelecido inicialmente pelos Stakeholders. A revisão da sprint deve ser de até 4 horas quando a sprint tem duração de um mês, para sprints mais
+          curtas a revisão deve ser mais curta.
+        </p>
+
+        <h2>Responsáveis e responsabilidades</h2>
+        <p>
+          O Scrum Team e os Stakeholders. Caso não seja possível a presença de todos Stakeholders, apenas a presença do Product Owner, para representatividade
+          dos Stakeholders.
+        </p>
+
+        <h2>Entrada e Saída</h2>
+        <h3>Entrada:</h3>
+        <ul>
+          <li>Incremento.</li>
+        </ul>
+
+        <h3>Saída:</h3>
+        <ul>
+          <li>Relatório da Sprint.</li>
+        </ul>
+
+        <h2>Tarefas</h2>
+        <ul>
+          <li><strong>A9.1</strong> Revisar e apresentar as entregas feitas pelo Scrum Team,</li>
+          <li><strong>A9.2</strong> Coletar Feedback do Product Owner e Stakeholders,</li>
+          <li><strong>A9.3</strong> Validar a entrega de acordo com os requisitos necessários para conclusão da Sprint,</li>
+          <li><strong>A9.4</strong> Verificar se é necessário o replanejamento da Sprint.</li>
+        </ul>
+
+        <h2>Recursos</h2>
+        <ul>
+          <h2>Recursos</h2>
+          <li>Ferramentas de Edição de Texto:</li>
+          <ul>
+            <li>
+              <a href="https://workspace.google.com/products/docs/">Google Docs,</a>
+            </li>
+            <li>
+              <a href="https://pt-br.libreoffice.org/">LibreOffice Writer,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-365/word?">Microsoft Word.</a>
+            </li>
+          </ul>
+
+          <li>(IDEs) Ambientes de Desenvolvimento Integrado:</li>
+          <ul>
+            <li>
+              <a href="https://developer.android.com/studio?hl=pt-br">Android Studio,</a>
+            </li>
+            <li><a href="https://netbeans.apache.org/">Apache Netbeans,</a></li>
+            <li>
+              <a href="https://www.jetbrains.com/pt-br/idea/">IntelliJ IDEA,</a>
+            </li>
+            <li>
+              <a href="https://code.visualstudio.com/">Visual Studio Code.</a>
+            </li>
+          </ul>
+
+          <li>(SGBDs) Sistemas Gerenciadores de Banco de Dados:</li>
+          <ul>
+            <li><a href="http://cassandra.apache.org/">Cassandra,</a></li>
+            <li><a href="https://www.mongodb.com/pt-br">MongoDB,</a></li>
+            <li><a href="https://www.postgresql.org/">Postgres,</a></li>
+            <li>
+              <a href="https://www.mysql.com/products/workbench/">MySQL Workbench,</a>
+            </li>
+            <li><a href="https://redis.io/">Redis.</a></li>
+          </ul>
+
+          <li>Ferramenta para acompanhamento do projeto:</li>
+          <ul>
+            <li><a href="https://github.com/">GitHub,</a></li>
+            <li><a href="https://trello.com/pt-BR">Trello.</a></li>
+          </ul>
+        </ul>
+
+        <h2>Materiais de apoio/Referências</h2>
+        <p>
+          DOCUMENTAÇÃO DE INTRODUÇÃO AO GITHUB. [<em>s. d.</em>].
+          <strong>GitHub Docs.</strong>
+          Disponível em:
+          <a href="https://docs.github.com/pt/get-started"> https://docs.github.com/pt/get-started</a>. Acesso em: 28 set. 2024.
+        </p>
+
+        <p>
+          O QUE é o trello: conheça recursos, usos e muito mais. [<em>s. d.</em>]. Disponível em:
+          <a href="https://trello.com/tour">https://trello.com/tour </a>. Acesso em: 03 abr. 2024
+        </p>
+
+        <p>
+          SCHWABER, Ken; SUTHERLAND, Jeff. <strong>The Scrum Guide</strong>. 2019. Scrum.org. Disponível em:
+          <a href="https://www.scrum.org/resources/scrum-guide">https://www.scrum.org/resources/scrum-guide</a>. Acesso em: 24 mar. 2023.
+        </p>
+      </section>
+
+      <section class="topic" id="topico_retrospectiva_sprint">
+        <h1>A10. Retrospectiva da Sprint</h1>
+        <hr />
+
+        <h2>Descrição</h2>
+        <p>
+          O Scrum Team e os Stakeholders realizam uma retrospectiva para inspecionar a última sprint. Nela, a equipe se autoavalia e verifica as interações
+          feitas, processos e ferramentas utilizadas. Discutem sobre o que deu certo e o que não ocorreu conforme o esperado, compartilham como possíveis
+          problemas foram resolvidos, para posteriormente fazer uso desse feedback a fim de aplicar para a próxima Sprint. A reunião de retorspectiva possui
+          duração de no máximo de 3 horas para uma sprint de um mês, para uma sprint mais curta, a reunião será mais curta também.
+        </p>
+
+        <h2>Responsáveis e responsabilidades</h2>
+        <p>Scrum Team e Stakeholders</p>
+
+        <h2>Entrada e Saída</h2>
+        <h3>Entrada:</h3>
+        <ul>
+          <li>Relatório da Sprint.</li>
+        </ul>
+
+        <h3>Saída:</h3>
+        <ul>
+          <li>Relatório da Sprint atualizado.</li>
+        </ul>
+
+        <h2>Tarefas</h2>
+        <ul>
+          <li><strong>A10.1</strong> Revisar e avaliar se as metas do Sprint foram alcançadas,</li>
+          <li><strong>A10.2</strong> Identificar e discutir pontos positivos e negativos do Sprint,</li>
+          <li><strong>A10.3</strong> Realizar uma análise da causa dos principais problemas e discutir como evitá-los no futuro,</li>
+          <li><strong>A10.4</strong> Avaliar a qualidade do trabalho entregue durante o Sprint e discutir formas de melhorá-lo,</li>
+          <li><strong>A10.5</strong> Avaliar o desempenho da equipe durante o Sprint e identificar oportunidades de melhoria,</li>
+          <li>
+            <strong>A10.6</strong> Registrar e documentar detalhadamente as atividades concluídas em um relatório de acordo com o
+            <a href="#topico_anexo3">ANEXO III</a>, a fim de manter um histórico.
+          </li>
+        </ul>
+
+        <h2>Recursos</h2>
+        <ul>
+          <li>Aplicativos de comunicação:</li>
+          <ul>
+            <li><a href="https://discord.com/">Discord,</a></li>
+            <li>
+              <a href="https://workspace.google.com/products/meet/">Goolge Meet,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-teams/">Microsoft Teams.</a>
+            </li>
+          </ul>
+
+          <li>Ferramentas de Edição de Texto:</li>
+          <ul>
+            <li>
+              <a href="https://workspace.google.com/products/docs/">Google Docs,</a>
+            </li>
+            <li>
+              <a href="https://pt-br.libreoffice.org/">LibreOffice Writer,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-365/word?">Microsoft Word.</a>
+            </li>
+          </ul>
+        </ul>
+
+        <h2>Materiais de apoio/Referências</h2>
+        <p>
+          SCHWABER, Ken; SUTHERLAND, Jeff. <strong>The Scrum Guide:</strong> The Definitive Guide to Scrum: The Rules of the Game. [<em>S. l.</em>]. 2020.
+          Disponível em:
+          <a href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf"
+            >https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf </a
+          >. Acesso em : 23 mar. 2023.
+        </p>
+      </section>
+
+      <section class="topic" id="topico_atualizar_documentacao">
+        <h1>A11. Atualizar Documentação do Sistema</h1>
+        <hr />
+
+        <h2>Descrição</h2>
+        <p>
+          O Scrum Team deve atualizar a documentação do sistema se a avaliação da revisão da Sprint estiver dentro dos conformes. Esta atividade tem como
+          objetivo manter a documentação relacionada do processo de desenvolvimento atualizada para que possa refletir atualizações feitas durante a Sprint,
+          incluindo atualizações em manuais de usuário, especificações de requisitos, planos de testes, entre outros documentos relevantes.
+        </p>
+
+        <h2>Responsáveis e responsabilidades</h2>
+        <p>Scrum Team</p>
+
+        <h2>Entrada e Saída</h2>
+        <h3>Entrada:</h3>
+        <ul>
+          <li>Relatório da Sprint.</li>
+        </ul>
+
+        <h3>Saída:</h3>
+        <ul>
+          <li>Documentação atualizada.</li>
+        </ul>
+
+        <h2>Tarefas</h2>
+        <ul>
+          <li>
+            <strong>A11.1</strong>: Revisar a documentação existente para determinar quais documentos precisam ser atualizados com base nas atualizações feitas
+            durante a sprint,
+          </li>
+          <li>
+            <strong>A11.2</strong>: Identificar e definir o escopo da atualização da documentação, que pode incluir manuais de usuário, especificações de
+            requisitos, planos de testes, diagramas, etc,
+          </li>
+          <li>
+            <strong>A11.3</strong>: Realizar as atualizações necessárias nos documentos identificados, garantindo que as atualizações feitas durante a sprint
+            sejam refletidas com precisão,
+          </li>
+          <li>
+            <strong>A11.4</strong>: Garantir que a documentação atualizada seja clara, completa e precisa, facilitando o entendimento da equipe e outras partes
+            interessadas,
+          </li>
+          <li><strong>A11.5</strong>: Verificar se a documentação atualizada está em conformidade com as normas e padrões de documentação da organização,</li>
+          <li>
+            <strong>A11.6</strong>: Comunicar quaisquer atualizações significativas na documentação para a equipe e outras partes interessadas, a fim de
+            garantir que todos estejam cientes das atualizações realizadas durante a sprint,
+          </li>
+          <li>
+            <strong>A11.7</strong>: Arquivar a documentação atualizada de forma adequada, a fim de facilitar a recuperação de informações relevantes no futuro.
+          </li>
+        </ul>
+
+        <h2>Recursos</h2>
+        <ul>
+          <li>Ferramentas de Edição de Texto:</li>
+          <ul>
+            <li>
+              <a href="https://workspace.google.com/products/docs/">Google Docs,</a>
+            </li>
+            <li>
+              <a href="https://pt-br.libreoffice.org/">LibreOffice Writer,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-365/word?">Microsoft Word.</a>
+            </li>
+          </ul>
+        </ul>
+
+        <h2>Materiais de apoio/Referências</h2>
+        <p>
+          ALTEXSOFT INC. Software Documentation: Types and Best Practices.
+          <strong>Prototypr.io</strong>. 2018. Disponível em:
+          <a href="https://blog.prototypr.io/software-documentation-types-and-best-practices-1726ca595c7f"
+            >https://blog.prototypr.io/software-documentation-types-and-best-practices-1726ca595c7f </a
+          >. Acesso em: 9 mar. 2023.
+        </p>
+
+        <p>
+          ISO/IEC.
+          <strong>Guide to the Software Engineering Body of Knowledge (SWEBOK), Version 3.0.</strong>
+          International Organization for Standardization, 2014.
+        </p>
+      </section>
+
+      <section class="topic" id="topico_conferir_novas_necessidades">
+        <h1>A12. Conferir se há novas necessidades</h1>
+        <hr />
+
+        <h2>Descrição</h2>
+        <p>O Product Owner deve contactar os Stakeholders em busca de novas necessidades ou coletar do próprio Scrum Team.</p>
+
+        <h2>Responsáveis e Responsabilidades</h2>
+        <p>Product Owner</p>
+
+        <h2>Entrada e Saída</h2>
+        <h3>Entrada:</h3>
+        <ul>
+          <li>Product Backlog.</li>
+        </ul>
+
+        <h3>Saída:</h3>
+        <ul>
+          <li>Necessidades e/ou Product Backlog Atualizado.</li>
+        </ul>
+
+        <h2>Tarefas</h2>
+        <ul>
+          <li><strong>A12.1</strong> Contactar os Stakeholders,</li>
+          <li><strong>A12.2</strong> Contactar o Scrum Team,</li>
+          <li><strong>A12.3</strong> Caso haja novas necessidades, é necessário armazená-las para elencá-las posteriormente como novos requisitos.</li>
+        </ul>
+
+        <h2>Recursos</h2>
+        <ul>
+          <li>Ferramentas de Edição de Texto:</li>
+          <ul>
+            <li>
+              <a href="https://workspace.google.com/products/docs/">Google Docs,</a>
+            </li>
+            <li>
+              <a href="https://pt-br.libreoffice.org/">LibreOffice Writer,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-365/word?">Microsoft Word.</a>
+            </li>
+          </ul>
+        </ul>
+
+        <h2>Materiais de Apoio/Referências</h2>
+        <p>
+          SCHWABER, Ken; SUTHERLAND, Jeff. <strong>The Scrum Guide:</strong> The Definitive Guide to Scrum: The Rules of the Game. [<em>S. l.</em>]. 2020.
+          Disponível em:
+          <a href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf"
+            >https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf </a
+          >. Acesso em : 23 mar. 2023.
+        </p>
+      </section>
+
+      <section class="topic" id="topico_conferir_produto_finalizado">
+        <h1>A13. Conferir se o produto está finalizado</h1>
+        <hr />
+
+        <h2>Descrição</h2>
+        <p>
+          O Product Owner deve contactar os Stakeholders e verificar se o Product Backlog está em conformidade com o solicitado pelas partes interessadas. Em
+          caso afirmativo, o produto é declarado como finalizado.
+        </p>
+
+        <h2>Responsáveis e Responsabilidades</h2>
+        <p>Product Owner</p>
+
+        <h2>Entrada e Saída</h2>
+        <h3>Entrada:</h3>
+        <ul>
+          <li>Product Backlog.</li>
+        </ul>
+
+        <h3>Saída:</h3>
+        <ul>
+          <li>Product Backlog Finalizado,</li>
+          <li>Produto Finalizado.</li>
+        </ul>
+
+        <h2>Tarefas</h2>
+        <ul>
+          <li><strong>A13.1</strong> Contactar os Stakeholders,</li>
+          <li><strong>A13.2</strong> Verificar se o produto está em conformidade com o solicitado pelos Stakeholders,</li>
+          <li><strong>A13.3</strong> Verificar se o Product Backlog está completo.</li>
+        </ul>
+
+        <h2>Recursos</h2>
+        <ul>
+          <li>Aplicativos de comunicação:</li>
+          <ul>
+            <li><a href="https://discord.com/">Discord,</a></li>
+            <li>
+              <a href="https://workspace.google.com/products/meet/">Goolge Meet,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-teams/">Microsoft Teams.</a>
+            </li>
+          </ul>
+
+          <li>Ferramentas de Edição de Texto:</li>
+          <ul>
+            <li>
+              <a href="https://workspace.google.com/products/docs/">Google Docs,</a>
+            </li>
+            <li>
+              <a href="https://pt-br.libreoffice.org/">LibreOffice Writer,</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/pt-br/microsoft-365/word?">Microsoft Word.</a>
+            </li>
+          </ul>
+        </ul>
+
+        <h2>Materiais de Apoio/Referências</h2>
+        <p>
+          SCHWABER, Ken; SUTHERLAND, Jeff. <strong>The Scrum Guide:</strong> The Definitive Guide to Scrum: The Rules of the Game. [<em>S. l.</em>]. 2020.
+          Disponível em:
+          <a href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf"
+            >https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf </a
+          >. Acesso em : 23 mar. 2023.
+        </p>
+      </section>
+
+      <section class="topic" id="topico_anexo1">
+        <h1>Anexo I - Product Backlog</h1>
+        <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+        <hr />
+        <img id="anexo1" src="./Desenvolvimento/images/anexo/anexo1.jpg" alt="Anexo I" />
+        <a class="button" href="./Desenvolvimento/documentacao/Product-Backlog-TEMPLATE.docx" download="Template do Product Backlog">Baixar Documento</a>
+      </section>
+      <section class="topic" id="topico_anexo2">
+        <h1>Anexo II - Sprint Backlog</h1>
+        <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+        <hr />
+        <img id="anexo2" src="./Desenvolvimento/images/anexo/anexo2.jpg" alt="Anexo II" />
+        <a class="button" href="./Desenvolvimento/documentacao/SprintBacklog-TEMPLATE.docx" download="Template do Sprint Backlog">Baixar Documento</a>
+      </section>
+      <section class="topic" id="topico_anexo3">
+        <h1>Anexo III - Relatório da Sprint</h1>
+        <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+        <hr />
+        <img id="anexo3" src="./Desenvolvimento/images/anexo/anexo3.jpg" alt="Anexo III" />
+        <a class="button" href="./Desenvolvimento/documentacao/RelatórioSprint-TEMPLATE.docx" download="Template do Relatório da Sprint">Baixar Documento</a>
+      </section>
     </div>
-</body>
-
+  </body>
 </html>
