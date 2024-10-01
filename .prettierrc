@@ -1,0 +1,12 @@
+{
+  "printWidth": 120,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "endOfLine": "crlf",
+  "insertFinalNewline": true,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "htmlWhitespaceSensitivity": "css",
+  "proseWrap": "preserve"
+}
